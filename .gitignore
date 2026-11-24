@@ -1,0 +1,7 @@
+# Kişisel kullanım: ÖSYM kitapçıkları, fotoğraflar, OCR çıktıları, yedekler, Artifact derlemesi
+data/private/
+work/
+
+.DS_Store
+__pycache__/
+*.pyc

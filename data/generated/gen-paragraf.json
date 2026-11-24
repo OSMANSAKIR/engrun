@@ -1,0 +1,1381 @@
+{
+ "id": "gen-paragraf",
+ "title": "Paragraf — Anlam Bütünlüğü, Paragraf Tamamlama ve Diyalog",
+ "source": "Claude üretimi",
+ "passages": [],
+ "questions": [
+  {
+   "id": "gen-paragraf-01",
+   "n": 1,
+   "section": "dialogue",
+   "passage": null,
+   "stem": "Emma:\n– I've just read that people who spend more time in nature report lower levels of stress. Do you think that's really true?\nDaniel:\n– ----\nEmma:\n– That's a good point. So maybe it's not nature itself but the fact that we leave our worries behind for a while.",
+   "stemTr": "Emma doğada daha çok vakit geçirenlerin daha az stres bildirdiğini okumuş ve doğru olup olmadığını soruyor. Boşluk (Daniel): 'Olabilir, ama doğaya çıkan insanlar genelde aynı zamanda işten ve telefonlarından da mola vermiş oluyor.' Emma: 'İyi bir nokta. Belki doğanın kendisi değil, dertlerimizi bir süre geride bırakmamızdır.'",
+   "options": {
+    "A": "It might be, but people who go out into nature are usually also taking a break from work and their phones.",
+    "B": "Yes, forests cover about 31 percent of the world's land area.",
+    "C": "Definitely. Even looking at photos of trees can lower your heart rate.",
+    "D": "I agree. That's why I've decided to move to the countryside next month.",
+    "E": "Actually, I've never been interested in hiking or camping."
+   },
+   "answer": "A",
+   "tags": [
+    "dialogue.response"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Emma'nın 'not nature itself but ... leave our worries behind' sonucu → Daniel başka bir açıklama (işten/telefondan mola) önermiş olmalı; A.",
+    "why": "Emma 'That's a good point. So maybe it's not nature itself but...' diyor. Yani Daniel, stres azalmasının doğadan değil BAŞKA bir şeyden kaynaklanabileceğini söylemiş olmalı. Doğru şıkta bu var: insanlar doğadayken işten ve telefondan da uzaklaşıyor. Örnek: Ayşe tatilde mutlu oluyor; ama belki deniz değil, patronundan uzak olmak onu mutlu ediyor.",
+    "others": {
+     "B": "Orman oranı; Emma'nın 'dertlerimizi geride bırakmamız' sonucuna yol açmaz.",
+     "C": "Ağaç fotoğrafı bile işe yarıyorsa etki doğanın kendisinden gelir; Emma'nın 'belki doğanın kendisi değil' çıkarımıyla çelişir.",
+     "D": "Taşınma kararı; 'belki doğa değil, başka bir şey' çıkarımını tetiklemez.",
+     "E": "Kişisel ilgi; soruya ve Emma'nın cevabına bağlanmıyor."
+    },
+    "clues": [
+     "That's a good point",
+     "it's not nature itself but the fact that we leave our worries behind"
+    ],
+    "tip": "Boşluktan SONRAKİ repliği mutlaka okuyun: 'Yes/Exactly/That's a good point/I see' ile başlıyorsa, boşluktaki cümle o cevabın onayladığı ya da açıkladığı fikri içermelidir."
+   },
+   "vocab": [
+    {
+     "en": "leave behind",
+     "tr": "geride bırakmak"
+    },
+    {
+     "en": "take a break from",
+     "tr": "-den mola vermek"
+    },
+    {
+     "en": "report",
+     "tr": "bildirmek, belirtmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-02",
+   "n": 2,
+   "section": "dialogue",
+   "passage": null,
+   "stem": "Professor:\n– Your results look promising, but the sample size is quite small.\nStudent:\n– I know. We could only recruit twenty participants because of our limited budget.\nProfessor:\n– ----\nStudent:\n– Yes, we've already applied for a grant that would allow us to include over two hundred people next year.",
+   "stemTr": "Profesör sonuçların umut verici ama örneklemin küçük olduğunu söylüyor; öğrenci bütçe yüzünden yalnızca yirmi katılımcı bulabildiklerini açıklıyor. Boşluk (Profesör): 'Çalışmayı daha büyük bir grupla tekrarlamayı planlıyor musunuz?' Öğrenci: 'Evet, gelecek yıl iki yüzden fazla kişiyi dahil etmemizi sağlayacak bir hibeye başvurduk bile.'",
+   "options": {
+    "A": "Why did you choose such a complicated statistical method?",
+    "B": "Are you planning to repeat the study with a larger group?",
+    "C": "How long did it take you to analyse the data?",
+    "D": "Have you considered publishing the results in a popular magazine?",
+    "E": "Did any of the participants drop out before the end of the study?"
+   },
+   "answer": "B",
+   "tags": [
+    "dialogue.question"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Cevap 'Evet, 200 kişiyle yapmak için hibeye başvurduk' → soru 'daha büyük grupla tekrarlayacak mısınız?'; B.",
+    "why": "Boşluk bir soru; cevabı da hemen altında. Öğrenci 'Yes' diyor ve gelecek yıl daha çok kişiyle çalışmak için hibe aldıklarını anlatıyor. Bu cevaba uyan tek soru 'daha büyük bir grupla tekrar edecek misiniz?'. Örnek: Ayşe'ye 'Bir dahaki sefere daha büyük salon tutacak mısın?' diye sorulsa 'Evet, 200 kişilik yer ayırttım bile' der.",
+    "others": {
+     "A": "Cevap yöntemle değil, katılımcı sayısını artırma planıyla ilgili.",
+     "C": "Süre sorusuna 'Yes, ... grant' cevabı verilmez.",
+     "D": "'Yes' der gibi görünse de cevap hibeyle daha çok kişiye ulaşmayı anlatıyor, dergiyle ilgisi yok.",
+     "E": "Ayrılan katılımcı sorusuna hibe başvurusuyla cevap verilmez."
+    },
+    "clues": [
+     "Yes, we've already applied for a grant",
+     "over two hundred people next year"
+    ],
+    "tip": "Boşluk soruysa önce cevabı okuyun, sonra 'bu cevap hangi soruya verilir?' diye geriye doğru çalışın; 'Yes/No' cevabı evet-hayır sorusu ister."
+   },
+   "vocab": [
+    {
+     "en": "sample size",
+     "tr": "örneklem büyüklüğü"
+    },
+    {
+     "en": "recruit",
+     "tr": "(katılımcı) bulmak, almak"
+    },
+    {
+     "en": "grant",
+     "tr": "hibe, burs"
+    },
+    {
+     "en": "promising",
+     "tr": "umut verici"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-03",
+   "n": 3,
+   "section": "dialogue",
+   "passage": null,
+   "stem": "Kerem:\n– Did you know that the Romans used a type of concrete that has lasted for two thousand years?\nLisa:\n– Really? Modern concrete often starts cracking after only a few decades.\nKerem:\n– ----\nLisa:\n– So, ironically, the seawater that damages modern structures actually made the Roman ones stronger.",
+   "stemTr": "Kerem, Romalıların iki bin yıl dayanan bir beton kullandığını söylüyor; Lisa modern betonun birkaç on yılda çatladığını belirtiyor. Boşluk (Kerem): 'Aynen. Araştırmacılar, deniz suyu Roma liman duvarlarına sızdığında volkanik külle tepkimeye girdiğini ve çatlakları dolduran yeni mineraller oluşturduğunu buldu.' Lisa: 'Yani ironik biçimde, modern yapılara zarar veren deniz suyu Roma yapılarını aslında güçlendirmiş.'",
+   "options": {
+    "A": "Exactly. Researchers found that when seawater seeped into Roman harbour walls, it reacted with volcanic ash and formed new minerals that filled the cracks.",
+    "B": "Yes, and the Colosseum could hold around 50,000 spectators.",
+    "C": "That's because the Romans built most of their structures far away from the sea.",
+    "D": "True, but modern concrete is much cheaper and quicker to produce.",
+    "E": "Actually, most Roman buildings collapsed within a century of being built."
+   },
+   "answer": "A",
+   "tags": [
+    "dialogue.response"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Lisa 'seawater ... made the Roman ones stronger' diyor → Kerem deniz suyunun Roma betonunu nasıl güçlendirdiğini anlatmış olmalı; A.",
+    "why": "Lisa'nın son repliği 'So' (yani) ile başlıyor; bu, Kerem'in söylediğinden bir sonuç çıkardığını gösterir. Sonuçta 'deniz suyu' ve 'güçlendirdi' var; o hâlde Kerem'in cümlesinde deniz suyunun betonla tepkimeye girip çatlakları doldurması anlatılmalı. Örnek: Ayşe 'Annemin turşusu hiç bozulmuyor çünkü tuzlu suda bekliyor' derse arkadaşı 'Yani tuz, aslında koruyucu' diye sonuç çıkarır.",
+    "others": {
+     "B": "Kolezyum'un kapasitesi; Lisa'nın 'deniz suyu' sonucuna hiç bağlanmıyor.",
+     "C": "Lisa deniz suyunun Roma yapılarını güçlendirdiğini söylüyor; bu şık denizden uzak dendiği için çelişiyor.",
+     "D": "Maliyet karşılaştırması; deniz suyunun etkisinden söz etmiyor.",
+     "E": "Kerem'in ilk sözüyle (iki bin yıl dayandı) çelişiyor."
+    },
+    "clues": [
+     "So, ironically, the seawater",
+     "actually made the Roman ones stronger"
+    ],
+    "tip": "Boşluktan SONRAKİ repliği mutlaka okuyun: 'Yes/Exactly/That's a good point/I see' ile başlıyorsa, boşluktaki cümle o cevabın onayladığı ya da açıkladığı fikri içermelidir."
+   },
+   "vocab": [
+    {
+     "en": "seep into",
+     "tr": "-e sızmak"
+    },
+    {
+     "en": "volcanic ash",
+     "tr": "volkanik kül"
+    },
+    {
+     "en": "harbour",
+     "tr": "liman"
+    },
+    {
+     "en": "ironically",
+     "tr": "ironik biçimde"
+    },
+    {
+     "en": "crack",
+     "tr": "çatlak; çatlamak"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-04",
+   "n": 4,
+   "section": "dialogue",
+   "passage": null,
+   "stem": "Selin:\n– I keep reading that we should drink eight glasses of water a day. Is there any scientific basis for that?\nMark:\n– Not really. The figure seems to come from a 1945 recommendation that was widely misunderstood.\nSelin:\n– ----\nMark:\n– Exactly, and people simply forgot that part. In fact, much of the water we need already comes from fruit, vegetables and other drinks.",
+   "stemTr": "Selin günde sekiz bardak su içmenin bilimsel dayanağı olup olmadığını soruyor; Mark bu rakamın 1945'teki yanlış anlaşılmış bir öneriden geldiğini söylüyor. Boşluk (Selin): 'Nasıl yanlış anlaşıldı? O miktarın çoğunun yediğimiz yiyeceklerden alınabileceğini söylemiyor muydu?' Mark: 'Aynen, insanlar o kısmı unuttu. Aslında ihtiyacımız olan suyun çoğu zaten meyve, sebze ve diğer içeceklerden geliyor.'",
+   "options": {
+    "A": "So should I stop drinking water altogether?",
+    "B": "Who was responsible for publishing it?",
+    "C": "Misunderstood how? Didn't it say that much of that amount could come from the food we eat?",
+    "D": "I see. Then I'll try to drink even more than eight glasses from now on.",
+    "E": "That's interesting. Did they also recommend avoiding coffee and tea?"
+   },
+   "answer": "C",
+   "tags": [
+    "dialogue.question"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "Mark 'Exactly, people forgot that part' + 'suyun çoğu yiyecekten geliyor' → Selin o unutulan kısmı sormuş olmalı; C.",
+    "why": "Mark'ın cevabındaki 'that part' (o kısım) boşluktaki cümlede adı geçen bir bölümü gösteriyor. Ardından 'suyun çoğu zaten meyve-sebzeden geliyor' diyor. O hâlde Selin, önerinin 'bu miktarın çoğu yiyeceklerden gelebilir' kısmını sormuş olmalı. Örnek: Ayşe 'Tarifte 'tuz isteğe bağlı' yazmıyor muydu?' der, annesi 'Aynen, herkes o kısmı atlıyor' diye cevap verir.",
+    "others": {
+     "A": "'Exactly' bu soruya verilirse 'su içmeyi tamamen bırak' anlamına gelir; saçma.",
+     "B": "'Kim yayımladı?' sorusuna 'Exactly' cevabı verilmez.",
+     "D": "Mark'ın 'Exactly, and people forgot that part' cevabına bağlanmıyor.",
+     "E": "Mark diğer içeceklerin de su ihtiyacını karşıladığını söylüyor; kahve-çaydan kaçınma ile çelişir."
+    },
+    "clues": [
+     "Exactly, and people simply forgot that part",
+     "much of the water we need already comes from fruit"
+    ],
+    "tip": "Cevaptaki 'that part / that / it / so' gibi gönderimler, boşluktaki cümlede adı geçen somut bir şeyi gösterir; o şeyi içeren şıkkı bulun."
+   },
+   "vocab": [
+    {
+     "en": "scientific basis",
+     "tr": "bilimsel dayanak"
+    },
+    {
+     "en": "recommendation",
+     "tr": "öneri, tavsiye"
+    },
+    {
+     "en": "misunderstand",
+     "tr": "yanlış anlamak"
+    },
+    {
+     "en": "altogether",
+     "tr": "tamamen"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-05",
+   "n": 5,
+   "section": "dialogue",
+   "passage": null,
+   "stem": "Interviewer:\n– Your new book argues that boredom can actually be good for us. Isn't that a strange claim?\nAuthor:\n– ----\nInterviewer:\n– So you're suggesting that constantly checking our phones might be harming our creativity.\nAuthor:\n– Precisely. We rarely give our minds the chance to wander anymore.",
+   "stemTr": "Muhabir yazarın, can sıkıntısının aslında bize iyi gelebileceğini savunan kitabını garip bulduğunu söylüyor. Boşluk (Yazar): 'Hiç de değil. Araştırmalar, insanlar sıkıldığında zihinlerinin dolaşmaya başladığını ve bunun çoğu zaman yaratıcı fikirlere yol açtığını gösteriyor.' Muhabir: 'Yani sürekli telefonumuza bakmanın yaratıcılığımıza zarar verebileceğini söylüyorsunuz.'",
+   "options": {
+    "A": "Not at all. Studies show that when people are bored, their minds start to wander, which often leads to creative ideas.",
+    "B": "Yes, I admit that boredom is mostly harmful to our mental health.",
+    "C": "Well, the book took me nearly five years to write.",
+    "D": "Actually, I've never experienced boredom myself.",
+    "E": "It depends on which publisher you ask."
+   },
+   "answer": "A",
+   "tags": [
+    "dialogue.response"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Muhabirin 'creativity' çıkarımı ve yazarın 'minds to wander' onayı → boşlukta sıkılma → zihin dolaşır → yaratıcılık bağı; A.",
+    "why": "Muhabirin bir sonraki repliği 'So you're suggesting ... creativity' ile yazarın sözünden sonuç çıkarıyor. Yazar da 'Precisely ... minds to wander' diyerek onaylıyor. O hâlde boşlukta can sıkıntısı, zihnin dolaşması ve yaratıcılık bağlantısı olmalı. Örnek: Ayşe otobüste telefonsuz kaldığında aklına en iyi fikirler geliyor.",
+    "others": {
+     "B": "Yazar kendi kitabının tezini çürütmüş olur; muhabirin 'yaratıcılık' çıkarımına bağlanmaz.",
+     "C": "Kitabın yazım süresi; soruyu cevaplamıyor.",
+     "D": "Kişisel deneyim; yaratıcılık ve zihnin dolaşması fikrini içermiyor.",
+     "E": "Yayıncı konusu ilgisiz."
+    },
+    "clues": [
+     "So you're suggesting that",
+     "harming our creativity",
+     "give our minds the chance to wander"
+    ],
+    "tip": "Boşluktan SONRAKİ repliği mutlaka okuyun: 'Yes/Exactly/That's a good point/I see' ile başlıyorsa, boşluktaki cümle o cevabın onayladığı ya da açıkladığı fikri içermelidir."
+   },
+   "vocab": [
+    {
+     "en": "boredom",
+     "tr": "can sıkıntısı"
+    },
+    {
+     "en": "wander",
+     "tr": "dolaşmak, (zihin) dalıp gitmek"
+    },
+    {
+     "en": "claim",
+     "tr": "iddia"
+    },
+    {
+     "en": "precisely",
+     "tr": "kesinlikle, aynen öyle"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-06",
+   "n": 6,
+   "section": "dialogue",
+   "passage": null,
+   "stem": "Doctor:\n– Your blood tests show that your vitamin D level is quite low.\nPatient:\n– That's surprising. I eat plenty of fish and eggs.\nDoctor:\n– ----\nPatient:\n– I see. I do work in an office all day, and I hardly ever go outside in winter.",
+   "stemTr": "Doktor hastanın D vitamini düzeyinin düşük olduğunu söylüyor; hasta bol balık ve yumurta yediği için şaşırıyor. Boşluk (Doktor): 'Beslenme yardımcı olur ama D vitaminimizin çoğu aslında deri güneş ışığına maruz kaldığında üretilir.' Hasta: 'Anlıyorum. Bütün gün ofiste çalışıyorum ve kışın neredeyse hiç dışarı çıkmıyorum.'",
+   "options": {
+    "A": "That explains it, because fish and eggs contain no vitamin D at all.",
+    "B": "You should stop eating fish immediately and switch to a vegetarian diet.",
+    "C": "Low vitamin D levels are very rare among people who live in cities.",
+    "D": "Diet helps, but most of our vitamin D is actually produced by the skin when it is exposed to sunlight.",
+    "E": "Have you been taking any painkillers for your headaches recently?"
+   },
+   "answer": "D",
+   "tags": [
+    "dialogue.response"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Hasta 'ofisteyim, dışarı çıkmıyorum' diyor → doktor güneş ışığından söz etmiş olmalı; D.",
+    "why": "Hastanın cevabı 'I see' (anlıyorum) ile başlıyor ve kendi durumunu açıklıyor: hep ofiste, kışın dışarı çıkmıyor. Bu ancak doktor 'D vitamini güneşle üretilir' dediyse anlamlı. Örnek: Ayşe 'Bitkim neden soldu, her gün suluyorum' der; çiçekçi 'Su yetmez, güneş de lazım' deyince Ayşe 'Haa, saksı hep karanlık köşede' der.",
+    "others": {
+     "A": "Hastanın 'ofiste çalışıyorum, dışarı çıkmıyorum' cevabı güneş ışığıyla ilgili bir açıklamaya bağlanır, besinle değil.",
+     "B": "Öneri hastanın 'dışarı çıkmıyorum' cevabıyla bağ kurmuyor.",
+     "C": "Hastanın açıklaması güneş eksikliğini anlatıyor; bu şıkta güneş yok.",
+     "E": "Ağrı kesici sorusuna 'ofiste çalışıyorum' cevabı verilmez."
+    },
+    "clues": [
+     "I do work in an office all day",
+     "I hardly ever go outside in winter"
+    ],
+    "tip": "Boşluktan SONRAKİ repliği mutlaka okuyun: 'Yes/Exactly/That's a good point/I see' ile başlıyorsa, boşluktaki cümle o cevabın onayladığı ya da açıkladığı fikri içermelidir."
+   },
+   "vocab": [
+    {
+     "en": "be exposed to",
+     "tr": "-e maruz kalmak"
+    },
+    {
+     "en": "blood test",
+     "tr": "kan tahlili"
+    },
+    {
+     "en": "hardly ever",
+     "tr": "neredeyse hiç"
+    },
+    {
+     "en": "plenty of",
+     "tr": "bol miktarda"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-07",
+   "n": 7,
+   "section": "para_completion",
+   "passage": null,
+   "stem": "Many people assume that the brain stops developing once childhood is over. ---- These include the prefrontal cortex, which is responsible for planning, decision-making and controlling impulses. This late maturation may help explain why teenagers are more prone to risk-taking than adults.",
+   "stemTr": "Pek çok insan beynin çocukluk bitince gelişmeyi bıraktığını varsayar. Boşluk: 'Gerçekte bazı bölgeler kişinin yirmili yaşlarının ortasına kadar olgunlaşmaya devam eder.' Bunlar arasında planlama, karar verme ve dürtü kontrolünden sorumlu prefrontal korteks vardır. Bu geç olgunlaşma, ergenlerin neden yetişkinlerden daha çok risk aldığını açıklayabilir.",
+   "options": {
+    "A": "Childhood is therefore the most important period for learning a second language.",
+    "B": "Teenagers often sleep later than adults because of changes in their body clock.",
+    "C": "In fact, the brain accounts for only about 2 percent of total body weight.",
+    "D": "In reality, some regions continue to mature well into a person's mid-twenties.",
+    "E": "As a result, adults find it much harder to learn new skills than children do."
+   },
+   "answer": "D",
+   "tags": [
+    "para.cohesion"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Sonraki cümle 'These include the prefrontal cortex' → boşlukta çoğul 'some regions' olmalı; D.",
+    "why": "Boşluktan sonraki cümle 'These include the prefrontal cortex' diyor: 'Bunlar arasında prefrontal korteks var.' 'These' çoğul bir şeyi (beyin bölgeleri) göstermeli. Ayrıca 'This late maturation' (bu geç olgunlaşma) ifadesi, boşlukta geç olgunlaşmadan söz edildiğini gösteriyor. Doğru şık hem 'some regions' hem de 'mid-twenties' ile ikisini de sağlıyor. Örnek: 'Ayşe'nin bazı arkadaşları hâlâ ailesiyle yaşıyor. Bunlar arasında en yakını Elif var.'",
+    "others": {
+     "A": "'These include the prefrontal cortex' cümlesindeki 'These' için çoğul bir isim (bölgeler) sağlamıyor.",
+     "B": "Uyku düzenine geçiyor; 'These' ve 'late maturation' bağlantısını kurmuyor.",
+     "C": "Beynin ağırlığı; 'These include ...' neyi gösterecek belli değil.",
+     "E": "Gelişimin bittiği varsayımını onaylıyor; 'late maturation' ile çelişiyor."
+    },
+    "clues": [
+     "These include the prefrontal cortex",
+     "This late maturation"
+    ],
+    "tip": "Boşluktan SONRAKİ cümleye bakın: 'This/These/Such/Instead/In addition/For these reasons' neyi gösteriyorsa o şey boşluktaki cümlede bulunmalı."
+   },
+   "vocab": [
+    {
+     "en": "mature",
+     "tr": "olgunlaşmak"
+    },
+    {
+     "en": "maturation",
+     "tr": "olgunlaşma"
+    },
+    {
+     "en": "impulse",
+     "tr": "dürtü"
+    },
+    {
+     "en": "be prone to",
+     "tr": "-e yatkın olmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-08",
+   "n": 8,
+   "section": "para_completion",
+   "passage": null,
+   "stem": "Coffee is one of the most widely consumed beverages in the world, and its health effects have been studied extensively. Moderate consumption, defined as three to four cups a day, has been linked to a lower risk of type 2 diabetes, Parkinson's disease and certain liver conditions. However, these benefits do not apply to everyone. ----",
+   "stemTr": "Kahve dünyada en çok tüketilen içeceklerden biridir ve sağlık etkileri kapsamlı biçimde incelenmiştir. Günde üç-dört fincan olarak tanımlanan ılımlı tüketim; tip 2 diyabet, Parkinson ve bazı karaciğer hastalıkları riskinin azalmasıyla ilişkilendirilmiştir. Ancak bu faydalar herkes için geçerli değildir. Boşluk: 'Örneğin hamile kadınlara ve bazı kalp rahatsızlıkları olanlara genellikle tüketimlerini sınırlamaları önerilir.'",
+   "options": {
+    "A": "Coffee was first cultivated in Ethiopia and Yemen several centuries ago.",
+    "B": "Therefore, doctors now recommend that everyone drink at least four cups a day.",
+    "C": "Tea, on the other hand, contains less caffeine than coffee.",
+    "D": "Indeed, the more coffee people drink, the healthier they tend to become.",
+    "E": "Pregnant women and people with certain heart conditions, for instance, are usually advised to limit their intake."
+   },
+   "answer": "E",
+   "tags": [
+    "para.topic_flow"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'Bu faydalar herkes için geçerli değil' → ardından istisna örnekleri: hamileler, kalp hastaları; E.",
+    "why": "Son cümle 'However, these benefits do not apply to everyone' bir iddia; paragraf bu iddiayı somutlaştırarak bitmeli: kimler için geçerli değil? Doğru şık 'for instance' ile örnek veriyor: hamile kadınlar ve kalp hastaları. Örnek: 'Spor herkese iyi gelir ama herkese uymaz; örneğin dizinde sakatlık olan Ayşe'ye koşu önerilmez.'",
+    "others": {
+     "A": "Tarihe geçiyor; 'herkes için geçerli değil' iddiasını desteklemiyor.",
+     "B": "'Herkes için geçerli değil' ile çelişiyor.",
+     "C": "Çaya geçiyor; kimin için faydanın geçerli olmadığını söylemiyor.",
+     "D": "'Ilımlı tüketim' ve 'herkese uymaz' fikirleriyle çelişiyor."
+    },
+    "clues": [
+     "However, these benefits do not apply to everyone"
+    ],
+    "tip": "Boşluk paragraf sonundaysa son cümlenin bir iddia mı, soru mu olduğuna bakın; iddiayı örnekleyen/destekleyen şık gelir."
+   },
+   "vocab": [
+    {
+     "en": "moderate",
+     "tr": "ılımlı, ölçülü"
+    },
+    {
+     "en": "intake",
+     "tr": "alım, tüketim"
+    },
+    {
+     "en": "apply to",
+     "tr": "-e uygulanmak, geçerli olmak"
+    },
+    {
+     "en": "beverage",
+     "tr": "içecek"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-09",
+   "n": 9,
+   "section": "para_completion",
+   "passage": null,
+   "stem": "---- For example, some Inuit languages are said to have many different words for snow, while English speakers rely on a few words combined with adjectives. Some researchers argue that such differences shape the way speakers perceive the world, an idea known as linguistic relativity. Others, however, believe that language merely reflects, rather than determines, how we think.",
+   "stemTr": "Boşluk: 'Diller, doğal çevrenin unsurlarını ne kadar ince ayrıntıyla bölümlendirdikleri konusunda sıklıkla farklılık gösterir.' Örneğin bazı İnuit dillerinde kar için pek çok farklı kelime olduğu söylenir; İngilizce konuşanlar ise birkaç kelimeyi sıfatlarla birleştirir. Bazı araştırmacılar bu tür farkların dünyayı algılayışımızı şekillendirdiğini savunur (dilsel görelilik); diğerleri ise dilin düşünceyi belirlemediğini, sadece yansıttığını düşünür.",
+   "options": {
+    "A": "Languages often differ in how finely they divide up aspects of the natural environment.",
+    "B": "Most of the world's languages are in danger of disappearing within the next century.",
+    "C": "Learning a second language has been shown to delay the onset of dementia.",
+    "D": "English has become the dominant language of international science and business.",
+    "E": "Linguistic relativity was first proposed in the early twentieth century."
+   },
+   "answer": "A",
+   "tags": [
+    "para.cohesion",
+    "para.topic_flow"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Sonraki cümle 'For example' ile kar kelimelerini örnekliyor → boşlukta 'diller doğayı farklı ayrıntıda bölümlendirir' genellemesi olmalı; A.",
+    "why": "Boşluk paragrafın başında ve hemen arkasından 'For example' geliyor. Demek ki boşluk, kar kelimeleri örneğinin genellemesi olmalı: diller çevreyi farklı inceliklerde adlandırır. Ayrıca 'such differences' (bu tür farklar) de dil farklılıklarını gösteriyor. Örnek: 'Türkçede akrabalar için çok kelime var. Örneğin İngilizcedeki tek 'uncle' yerine biz amca ve dayı diyoruz.'",
+    "others": {
+     "B": "Dillerin yok olmasından söz ediyor; kar kelimeleri bunun örneği değil.",
+     "C": "İkinci dil ve bunama; 'For example' sonrası verilen örnekle bağ kurmuyor.",
+     "D": "İngilizcenin yaygınlığı; kar kelimeleri örneği bunu göstermez.",
+     "E": "Kavram sonradan 'an idea known as linguistic relativity' diye tanıtılıyor; önceden adı geçmiş olsaydı yeniden tanıtılmazdı. 'For example' da bu cümleyi örneklemiyor."
+    },
+    "clues": [
+     "For example, some Inuit languages",
+     "such differences",
+     "an idea known as linguistic relativity"
+    ],
+    "tip": "Boşluk başta ve sonra 'For example / For instance' geliyorsa, boşluğa örneğin kapsadığı GENEL fikri koyun; örnekten daha dar ya da başka konuda olan şıkları eleyin."
+   },
+   "vocab": [
+    {
+     "en": "divide up",
+     "tr": "bölümlere ayırmak"
+    },
+    {
+     "en": "perceive",
+     "tr": "algılamak"
+    },
+    {
+     "en": "linguistic relativity",
+     "tr": "dilsel görelilik"
+    },
+    {
+     "en": "merely",
+     "tr": "sadece"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-10",
+   "n": 10,
+   "section": "para_completion",
+   "passage": null,
+   "stem": "For decades, scientists believed that the extinction of the dinosaurs was a gradual process caused by changes in climate and sea level. ---- Instead, they proposed that a massive asteroid struck the Earth about 66 million years ago, throwing so much dust into the atmosphere that sunlight was blocked for months. The discovery of a huge crater off the coast of Mexico in the early 1990s provided strong support for this theory.",
+   "stemTr": "On yıllar boyunca bilim insanları dinozorların yok oluşunun iklim ve deniz seviyesindeki değişikliklerin yol açtığı yavaş bir süreç olduğuna inandı. Boşluk: 'Ancak 1980'de bir araştırma ekibi, dünyanın dört bir yanındaki kaya katmanlarında, Dünya'da nadir ama asteroitlerde yaygın bir metal olan iridyumu alışılmadık yüksek düzeylerde bulunca bu görüşe itiraz etti.' Bunun yerine, yaklaşık 66 milyon yıl önce dev bir asteroidin Dünya'ya çarptığını öne sürdüler...",
+   "options": {
+    "A": "In 1980, however, a team of researchers challenged this view after finding unusually high levels of iridium, a metal rare on Earth but common in asteroids, in rock layers around the world.",
+    "B": "Dinosaurs first appeared about 230 million years ago, during the Triassic period.",
+    "C": "This gradual theory was accepted by nearly all palaeontologists until the 1990s.",
+    "D": "Many of these animals were much smaller than is commonly believed.",
+    "E": "Similarly, the extinction of the woolly mammoth is attributed to both climate change and human hunting."
+   },
+   "answer": "A",
+   "tags": [
+    "para.cohesion"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Instead, they proposed...' → boşlukta eski görüşe itiraz eden 'they' (araştırmacılar) olmalı; A.",
+    "why": "Sonraki cümle 'Instead, they proposed' = 'Bunun yerine şunu önerdiler'. Bu cümle iki şey istiyor: 1) 'they' diye gösterilebilecek yeni bir grup, 2) eski görüşün reddedilmesi. Doğru şık ikisini de veriyor: bir ekip eski görüşe itiraz etti (challenged this view) ve iridyum buldu. Örnek: 'Herkes Ayşe'nin trafikte kaldığını sandı. Ama arkadaşları bir mesaj buldu. Bunun yerine, uyuyakaldığını düşündüler.'",
+    "others": {
+     "B": "Dinozorların ortaya çıkışı; 'Instead, they proposed' cümlesindeki 'they' ve 'instead' için zemin hazırlamıyor.",
+     "C": "Sonraki cümlede 'they' asteroidi öneriyor; bu şıkta 'they' yavaş süreci kabul edenler olur, 'Instead' çelişir.",
+     "D": "Boyut bilgisi; 'Instead' ile başlayan yeni teoriyi hazırlamıyor.",
+     "E": "Mamutlara geçiyor; 'they proposed that a massive asteroid' ile bağ yok."
+    },
+    "clues": [
+     "Instead, they proposed",
+     "provided strong support for this theory"
+    ],
+    "tip": "Boşluktan SONRAKİ cümleye bakın: 'This/These/Such/Instead/In addition/For these reasons' neyi gösteriyorsa o şey boşluktaki cümlede bulunmalı."
+   },
+   "vocab": [
+    {
+     "en": "extinction",
+     "tr": "yok oluş, nesli tükenme"
+    },
+    {
+     "en": "gradual",
+     "tr": "kademeli, yavaş"
+    },
+    {
+     "en": "challenge a view",
+     "tr": "bir görüşe itiraz etmek"
+    },
+    {
+     "en": "crater",
+     "tr": "krater"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-11",
+   "n": 11,
+   "section": "para_completion",
+   "passage": null,
+   "stem": "Social media platforms are designed to capture as much of our attention as possible. Features such as infinite scrolling and unpredictable notifications exploit the same reward circuits in the brain that are activated by gambling. ---- This, in turn, keeps users coming back to their screens dozens of times a day, often without any conscious decision to do so.",
+   "stemTr": "Sosyal medya platformları dikkatimizi olabildiğince çok çekecek şekilde tasarlanır. Sonsuz kaydırma ve öngörülemeyen bildirimler gibi özellikler, beyinde kumarla etkinleşen ödül devrelerini sömürür. Boşluk: 'Her yeni beğeni ya da mesaj küçük bir dopamin salınımını tetikleyerek bir beklenti ve ödül döngüsü yaratır.' Bu da kullanıcıların çoğu zaman bilinçli bir karar vermeden günde onlarca kez ekrana dönmesine yol açar.",
+   "options": {
+    "A": "Many platforms now offer tools that allow users to limit their daily screen time.",
+    "B": "The first social networking site was launched in the late 1990s.",
+    "C": "Gambling addiction, however, is recognised as a mental disorder by most health organisations.",
+    "D": "As a result, users have become far more selective about the content they consume.",
+    "E": "Each new like or message triggers a small release of dopamine, creating a cycle of anticipation and reward."
+   },
+   "answer": "E",
+   "tags": [
+    "para.cohesion"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'This, in turn, keeps users coming back' → boşlukta tekrar tekrar dönmeye yol açan mekanizma (dopamin döngüsü) olmalı; E.",
+    "why": "Sonraki cümledeki 'This, in turn' = 'bu da sırasıyla'. Yani boşluk, kullanıcıları ekrana geri getiren bir SEBEP içermeli. Dopamin ve 'beklenti-ödül döngüsü' tam olarak bu sebep. Örnek: Ayşe her bildirimde küçük bir heyecan duyuyor; bu da onu telefonu sürekli kontrol etmeye itiyor.",
+    "others": {
+     "A": "'This keeps users coming back' ile çelişiyor: sınırlama aracı geri dönmeyi sağlamaz.",
+     "B": "Tarihe kayıyor; 'This, in turn' sonucunu doğurmaz.",
+     "C": "Kumar bağımlılığına geçiyor; 'This' kullanıcıların ekrana dönmesini açıklamaz.",
+     "D": "'Daha seçici oldular' ile 'bilinçsizce sürekli dönüyorlar' çelişiyor."
+    },
+    "clues": [
+     "This, in turn, keeps users coming back",
+     "without any conscious decision"
+    ],
+    "tip": "Boşluktan SONRAKİ cümleye bakın: 'This/These/Such/Instead/In addition/For these reasons' neyi gösteriyorsa o şey boşluktaki cümlede bulunmalı."
+   },
+   "vocab": [
+    {
+     "en": "exploit",
+     "tr": "sömürmek, istismar etmek"
+    },
+    {
+     "en": "reward circuit",
+     "tr": "ödül devresi"
+    },
+    {
+     "en": "anticipation",
+     "tr": "beklenti"
+    },
+    {
+     "en": "in turn",
+     "tr": "bu da, sırasıyla"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-12",
+   "n": 12,
+   "section": "para_completion",
+   "passage": null,
+   "stem": "Bilingual children were once thought to be at a disadvantage, as it was feared that learning two languages at once would confuse them and delay their speech. Research over the past few decades has largely overturned this belief. Although bilingual toddlers may have slightly smaller vocabularies in each individual language, their combined vocabulary is usually equal to or larger than that of monolingual children. ----",
+   "stemTr": "Bir zamanlar iki dilli çocukların dezavantajlı olduğu düşünülürdü; iki dili aynı anda öğrenmenin kafalarını karıştıracağından ve konuşmalarını geciktireceğinden korkulurdu. Son on yılların araştırmaları bu inancı büyük ölçüde çürüttü. İki dilli küçük çocukların her bir dildeki kelime hazinesi biraz daha küçük olabilse de toplam kelime hazineleri genellikle tek dilli çocuklarınkine eşit ya da daha fazladır. Boşluk: 'Üstelik farklı kurallar arasında dikkatini değiştirmeyi gerektiren görevlerde çoğu zaman daha başarılıdırlar.'",
+   "options": {
+    "A": "Consequently, parents are advised to speak only one language at home.",
+    "B": "This confirms that learning two languages at once seriously delays speech development.",
+    "C": "Moreover, they often perform better on tasks that require switching attention between different rules.",
+    "D": "The number of languages spoken in the world is estimated at around 7,000.",
+    "E": "Monolingual adults, on the other hand, rarely travel abroad."
+   },
+   "answer": "C",
+   "tags": [
+    "para.topic_flow"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Paragraf iki dilliliğin avantajlarını sıralıyor → bir avantaj daha ekleyen 'Moreover' cümlesi; C.",
+    "why": "Paragrafın akışı: eski korku (dezavantaj) → araştırmalar bunu çürüttü → kelime hazinesi aslında eşit/fazla. Sonda aynı yönde bir avantaj daha eklenmeli: 'Moreover' (üstelik) dikkat değiştirmede daha iyiler. Çelişen ya da konu dışı şıkları eleyin. Örnek: 'Ayşe'nin yeni telefonu ucuz değil ama pili uzun gidiyor; üstelik kamerası da çok iyi.'",
+    "others": {
+     "A": "Paragraf iki dilliliğin zararlı olmadığını söylüyor; bu öneri çelişir.",
+     "B": "'overturned this belief' (bu inancı çürüttü) ile doğrudan çelişir.",
+     "D": "Dünyadaki dil sayısına kayıyor; konu iki dilli çocuklar.",
+     "E": "Tek dilli yetişkinler ve seyahat; konudan kopuk."
+    },
+    "clues": [
+     "has largely overturned this belief",
+     "equal to or larger than"
+    ],
+    "tip": "Paragraf sonu boşlukta yazarın yönünü (olumlu mu, olumsuz mu) belirleyin; aynı yönde devam eden (Moreover, In addition) şıkkı seçin."
+   },
+   "vocab": [
+    {
+     "en": "bilingual",
+     "tr": "iki dilli"
+    },
+    {
+     "en": "overturn",
+     "tr": "çürütmek, tersine çevirmek"
+    },
+    {
+     "en": "toddler",
+     "tr": "küçük çocuk (1-3 yaş)"
+    },
+    {
+     "en": "monolingual",
+     "tr": "tek dilli"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-13",
+   "n": 13,
+   "section": "para_completion",
+   "passage": null,
+   "stem": "Desalination, the process of removing salt from seawater, could in theory provide an almost unlimited supply of drinking water. ---- In addition, the highly concentrated salty water left over from the process, known as brine, can harm marine life when it is pumped back into the sea. For these reasons, desalination is generally regarded as a last resort for regions that have no other options.",
+   "stemTr": "Deniz suyundan tuzun arındırılması işlemi olan tuzdan arındırma, teoride neredeyse sınırsız içme suyu sağlayabilir. Boşluk: 'Ancak uygulamada muazzam miktarda enerji gerektirir ve bu da onu nehir ya da yer altı suyunu arıtmaktan çok daha pahalı yapar.' Buna ek olarak, işlemden geriye kalan ve tuzlu su (brine) denen yoğun tuzlu su denize geri pompalandığında deniz canlılarına zarar verebilir. Bu nedenlerle tuzdan arındırma genellikle başka seçeneği olmayan bölgeler için son çare olarak görülür.",
+   "options": {
+    "A": "Saudi Arabia, for instance, obtains much of its drinking water through desalination.",
+    "B": "In practice, however, it requires enormous amounts of energy, making it far more expensive than treating river or ground water.",
+    "C": "Seawater makes up about 97 percent of all the water on Earth.",
+    "D": "Thanks to new technologies, the process has now become cheap and environmentally harmless.",
+    "E": "Brine is also used in the food industry to preserve vegetables and cheese."
+   },
+   "answer": "B",
+   "tags": [
+    "para.cohesion",
+    "para.topic_flow"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "'In addition ... can harm' + 'For these reasons' → boşlukta ilk dezavantaj (yüksek enerji ve maliyet) olmalı; B.",
+    "why": "Boşluktan sonraki cümle 'In addition' (buna ek olarak) ile ikinci bir sorunu (deniz canlılarına zarar) ekliyor. Demek ki boşlukta birinci sorun olmalı. 'For these reasons' (bu nedenlerle) de çoğul; en az iki dezavantaj gerekir. İlk cümle 'in theory' (teoride) diyor; doğru şık 'In practice, however' (ama uygulamada) ile buna doğal bir karşılık veriyor. Örnek: 'Bu ev teoride harika. Ama uygulamada ısıtması çok pahalı. Ayrıca yolu da kötü. Bu yüzden Ayşe almadı.'",
+    "others": {
+     "A": "Bir örnek ama dezavantaj değil; 'In addition ... can harm' bir ilk dezavantaj bekliyor.",
+     "C": "Bilgi veriyor ama dezavantaj değil; 'For these reasons' (bu nedenlerle) çoğul sorun ister.",
+     "D": "'son çare' sonucuyla ve sonraki zarar cümlesiyle çelişir.",
+     "E": "'brine' kelimesi sonraki cümlede ilk kez tanıtılıyor ('known as brine'); önce kullanılamaz, konu da kayar."
+    },
+    "clues": [
+     "could in theory",
+     "In addition, the highly concentrated salty water",
+     "For these reasons"
+    ],
+    "tip": "Boşluktan SONRAKİ cümleye bakın: 'This/These/Such/Instead/In addition/For these reasons' neyi gösteriyorsa o şey boşluktaki cümlede bulunmalı."
+   },
+   "vocab": [
+    {
+     "en": "desalination",
+     "tr": "tuzdan arındırma"
+    },
+    {
+     "en": "in theory / in practice",
+     "tr": "teoride / uygulamada"
+    },
+    {
+     "en": "brine",
+     "tr": "çok tuzlu su, salamura"
+    },
+    {
+     "en": "last resort",
+     "tr": "son çare"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-14",
+   "n": 14,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) During sleep, the brain does not simply switch off; instead, it actively replays and reorganises the information gathered during the day. (II) Sleepwalking, which affects up to 4 percent of adults, usually occurs during the deepest stages of non-REM sleep. (III) This process, known as memory consolidation, transfers new information from temporary storage in the hippocampus to more permanent networks in the cortex. (IV) In one experiment, students who slept after learning a list of words recalled significantly more of them the next morning than those who stayed awake. (V) Such findings suggest that staying up all night before an exam may in fact undermine the very learning it is intended to improve.",
+   "stemTr": "Paragraf uykunun gün içinde öğrenilen bilgiyi yeniden işleyip kalıcı hâle getirmesini (hafıza pekiştirme) anlatıyor. Anlam bütünlüğünü bozan cümle: II (uyurgezerliğin yetişkinlerdeki sıklığı ve hangi uyku evresinde görüldüğü).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "B",
+   "tags": [
+    "irrelevant.topic_shift",
+    "para.cohesion"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "III'teki 'This process' I'deki bilgi işleme sürecini gösteriyor; II (uyurgezerlik) zinciri koparıyor; B.",
+    "why": "III'ün başındaki 'This process' (bu süreç) bir süreci gösteriyor. I'de böyle bir süreç var: beynin bilgiyi yeniden işlemesi. II'de ise uyurgezerlik var; 'This process' onu gösteremez, çünkü uyurgezerlik bilgiyi hipokampustan kortekse taşımaz. Yani II, I ile III arasındaki bağı koparıyor. Örnek: Ayşe kek tarifini anlatıyor: 'Unu ekle. (Komşumuz da dün pasta yapmış.) Bu karışımı 20 dakika pişir.' Ortadaki cümle 'bu karışım' bağını bozar.",
+    "others": {
+     "A": "Konuyu açıyor: beyin uykuda bilgiyi yeniden işler.",
+     "C": "'This process' I'deki yeniden işleme sürecini gösteriyor; II araya girince bu gönderim kopuyor.",
+     "D": "Bir deneyle uykunun hatırlamayı artırdığını kanıtlıyor.",
+     "E": "'Such findings' IV'teki deney sonucunu gösteriyor; sonuç cümlesi."
+    },
+    "clues": [
+     "This process, known as memory consolidation",
+     "Sleepwalking"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "memory consolidation",
+     "tr": "hafıza pekiştirme"
+    },
+    {
+     "en": "sleepwalking",
+     "tr": "uyurgezerlik"
+    },
+    {
+     "en": "undermine",
+     "tr": "baltalamak, zayıflatmak"
+    },
+    {
+     "en": "recall",
+     "tr": "hatırlamak"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-15",
+   "n": 15,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Inflation refers to the general rise in prices across an economy over a period of time. (II) Moderate inflation, typically around 2 percent a year, is widely considered healthy because it encourages people to spend and invest rather than hoard cash. (III) When inflation rises too quickly, however, it erodes the purchasing power of savings, hitting those on fixed incomes, such as pensioners, particularly hard. (IV) The world's first paper money is believed to have appeared in China more than a thousand years ago. (V) For this reason, most central banks raise interest rates when prices begin to climb faster than their target.",
+   "stemTr": "Paragraf enflasyonu, ılımlı enflasyonun faydasını, hızlı enflasyonun zararını ve merkez bankalarının buna tepkisini anlatıyor. Anlam bütünlüğünü bozan cümle: IV (kâğıt paranın bin yıl önce Çin'de ortaya çıkışı).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "D",
+   "tags": [
+    "irrelevant.topic_shift",
+    "irrelevant.time_shift"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Konu enflasyon ve kontrolü; IV kâğıt paranın tarihine kayıyor; D.",
+    "why": "I-II-III enflasyonu ve etkilerini, V ise 'For this reason' ile merkez bankalarının tepkisini anlatıyor. V'teki 'this reason' III'teki zararı (birikimlerin erimesi) gösteriyor; IV araya girince 'Bu nedenle' kâğıt paranın icadına bağlanıyor gibi olup anlamsızlaşıyor. Ayrıca IV bin yıl öncesine giderek zaman kayması yapıyor. Örnek: Ayşe kira artışlarını anlatırken 'İlk apartmanlar Roma'da yapılmış' derse konu kayar.",
+    "others": {
+     "A": "Enflasyonu tanımlıyor; konu cümlesi.",
+     "B": "Ilımlı enflasyonun neden sağlıklı sayıldığını açıklıyor.",
+     "C": "'however' ile hızlı enflasyonun zararına geçiyor; V'teki 'For this reason'ın gösterdiği sebep bu.",
+     "E": "'For this reason' III'teki zararı gösteriyor: bankalar bu yüzden faiz artırıyor."
+    },
+    "clues": [
+     "For this reason",
+     "The world's first paper money"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "inflation",
+     "tr": "enflasyon"
+    },
+    {
+     "en": "hoard",
+     "tr": "biriktirip saklamak, istiflemek"
+    },
+    {
+     "en": "erode",
+     "tr": "aşındırmak, eritmek"
+    },
+    {
+     "en": "purchasing power",
+     "tr": "satın alma gücü"
+    },
+    {
+     "en": "pensioner",
+     "tr": "emekli"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-16",
+   "n": 16,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) The bystander effect describes the tendency of individuals to be less likely to help a person in distress when other people are present. (II) Psychologists first studied it in the 1960s, after reports that dozens of neighbours had failed to intervene during a violent attack in New York. (III) New York, which had a population of nearly eight million at the time, was then the largest city in the United States. (IV) Researchers explained the phenomenon through a 'diffusion of responsibility', whereby each witness assumes that someone else will take action. (V) Interestingly, the effect weakens considerably when one bystander is singled out and directly asked for help.",
+   "stemTr": "Paragraf seyirci etkisini (başkaları varken yardım etme olasılığının düşmesi), keşfini, açıklamasını ve nasıl zayıfladığını anlatıyor. Anlam bütünlüğünü bozan cümle: III (New York'un nüfusu ve büyüklüğü).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "C",
+   "tags": [
+    "irrelevant.topic_shift"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Konu seyirci etkisi; III 'New York' kelimesini yakalayıp şehrin nüfusuna kayıyor; C.",
+    "why": "II'de olayın New York'ta yaşandığı söyleniyor; III bu kelimeyi tekrar edip şehrin nüfusunu anlatıyor. Kelime tekrarı bağlantı gibi görünür ama konu psikoloji değil, şehir istatistiği olmuş. IV 'the phenomenon' ile tekrar seyirci etkisine dönüyor. Örnek: Ayşe 'Ankara'da bir trafik kazası gördüm' deyip 'Ankara 1923'te başkent oldu' diye devam ederse konu kayar.",
+    "others": {
+     "A": "Seyirci etkisini tanımlıyor; konu cümlesi.",
+     "B": "Etkinin ilk ne zaman ve neden incelendiğini anlatıyor.",
+     "D": "'the phenomenon' seyirci etkisini gösteriyor; açıklamasını veriyor.",
+     "E": "Etkinin ne zaman zayıfladığını anlatarak konuyu sürdürüyor."
+    },
+    "clues": [
+     "New York, which had a population",
+     "Researchers explained the phenomenon"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "bystander",
+     "tr": "olaya tanık olan kişi, seyirci"
+    },
+    {
+     "en": "in distress",
+     "tr": "zor durumda"
+    },
+    {
+     "en": "intervene",
+     "tr": "müdahale etmek"
+    },
+    {
+     "en": "diffusion of responsibility",
+     "tr": "sorumluluğun dağılması"
+    },
+    {
+     "en": "single out",
+     "tr": "seçip ayırmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-17",
+   "n": 17,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Every year, millions of tonnes of plastic waste find their way into the world's oceans, carried by rivers, wind and careless disposal. (II) Once there, larger items gradually break down under sunlight and wave action into tiny fragments known as microplastics. (III) These particles are easily mistaken for food by plankton, fish and seabirds, allowing them to enter the marine food chain. (IV) Ultimately, they may end up on our own plates, as microplastics have been detected in seafood, sea salt and even drinking water. (V) Glass, by contrast, is made from sand and can be recycled endlessly without any loss in quality.",
+   "stemTr": "Paragraf plastik atıkların okyanuslara ulaşıp mikroplastiğe dönüşmesini ve besin zinciri yoluyla tabağımıza gelmesini anlatıyor. Anlam bütünlüğünü bozan cümle: V (camın kumdan yapılması ve sonsuz geri dönüştürülebilmesi).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "E",
+   "tags": [
+    "irrelevant.topic_shift",
+    "irrelevant.perspective_shift"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Zincir: plastik → okyanus → mikroplastik → besin zinciri → insan; V cama ve geri dönüşüme geçiyor; E.",
+    "why": "I-IV adım adım ilerleyen bir zincir: 'Once there', 'These particles', 'they' gönderimleriyle her cümle bir öncekine bağlanıyor. V 'by contrast' ile bir karşılaştırma yapıyormuş gibi görünse de konu camın üretimi ve geri dönüşümü; okyanus kirliliği zincirinde yeri yok. Örnek: Ayşe bir ilacın vücuttaki yolculuğunu anlatıp 'Buna karşılık vitaminler meyvede bulunur' derse konu kopar.",
+    "others": {
+     "A": "Plastiğin okyanusa nasıl ulaştığını anlatıyor.",
+     "B": "'Once there' okyanusu gösteriyor; plastiğin mikroplastiğe dönüşmesi.",
+     "C": "'These particles' mikroplastikleri gösteriyor; besin zincirine girişleri.",
+     "D": "'they' mikroplastikleri gösteriyor; zincirin son halkası: insan."
+    },
+    "clues": [
+     "Glass, by contrast",
+     "These particles"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "disposal",
+     "tr": "atma, bertaraf"
+    },
+    {
+     "en": "fragment",
+     "tr": "parça"
+    },
+    {
+     "en": "food chain",
+     "tr": "besin zinciri"
+    },
+    {
+     "en": "detect",
+     "tr": "tespit etmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-18",
+   "n": 18,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) A placebo is an inactive substance, such as a sugar pill, that contains no therapeutic ingredient. (II) Sugar consumption has risen sharply in most industrialised countries over the past century, contributing to the spread of obesity. (III) Remarkably, patients who receive one often report genuine improvements in their symptoms, particularly pain and fatigue. (IV) This so-called placebo effect is thought to arise from patients' expectations, which can trigger the release of the body's own painkilling chemicals. (V) For this reason, new drugs are routinely tested against placebos to determine whether their benefits exceed those produced by belief alone.",
+   "stemTr": "Paragraf plaseboyu, plasebo etkisini ve ilaç denemelerinde neden kullanıldığını anlatıyor. Anlam bütünlüğünü bozan cümle: II (şeker tüketiminin artması ve obezite).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "B",
+   "tags": [
+    "irrelevant.topic_shift",
+    "para.cohesion"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "III'teki 'receive one' plaseboyu gösteriyor; II 'sugar' kelimesini yakalayıp obeziteye kayıyor; B.",
+    "why": "III'te 'patients who receive one' = bir tane (plasebo) alan hastalar. 'one' I'deki 'a placebo'yu göstermeli. II araya girince 'one' en yakın isme, yani şeker tüketimine bağlanacak gibi olur ve anlamsızlaşır. II'nin konusu şeker ve obezite; plaseboyla ilgisi yok, sadece 'sugar pill' kelimesindeki 'sugar' yakalanmış. Örnek: Ayşe 'Bilet aldım. (Bilet fiyatları çok arttı.) Onu kapıda gösterdim' derse 'onu' bağı kopar.",
+    "others": {
+     "A": "Plaseboyu tanımlıyor; konu cümlesi.",
+     "C": "'one' I'deki plaseboyu gösteriyor; II araya girince bu gönderim kopuyor.",
+     "D": "'This so-called placebo effect' III'teki iyileşmeyi adlandırıyor.",
+     "E": "'For this reason' ile plasebonun ilaç denemelerindeki kullanımına bağlanıyor."
+    },
+    "clues": [
+     "patients who receive one",
+     "Sugar consumption has risen sharply"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "placebo",
+     "tr": "plasebo, etkisiz ilaç"
+    },
+    {
+     "en": "therapeutic",
+     "tr": "tedavi edici"
+    },
+    {
+     "en": "fatigue",
+     "tr": "yorgunluk, bitkinlik"
+    },
+    {
+     "en": "exceed",
+     "tr": "aşmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-19",
+   "n": 19,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) The Silk Road was not a single route but a vast network of trade paths linking China with the Mediterranean world. (II) Along it travelled not only silk, spices and precious metals but also ideas, religions and technologies such as papermaking. (III) Merchants rarely made the entire journey themselves; instead, goods passed through the hands of many traders, each covering a short section of the route. (IV) Silk is produced by the larvae of the silk moth, which spin their cocoons from a single continuous thread up to a kilometre long. (V) As a result, the price of an item could multiply many times over by the time it reached its final destination.",
+   "stemTr": "Paragraf İpek Yolu'nu, üzerinde taşınanları ve malların birçok tüccarın elinden geçerek fiyatının katlanmasını anlatıyor. Anlam bütünlüğünü bozan cümle: IV (ipeğin ipek böceği larvalarınca üretilmesi).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "D",
+   "tags": [
+    "irrelevant.topic_shift"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "V'teki 'As a result' III'teki çok el değiştirmeye bağlı; IV ipeğin biyolojik üretimine kayıyor; D.",
+    "why": "III ve V sebep-sonuç çifti: mallar birçok tüccarın elinden geçti → sonuç olarak fiyat katlandı. IV araya girerse 'As a result' ipek böceğinin kozasına bağlanır ve 'kozası uzun olduğu için fiyat katlandı' gibi saçma bir anlam çıkar. IV 'silk' kelimesini yakalıyor ama konu ticaret değil biyoloji. Örnek: Ayşe kargo ücretini anlatırken 'Pamuk tarlada yetişir' derse konu kayar.",
+    "others": {
+     "A": "İpek Yolu'nu tanımlıyor.",
+     "B": "Yol boyunca taşınan mal ve fikirleri anlatıyor.",
+     "C": "Malların birçok tüccarın elinden geçtiğini anlatıyor; V'teki 'As a result'ın sebebi bu.",
+     "E": "'As a result' III'e bağlanıyor: çok el değiştirdiği için fiyat katlanıyor."
+    },
+    "clues": [
+     "As a result, the price of an item",
+     "Silk is produced by the larvae"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "network",
+     "tr": "ağ"
+    },
+    {
+     "en": "merchant",
+     "tr": "tüccar"
+    },
+    {
+     "en": "larva (pl. larvae)",
+     "tr": "larva, kurtçuk"
+    },
+    {
+     "en": "cocoon",
+     "tr": "koza"
+    },
+    {
+     "en": "multiply",
+     "tr": "katlanmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-20",
+   "n": 20,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Procrastination is often dismissed as simple laziness, but psychologists increasingly view it as a problem of emotional regulation. (II) According to this view, people put off tasks not because they lack time but because the tasks trigger unpleasant feelings such as boredom, anxiety or self-doubt. (III) Time-management apps, which have become increasingly popular, allow users to synchronise their calendars across several devices. (IV) Delaying the task brings immediate relief from these feelings, which reinforces the habit and makes it more likely to recur. (V) Consequently, strategies that help people tolerate negative emotions tend to be more effective than mere scheduling techniques.",
+   "stemTr": "Paragraf erteleme alışkanlığını tembellik değil, duygu düzenleme sorunu olarak açıklıyor. Anlam bütünlüğünü bozan cümle: III (zaman yönetimi uygulamalarının takvimleri cihazlar arasında eşitlemesi).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "C",
+   "tags": [
+    "irrelevant.topic_shift",
+    "para.cohesion"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "IV'teki 'these feelings' II'deki duyguları gösteriyor; III (uygulamalar ve takvim) bu bağı koparıyor; C.",
+    "why": "IV'te 'relief from these feelings' (bu duygulardan rahatlama) var. 'these feelings' II'deki can sıkıntısı, kaygı ve öz-şüpheyi göstermeli. III araya girince 'these feelings' takvim eşitlemeye bağlanacak gibi olur; anlamsız. III zaman yönetimi konusuna dokunsa da paragrafın iddiası 'sorun zaman değil duygu' olduğu için bakış açısı da ters. Örnek: Ayşe 'Sınav beni geriyor. (Telefonumda takvim uygulaması var.) Bu gerginlikten kaçmak için diziye başlıyorum' derse 'bu gerginlik' bağı kopar.",
+    "others": {
+     "A": "Ana fikri veriyor: erteleme bir duygu düzenleme sorunu.",
+     "B": "'this view' I'deki görüşü gösteriyor; olumsuz duyguları sıralıyor.",
+     "D": "'these feelings' II'deki can sıkıntısı, kaygı vb. duyguları gösteriyor.",
+     "E": "'Consequently' ile sonuca bağlanıyor: duygularla başa çıkma stratejileri daha etkili."
+    },
+    "clues": [
+     "relief from these feelings",
+     "Time-management apps"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "procrastination",
+     "tr": "erteleme, işi son dakikaya bırakma"
+    },
+    {
+     "en": "dismiss as",
+     "tr": "... diye geçiştirmek"
+    },
+    {
+     "en": "emotional regulation",
+     "tr": "duygu düzenleme"
+    },
+    {
+     "en": "recur",
+     "tr": "tekrarlamak"
+    },
+    {
+     "en": "put off",
+     "tr": "ertelemek"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-21",
+   "n": 21,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Honeybees communicate the location of food sources to their nestmates through a remarkable behaviour known as the waggle dance. (II) The angle of the dance relative to the vertical indicates the direction of the food in relation to the sun. (III) Meanwhile, the duration of the 'waggle' portion signals how far away the food is located. (IV) By decoding this information, other foragers can fly directly to flowers several kilometres from the hive. (V) Honey has been used as a natural remedy for wounds and sore throats since ancient times.",
+   "stemTr": "Paragraf bal arılarının sallanma dansıyla besin kaynağının yönünü ve uzaklığını nasıl ilettiğini anlatıyor. Anlam bütünlüğünü bozan cümle: V (balın eski çağlardan beri yara ve boğaz ağrısına ilaç olarak kullanılması).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "E",
+   "tags": [
+    "irrelevant.topic_shift",
+    "irrelevant.perspective_shift"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Konu arıların iletişimi; V balın insanlarca ilaç olarak kullanımına kayıyor; E.",
+    "why": "I-IV arıların dansla nasıl haberleştiğini adım adım anlatıyor: dans (I) → yön (II) → uzaklık (III) → bilgiyi çözen arılar çiçeğe uçar (IV). V ise insanların balı ilaç olarak kullanmasından söz ediyor; hem konu (iletişim → tıp) hem bakış açısı (arılar → insanlar) değişiyor. Örnek: Ayşe kedisinin mama istemek için nasıl miyavladığını anlatıp 'Kedi maması çok pahalandı' derse konu kayar.",
+    "others": {
+     "A": "Sallanma dansını tanıtıyor; konu cümlesi.",
+     "B": "Dansın açısının yönü gösterdiğini anlatıyor.",
+     "C": "'Meanwhile' ile dansın süresinin uzaklığı gösterdiğini ekliyor.",
+     "D": "'this information' II-III'teki yön ve uzaklık bilgisini gösteriyor; sonuç."
+    },
+    "clues": [
+     "Honey has been used as a natural remedy",
+     "By decoding this information"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "waggle dance",
+     "tr": "sallanma dansı"
+    },
+    {
+     "en": "forager",
+     "tr": "yiyecek arayan (arı)"
+    },
+    {
+     "en": "hive",
+     "tr": "kovan"
+    },
+    {
+     "en": "remedy",
+     "tr": "çare, ilaç"
+    },
+    {
+     "en": "decode",
+     "tr": "çözmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-22",
+   "n": 22,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Antibiotic resistance occurs when bacteria evolve in ways that allow them to survive the drugs designed to kill them. (II) Each time an antibiotic is used, the most susceptible bacteria die, while those with resistant mutations survive and multiply. (III) Overuse of these drugs, both in human medicine and in livestock farming, has therefore greatly accelerated the process. (IV) Alexander Fleming, who discovered penicillin in 1928, was awarded the Nobel Prize in Physiology or Medicine in 1945. (V) If the trend continues, routine operations and minor infections could once again become life-threatening.",
+   "stemTr": "Paragraf antibiyotik direncinin nasıl geliştiğini, aşırı kullanımın bunu nasıl hızlandırdığını ve olası sonuçlarını anlatıyor. Anlam bütünlüğünü bozan cümle: IV (Fleming'in penisilini keşfi ve Nobel ödülü).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "D",
+   "tags": [
+    "irrelevant.topic_shift",
+    "irrelevant.time_shift"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Konu direncin gelişimi ve tehlikesi; IV Fleming'in biyografisine (geçmişe) kayıyor; D.",
+    "why": "V'teki 'If the trend continues' (bu eğilim sürerse) III'teki hızlanan direnç eğilimini gösteriyor. IV araya girince 'the trend' Fleming'in ödülüne bağlanacak gibi olur; anlamsız. IV antibiyotik kelimesine yakın görünse de konusu bir bilim insanının ödülü; direncin nasıl geliştiğiyle ilgisi yok. Örnek: Ayşe telefonunun pilinin neden çabuk bittiğini anlatırken 'İlk cep telefonu 1973'te yapıldı' derse konu kayar.",
+    "others": {
+     "A": "Antibiyotik direncini tanımlıyor; konu cümlesi.",
+     "B": "Direncin nasıl seçildiğini (mekanizma) anlatıyor.",
+     "C": "'therefore' ile aşırı kullanımın süreci hızlandırdığını söylüyor.",
+     "E": "'the trend' III'teki hızlanan direnç eğilimini gösteriyor; olası sonuç."
+    },
+    "clues": [
+     "If the trend continues",
+     "Alexander Fleming, who discovered penicillin"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "resistance",
+     "tr": "direnç"
+    },
+    {
+     "en": "susceptible",
+     "tr": "duyarlı, etkilenebilir"
+    },
+    {
+     "en": "livestock farming",
+     "tr": "hayvancılık"
+    },
+    {
+     "en": "accelerate",
+     "tr": "hızlandırmak"
+    },
+    {
+     "en": "life-threatening",
+     "tr": "hayati tehlike oluşturan"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-23",
+   "n": 23,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Behavioural economists have shown that people feel the pain of losing money roughly twice as strongly as the pleasure of gaining the same amount. (II) This tendency, called loss aversion, helps explain why investors often hold on to falling stocks for too long, hoping to avoid admitting a loss. (III) The stock market crash of 1929 wiped out billions of dollars and was followed by the Great Depression. (IV) It also explains why marketers frame offers in terms of what customers stand to lose, as in 'Don't miss out on this deal'. (V) Thus, the way a choice is presented can influence decisions as much as its actual value.",
+   "stemTr": "Paragraf kayıptan kaçınma eğilimini ve bunun yatırım ile pazarlama kararlarına etkisini anlatıyor. Anlam bütünlüğünü bozan cümle: III (1929 borsa çöküşü ve Büyük Buhran).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "C",
+   "tags": [
+    "irrelevant.topic_shift",
+    "para.cohesion"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "IV'teki 'It also explains' kayıptan kaçınmayı gösteriyor; III (1929 çöküşü) bu bağı koparıyor; C.",
+    "why": "IV 'It also explains...' (o ayrıca şunu da açıklar) diyor. 'It' II'deki 'loss aversion'ı göstermeli; 'also' da II'de bir açıklama yapıldığını varsayıyor. III araya girince 'It' 1929 çöküşüne bağlanacak gibi olur; 'çöküş pazarlamacıların teklif biçimini açıklar' anlamsız. III 'stocks' kelimesini yakalıyor ama konusu tarihî bir kriz, psikolojik eğilim değil. Örnek: Ayşe 'İndirim kaçırma korkusu beni alışverişe itiyor. (Geçen yıl AVM'de yangın çıktı.) O ayrıca neden sepeti doldurduğumu da açıklıyor' derse 'o' bağı kopar.",
+    "others": {
+     "A": "Kaybın acısının kazancın hazzından iki kat güçlü olduğunu söylüyor.",
+     "B": "'This tendency' I'deki eğilimi adlandırıyor ve yatırımcılara uyguluyor.",
+     "D": "'It also explains' kayıptan kaçınmayı gösteriyor; ikinci uygulama (pazarlama).",
+     "E": "'Thus' ile genel sonuca bağlanıyor."
+    },
+    "clues": [
+     "It also explains why marketers",
+     "The stock market crash of 1929"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "loss aversion",
+     "tr": "kayıptan kaçınma"
+    },
+    {
+     "en": "hold on to",
+     "tr": "elinde tutmak"
+    },
+    {
+     "en": "frame",
+     "tr": "(bir şeyi belli biçimde) sunmak, çerçevelemek"
+    },
+    {
+     "en": "stand to lose",
+     "tr": "kaybetme ihtimali olmak"
+    },
+    {
+     "en": "wipe out",
+     "tr": "silip süpürmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-24",
+   "n": 24,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Cities are often several degrees warmer than the surrounding countryside, a phenomenon known as the urban heat island effect. (II) The countryside, however, has been losing population steadily as young people move to cities in search of jobs. (III) The main cause is that asphalt, concrete and dark roofs absorb sunlight during the day and release the heat slowly at night. (IV) In addition, the lack of vegetation means there is less evaporation from plants to cool the air. (V) To counter this, many cities are now planting trees and installing reflective 'cool roofs'.",
+   "stemTr": "Paragraf kentsel ısı adası etkisini, nedenlerini ve kentlerin buna karşı aldığı önlemleri anlatıyor. Anlam bütünlüğünü bozan cümle: II (kırsalın göç nedeniyle nüfus kaybetmesi).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "B",
+   "tags": [
+    "irrelevant.topic_shift"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "III'teki 'The main cause' ısı adası etkisinin nedenini veriyor; II 'countryside' kelimesini yakalayıp göçe kayıyor; B.",
+    "why": "I bir olguyu (kentler daha sıcak) tanıtıyor; III 'The main cause is...' ile bu olgunun nedenini veriyor. II araya girince 'ana neden' göçün nedeni gibi okunur ve 'asfalt güneşi emdiği için gençler göç ediyor' gibi saçma bir anlam çıkar. II 'countryside' kelimesini tekrar ederek bağlıymış gibi görünüyor ama konu sıcaklık değil nüfus. Örnek: Ayşe 'Evim çok sıcak. (Mahallemize yeni aileler taşındı.) Ana nedeni güneye bakan pencereler' derse bağ kopar.",
+    "others": {
+     "A": "Kentsel ısı adası etkisini tanımlıyor; konu cümlesi.",
+     "C": "'The main cause' I'deki etkinin ana nedenini veriyor; II araya girince göçün nedeni gibi okunur.",
+     "D": "'In addition' ile ikinci nedeni (bitki örtüsü azlığı) ekliyor.",
+     "E": "'To counter this' ısı adası etkisine karşı önlemleri anlatıyor."
+    },
+    "clues": [
+     "The main cause is that asphalt",
+     "The countryside, however"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "urban heat island",
+     "tr": "kentsel ısı adası"
+    },
+    {
+     "en": "vegetation",
+     "tr": "bitki örtüsü"
+    },
+    {
+     "en": "evaporation",
+     "tr": "buharlaşma"
+    },
+    {
+     "en": "counter",
+     "tr": "karşı koymak"
+    },
+    {
+     "en": "reflective",
+     "tr": "yansıtıcı"
+    }
+   ]
+  },
+  {
+   "id": "gen-paragraf-25",
+   "n": 25,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Radiocarbon dating allows scientists to estimate the age of organic materials such as wood, bone and textiles. (II) It relies on the fact that living organisms continually absorb carbon, including a small amount of the radioactive isotope carbon-14. (III) When an organism dies, it stops taking in carbon, and the carbon-14 it contains begins to decay at a steady, known rate. (IV) By measuring how much of this isotope remains in a sample, researchers can calculate how long ago the organism died. (V) Organic farming, which avoids synthetic fertilisers and pesticides, has grown rapidly in popularity over the past two decades.",
+   "stemTr": "Paragraf radyokarbon tarihlendirmenin nasıl çalıştığını adım adım anlatıyor. Anlam bütünlüğünü bozan cümle: V (organik tarımın son yirmi yılda popülerleşmesi).",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "E",
+   "tags": [
+    "irrelevant.topic_shift"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Konu radyokarbon tarihlendirme; V 'organic' kelimesini yakalayıp organik tarıma kayıyor; E.",
+    "why": "I-IV bir yöntemin işleyişini sırayla anlatıyor: tanım → ilke → ölümden sonra bozunma → ölçüp yaş hesaplama. V'teki 'Organic' kelimesi I'deki 'organic materials'ı hatırlatıyor ama anlamı tamamen farklı: tarım yöntemi. Kelime tekrarı bağlantı değildir. Örnek: Ayşe 'mouse' (bilgisayar faresi) kullanmayı anlatırken 'Fareler peynir sever' derse konu kayar.",
+    "others": {
+     "A": "Radyokarbon tarihlendirmeyi tanıtıyor; konu cümlesi.",
+     "B": "'It' yöntemi gösteriyor; dayandığı ilkeyi (karbon emilimi) anlatıyor.",
+     "C": "Ölümle birlikte karbon-14'ün bozunmaya başladığını söylüyor.",
+     "D": "'this isotope' karbon-14'ü gösteriyor; hesaplamanın nasıl yapıldığı."
+    },
+    "clues": [
+     "Organic farming",
+     "how much of this isotope remains"
+    ],
+    "tip": "Her cümleyi bir öncekiyle bağlayan 'this/it/these/such/the X' gönderimlerini takip edin; zinciri koparan ve konuyu kaydıran cümle anlam bütünlüğünü bozar. Aynı kelimenin tekrar etmesi (ör. 'sugar', 'New York') bağlantı demek değildir."
+   },
+   "vocab": [
+    {
+     "en": "radiocarbon dating",
+     "tr": "radyokarbon tarihlendirme"
+    },
+    {
+     "en": "isotope",
+     "tr": "izotop"
+    },
+    {
+     "en": "decay",
+     "tr": "bozunmak"
+    },
+    {
+     "en": "steady rate",
+     "tr": "sabit hız"
+    },
+    {
+     "en": "fertiliser",
+     "tr": "gübre"
+    }
+   ]
+  }
+ ]
+}

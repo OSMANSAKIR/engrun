@@ -1,0 +1,1344 @@
+{
+ "id": "gen-kelime",
+ "title": "Kelime — Zayıf Nokta Seti (Collocation & Phrasal)",
+ "source": "Claude üretimi",
+ "passages": [],
+ "questions": [
+  {
+   "id": "gen-kelime-01",
+   "n": 1,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Chronic stress may ---- itself in a variety of physical symptoms, ranging from persistent headaches to digestive problems, long before the individual becomes aware of any psychological strain.",
+   "stemTr": "Kronik stres, kişi herhangi bir psikolojik gerginliğin farkına varmadan çok önce, ısrarcı baş ağrılarından sindirim sorunlarına kadar çeşitli fiziksel belirtilerle kendini gösterebilir.",
+   "options": {
+    "A": "attribute",
+    "B": "confine",
+    "C": "manifest",
+    "D": "dedicate",
+    "E": "entitle"
+   },
+   "answer": "C",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'manifest itself in' = kendini ... şeklinde göstermek; C.",
+    "why": "'manifest itself in sth' kalıbı 'bir şeyin kendini ... olarak/şeklinde göstermesi' demek. Stres görünmez bir şey; ama baş ağrısı, mide sorunu gibi belirtilerle ortaya çıkar. Örnek: Ayşe'nin sınav kaygısı uykusuzlukla kendini gösteriyor = 'Ayşe's exam anxiety manifests itself in sleeplessness.' Şıklardaki diğer fiiller de 'itself' alabilir ama hepsi 'to' ister ve anlam tutmaz.",
+    "others": {
+     "A": "attribute X to Y = X'i Y'ye bağlamak; 'itself in' ile kullanılmaz.",
+     "B": "confine itself to = kendini bir şeyle sınırlamak; edat 'to' olur, anlam da tutmaz.",
+     "D": "dedicate itself to = kendini adamak; stres kendini belirtilere 'adamaz', edat da 'to'.",
+     "E": "entitle = hak vermek/başlık koymak; 'itself in symptoms' ile anlamsız."
+    },
+    "clues": [
+     "---- itself in a variety of physical symptoms",
+     "long before the individual becomes aware"
+    ],
+    "tip": "'---- itself in' görürseniz aklınıza ilk 'manifest' gelsin; 'itself to' görürseniz 'confine/dedicate/commit/devote' grubuna bakın."
+   },
+   "vocab": [
+    {
+     "en": "manifest itself in",
+     "tr": "kendini ... şeklinde göstermek"
+    },
+    {
+     "en": "persistent",
+     "tr": "ısrarcı, sürekli"
+    },
+    {
+     "en": "strain",
+     "tr": "gerginlik, zorlanma"
+    },
+    {
+     "en": "digestive",
+     "tr": "sindirimle ilgili"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-02",
+   "n": 2,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Researchers have found that sleep deprivation raises levels of the hunger hormone ghrelin, which in turn intensifies people's ---- for sugary and high-fat foods.",
+   "stemTr": "Araştırmacılar uykusuzluğun açlık hormonu grelinin seviyesini yükselttiğini, bunun da insanların şekerli ve yağlı yiyeceklere duyduğu aşırı isteği şiddetlendirdiğini buldu.",
+   "options": {
+    "A": "aversion",
+    "B": "exposure",
+    "C": "compensation",
+    "D": "immunity",
+    "E": "craving"
+   },
+   "answer": "E",
+   "tags": [
+    "vocab.noun",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'craving for' = -e karşı aşırı istek; açlık hormonu bu isteği artırır; E.",
+    "why": "Cümlenin mantığı: uykusuzluk → açlık hormonu artar → tatlı ve yağlı yiyeceklere İSTEK artar. 'craving for sth' tam olarak 'bir şeye canının çok çekmesi' demek. Örnek: Ayşe gece geç yatınca ertesi gün çikolataya karşı dayanılmaz bir istek duyuyor = 'a strong craving for chocolate'.",
+    "others": {
+     "A": "aversion = tiksinti, isteksizlik; açlık hormonu artınca isteksizlik artmaz, anlam ters (edatı da 'to').",
+     "B": "exposure to = maruz kalma; edat 'to' olur ve 'yiyeceklere maruz kalmayı şiddetlendirir' anlamsız.",
+     "C": "compensation for = tazminat, telafi; hormonun 'telafiyi' artırması anlamsız.",
+     "D": "immunity to/from = bağışıklık; yiyeceğe bağışıklık anlamsız."
+    },
+    "clues": [
+     "the hunger hormone ghrelin",
+     "intensifies people's ---- for sugary and high-fat foods"
+    ],
+    "tip": "Boşluktan önce bir sebep (açlık hormonu) varsa sonuç kelimesi aynı yönde olmalı; 'aversion' gibi ters anlamlı şıkları hemen eleyin."
+   },
+   "vocab": [
+    {
+     "en": "craving for",
+     "tr": "-e aşırı istek, aşerme"
+    },
+    {
+     "en": "sleep deprivation",
+     "tr": "uykusuzluk, uyku yoksunluğu"
+    },
+    {
+     "en": "intensify",
+     "tr": "şiddetlendirmek"
+    },
+    {
+     "en": "in turn",
+     "tr": "bu da, sırasıyla"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-03",
+   "n": 3,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Many people mistakenly ---- wealth with happiness, even though numerous studies suggest that, beyond a certain income level, additional money brings little improvement in life satisfaction.",
+   "stemTr": "Pek çok insan zenginliği yanlışlıkla mutlulukla bir tutar; oysa çok sayıda çalışma, belli bir gelir düzeyinin ötesinde ek paranın yaşam memnuniyetinde çok az iyileşme sağladığını gösteriyor.",
+   "options": {
+    "A": "deprive",
+    "B": "derive",
+    "C": "attribute",
+    "D": "prevent",
+    "E": "equate"
+   },
+   "answer": "E",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'equate X with Y' = X'i Y ile bir tutmak/eş saymak; E.",
+    "why": "'mistakenly' (yanlışlıkla) ve 'even though' sonrası 'para mutluluğu pek artırmıyor' bilgisi, insanların paranın = mutluluk olduğunu sandığını gösteriyor. 'equate X with Y' = X'i Y'ye eşit saymak. Örnek: Ayşe pahalı telefonu iyi telefonla bir tutuyor = 'Ayşe equates expensive with good.' Diğer fiillerin hepsi farklı edat ister.",
+    "others": {
+     "A": "deprive sb of sth = birini bir şeyden yoksun bırakmak; edat 'of' olur.",
+     "B": "derive X from Y = X'i Y'den elde etmek; edat 'from' olur.",
+     "C": "attribute X to Y = X'i Y'ye bağlamak; edat 'to' olur.",
+     "D": "prevent X from = X'in -mesini engellemek; edat 'from' ve anlam tutmaz."
+    },
+    "clues": [
+     "mistakenly",
+     "---- wealth with happiness"
+    ],
+    "tip": "Boşluktan hemen sonraki edata (in, for, with, to, of) bakın; şıklardaki kelimelerden hangisinin bu edatla kalıp oluşturduğunu bulun, sonra anlamı kontrol edin."
+   },
+   "vocab": [
+    {
+     "en": "equate X with Y",
+     "tr": "X'i Y ile bir tutmak"
+    },
+    {
+     "en": "life satisfaction",
+     "tr": "yaşam memnuniyeti"
+    },
+    {
+     "en": "income level",
+     "tr": "gelir düzeyi"
+    },
+    {
+     "en": "derive from",
+     "tr": "-den elde etmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-04",
+   "n": 4,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Older adults are particularly ---- to complications from influenza because their immune systems respond less vigorously to infection.",
+   "stemTr": "Yaşlı yetişkinler, bağışıklık sistemleri enfeksiyona daha zayıf tepki verdiği için grip kaynaklı komplikasyonlara özellikle yatkındır.",
+   "options": {
+    "A": "susceptible",
+    "B": "resistant",
+    "C": "indifferent",
+    "D": "entitled",
+    "E": "accustomed"
+   },
+   "answer": "A",
+   "tags": [
+    "vocab.adjective",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Bağışıklık zayıf → hastalığa 'yatkın, açık' = susceptible to; A.",
+    "why": "Hepsi 'to' alan sıfatlar, o yüzden karar anlamla verilir. 'because' sonrası sebep: bağışıklık sistemi zayıf tepki veriyor. Bunun sonucu, hastalığa kolay yakalanmak = 'susceptible to'. Örnek: Ayşe az uyuduğunda nezleye çok yatkın oluyor = 'more susceptible to colds'. 'resistant' tam tersi anlam taşıyan tuzak.",
+    "others": {
+     "B": "resistant to = dirençli; 'bağışıklık zayıf olduğu için dirençli' çelişki.",
+     "C": "indifferent to = kayıtsız; insanlar komplikasyona 'kayıtsız' olmaz, anlamsız.",
+     "D": "entitled to = -e hakkı olan; komplikasyona hak kazanmak anlamsız.",
+     "E": "accustomed to = alışkın; 'bağışıklık zayıf olduğu için komplikasyona alışkın' mantıksız."
+    },
+    "clues": [
+     "because their immune systems respond less vigorously"
+    ],
+    "tip": "Şıkların hepsi aynı edatı alıyorsa edata değil, 'because' gibi sebep bağlacının verdiği yöne bakın."
+   },
+   "vocab": [
+    {
+     "en": "susceptible to",
+     "tr": "-e yatkın, açık, duyarlı"
+    },
+    {
+     "en": "complication",
+     "tr": "komplikasyon, ek sorun"
+    },
+    {
+     "en": "vigorously",
+     "tr": "güçlü biçimde"
+    },
+    {
+     "en": "resistant to",
+     "tr": "-e dirençli"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-05",
+   "n": 5,
+   "section": "vocab",
+   "passage": null,
+   "stem": "The research team had to ---- the experiment after a power outage destroyed several months' worth of frozen tissue samples.",
+   "stemTr": "Bir elektrik kesintisi birkaç aylık dondurulmuş doku örneğini yok edince araştırma ekibi deneyi iptal etmek zorunda kaldı.",
+   "options": {
+    "A": "take after",
+    "B": "run into",
+    "C": "put on",
+    "D": "call off",
+    "E": "bring about"
+   },
+   "answer": "D",
+   "tags": [
+    "vocab.phrasal_verb"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Örnekler yok olunca deney 'iptal edilir' = call off; D.",
+    "why": "Örnekler mahvolduysa deneye devam edilemez; mantıklı sonuç iptal etmek. 'call off' = (planlanmış bir şeyi) iptal etmek. Örnek: Yağmur yağınca Ayşe pikniği iptal etti = 'Ayşe called off the picnic.'",
+    "others": {
+     "A": "take after = (aileden birine) benzemek; deneye benzemek anlamsız.",
+     "B": "run into = rastlamak/karşılaşmak; 'deneye rastlamak zorunda kaldılar' mantıksız.",
+     "C": "put on = giymek, (kilo) almak, sahnelemek; deneye uymaz.",
+     "E": "bring about = -e yol açmak; 'deneye yol açmak zorunda kaldılar' anlamsız."
+    },
+    "clues": [
+     "had to",
+     "a power outage destroyed"
+    ],
+    "tip": "Phrasal verb sorularında önce cümlenin istediği anlamı Türkçe söyleyin (burada 'iptal etmek'), sonra o anlamı veren şıkkı arayın."
+   },
+   "vocab": [
+    {
+     "en": "call off",
+     "tr": "iptal etmek"
+    },
+    {
+     "en": "power outage",
+     "tr": "elektrik kesintisi"
+    },
+    {
+     "en": "tissue sample",
+     "tr": "doku örneği"
+    },
+    {
+     "en": "bring about",
+     "tr": "-e yol açmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-06",
+   "n": 6,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Although the symptoms of the disease may not ---- until years after infection, the virus can still be transmitted to others during this silent period.",
+   "stemTr": "Hastalığın belirtileri enfeksiyondan yıllar sonrasına kadar ortaya çıkmayabilse de virüs bu sessiz dönemde yine de başkalarına bulaşabilir.",
+   "options": {
+    "A": "give up",
+    "B": "show up",
+    "C": "take over",
+    "D": "put off",
+    "E": "look after"
+   },
+   "answer": "B",
+   "tags": [
+    "vocab.phrasal_verb"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Belirtiler yıllarca 'ortaya çıkmayabilir' = show up; B.",
+    "why": "'silent period' (sessiz dönem) ifadesi, belirtilerin bir süre görünmediğini anlatıyor. 'show up' = ortaya çıkmak, görünmek. Örnek: Ayşe'nin alerjisi ancak bahar gelince ortaya çıkıyor = 'shows up only in spring'. Diğer phrasal verb'lerin çoğu bir nesne ister; boşluktan sonra nesne yok.",
+    "others": {
+     "A": "give up = vazgeçmek; belirtiler 'vazgeçmez'.",
+     "C": "take over = devralmak, kontrolü ele geçirmek; nesnesiz bu anlamda oturmuyor.",
+     "D": "put off = ertelemek; nesne ister ve belirtiler bir şeyi ertelemez.",
+     "E": "look after = bakmak, ilgilenmek; nesne ister, anlamsız."
+    },
+    "clues": [
+     "until years after infection",
+     "this silent period"
+    ],
+    "tip": "Boşluktan sonra nesne yoksa nesne isteyen phrasal verb'leri (look after, put off) eleyin."
+   },
+   "vocab": [
+    {
+     "en": "show up",
+     "tr": "ortaya çıkmak, görünmek"
+    },
+    {
+     "en": "transmit",
+     "tr": "bulaştırmak, iletmek"
+    },
+    {
+     "en": "infection",
+     "tr": "enfeksiyon"
+    },
+    {
+     "en": "silent period",
+     "tr": "belirtisiz dönem"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-07",
+   "n": 7,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Rising sea levels and stronger storms are expected to ---- the erosion of coastal wetlands, which serve as natural barriers against flooding.",
+   "stemTr": "Yükselen deniz seviyeleri ve daha güçlü fırtınaların, sele karşı doğal bariyer görevi gören kıyı sulak alanlarının aşınmasını hızlandırması bekleniyor.",
+   "options": {
+    "A": "speed up",
+    "B": "hold back",
+    "C": "cut down on",
+    "D": "make up",
+    "E": "rule out"
+   },
+   "answer": "A",
+   "tags": [
+    "vocab.phrasal_verb"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Kötüleştiren etkenler aşınmayı 'hızlandırır' = speed up; A.",
+    "why": "Özneler olumsuz şeyler (yükselen deniz, güçlü fırtına), nesne de olumsuz bir süreç (aşınma). Olumsuz şey olumsuz süreci artırır: 'speed up' = hızlandırmak. Örnek: Ayşe'nin ıslak zeminde koşması düşmesini hızlandırdı.",
+    "others": {
+     "B": "hold back = durdurmak, frenlemek; daha güçlü fırtına aşınmayı frenlemez, ters anlam.",
+     "C": "cut down on = (tüketimi) azaltmak; fırtınalar aşınmayı azaltmaz, ters anlam.",
+     "D": "make up = oluşturmak/uydurmak; 'aşınmayı uydurmak' anlamsız.",
+     "E": "rule out = ihtimal dışı bırakmak; anlam tutmaz."
+    },
+    "clues": [
+     "Rising sea levels and stronger storms",
+     "the erosion of coastal wetlands"
+    ],
+    "tip": "Öznenin ve nesnenin 'iyi mi kötü mü' olduğuna bakın: kötü + kötü süreç = artırma/hızlandırma fiili."
+   },
+   "vocab": [
+    {
+     "en": "speed up",
+     "tr": "hızlandırmak"
+    },
+    {
+     "en": "erosion",
+     "tr": "aşınma, erozyon"
+    },
+    {
+     "en": "wetland",
+     "tr": "sulak alan"
+    },
+    {
+     "en": "hold back",
+     "tr": "geri tutmak, frenlemek"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-08",
+   "n": 8,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Fossil fuel combustion ---- roughly three quarters of global greenhouse gas emissions, which makes the energy sector the main target of climate policies.",
+   "stemTr": "Fosil yakıt yakımı küresel sera gazı emisyonlarının kabaca dörtte üçünü oluşturur; bu da enerji sektörünü iklim politikalarının ana hedefi yapar.",
+   "options": {
+    "A": "consists of",
+    "B": "stands for",
+    "C": "accounts for",
+    "D": "results from",
+    "E": "makes up for"
+   },
+   "answer": "C",
+   "tags": [
+    "vocab.phrasal_verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Bir oranın 'payını oluşturmak' = account for; C.",
+    "why": "'account for + oran/yüzde' kalıbı 'bir bütünün şu kadarını oluşturmak' demektir. Örnek: Kira, Ayşe'nin harcamalarının yarısını oluşturuyor = 'Rent accounts for half of Ayşe's spending.' 'consist of' tuzak: bütün parçalardan oluşur (The team consists of five people), parça bütünü oluşturmaz.",
+    "others": {
+     "A": "consists of = -den oluşur; 'yakım, emisyonların dörtte üçünden oluşur' ters ilişki.",
+     "B": "stands for = (kısaltma) anlamına gelir/temsil eder; oran bildirmez.",
+     "D": "results from = -den kaynaklanır; yakım emisyondan kaynaklanmaz, tersi doğru.",
+     "E": "makes up for = telafi eder; anlam tutmaz."
+    },
+    "clues": [
+     "roughly three quarters of"
+    ],
+    "tip": "Boşluktan sonra yüzde/oran (a third of, 40 percent of) geliyorsa ilk aday 'account for' (ya da 'make up', 'constitute') olsun."
+   },
+   "vocab": [
+    {
+     "en": "account for",
+     "tr": "(bir oranı) oluşturmak; açıklamak"
+    },
+    {
+     "en": "combustion",
+     "tr": "yanma, yakma"
+    },
+    {
+     "en": "emission",
+     "tr": "salınım, emisyon"
+    },
+    {
+     "en": "results from",
+     "tr": "-den kaynaklanmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-09",
+   "n": 9,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Invasive species ---- a serious threat to biodiversity, as they often outcompete native organisms for food and habitat.",
+   "stemTr": "İstilacı türler biyoçeşitlilik için ciddi bir tehdit oluşturur; çünkü yiyecek ve yaşam alanı rekabetinde çoğu zaman yerli organizmaları geride bırakırlar.",
+   "options": {
+    "A": "pose",
+    "B": "undergo",
+    "C": "reveal",
+    "D": "render",
+    "E": "adopt"
+   },
+   "answer": "A",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'pose a threat/risk to' = -e tehdit oluşturmak; A.",
+    "why": "'pose a threat (risk, danger, challenge) to sth' YDS'nin en sık kalıplarından biri: bir şey için tehdit oluşturmak. Örnek: Buzlu yol sürücüler için risk oluşturuyor = 'Icy roads pose a risk to drivers.'",
+    "others": {
+     "B": "undergo = (ameliyat, değişim) geçirmek; tehdit 'geçirilmez'.",
+     "C": "reveal = ortaya çıkarmak/açıklamak; türler tehdidi 'açıklamaz', tehdidin kendisidirler.",
+     "D": "render = hâle getirmek; 'render a threat' diye bir kalıp yok.",
+     "E": "adopt = benimsemek; tehdit benimsenmez."
+    },
+    "clues": [
+     "a serious threat to biodiversity"
+    ],
+    "tip": "'threat, risk, danger, challenge, problem' kelimelerinden önce boşluk varsa fiil çoğunlukla 'pose'dur."
+   },
+   "vocab": [
+    {
+     "en": "pose a threat to",
+     "tr": "-e tehdit oluşturmak"
+    },
+    {
+     "en": "invasive species",
+     "tr": "istilacı tür"
+    },
+    {
+     "en": "outcompete",
+     "tr": "rekabette geride bırakmak"
+    },
+    {
+     "en": "native",
+     "tr": "yerli"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-10",
+   "n": 10,
+   "section": "vocab",
+   "passage": null,
+   "stem": "The newly deciphered clay tablets are expected to ---- light on the daily lives of ordinary people in ancient Mesopotamia, a subject long neglected by historians.",
+   "stemTr": "Yeni çözülen kil tabletlerin, tarihçilerin uzun süre ihmal ettiği bir konu olan antik Mezopotamya'daki sıradan insanların gündelik yaşamına ışık tutması bekleniyor.",
+   "options": {
+    "A": "take",
+    "B": "shed",
+    "C": "draw",
+    "D": "keep",
+    "E": "raise"
+   },
+   "answer": "B",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'shed light on' = -e ışık tutmak, aydınlatmak; B.",
+    "why": "'shed (ya da throw/cast) light on sth' = bir konuyu aydınlatmak, anlaşılmasını sağlamak. Tabletler, az bilinen bir konuyu açıklığa kavuşturacak. Örnek: Ayşe'nin bulduğu eski mektuplar, büyükannesinin gençliğine ışık tuttu.",
+    "others": {
+     "A": "'take light on' diye bir kalıp yok.",
+     "C": "draw attention/conclusion olur; 'draw light on' yanlış.",
+     "D": "keep light on (ışığı açık tutmak) gerçek anlamdır; 'konuya ışık tutmak' değil.",
+     "E": "raise awareness/question olur; 'raise light' yanlış."
+    },
+    "clues": [
+     "---- light on",
+     "a subject long neglected by historians"
+    ],
+    "tip": "Sabit kalıpları tek tek ezberleyin: shed light on, pose a threat, draw a conclusion, give rise to, lay the foundation for."
+   },
+   "vocab": [
+    {
+     "en": "shed light on",
+     "tr": "-e ışık tutmak"
+    },
+    {
+     "en": "decipher",
+     "tr": "(yazı/şifre) çözmek"
+    },
+    {
+     "en": "clay tablet",
+     "tr": "kil tablet"
+    },
+    {
+     "en": "neglect",
+     "tr": "ihmal etmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-11",
+   "n": 11,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Because the sample size of the study was extremely small, the authors cautioned against ---- firm conclusions about the effectiveness of the treatment.",
+   "stemTr": "Çalışmanın örneklem büyüklüğü son derece küçük olduğu için yazarlar, tedavinin etkinliği hakkında kesin sonuçlar çıkarmaya karşı uyardı.",
+   "options": {
+    "A": "drawing",
+    "B": "taking",
+    "C": "paying",
+    "D": "casting",
+    "E": "bearing"
+   },
+   "answer": "A",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'draw a conclusion' = sonuç çıkarmak; A.",
+    "why": "Örneklem küçükse 'kesin sonuç çıkarmayın' denir: 'draw conclusions'. Örnek: Ayşe bir kez geç kalan arkadaşı için 'hep geç kalır' sonucunu çıkarmamalı = 'shouldn't draw conclusions from one case'. 'reach/come to a conclusion' da doğrudur ama şıklarda yok.",
+    "others": {
+     "B": "'take a conclusion' kalıbı yok; take a decision/step olur.",
+     "C": "pay attention/tribute olur; 'pay conclusions' yanlış.",
+     "D": "cast doubt/light olur; 'cast conclusions' yanlış.",
+     "E": "bear responsibility/resemblance olur; 'bear conclusions' yanlış."
+    },
+    "clues": [
+     "sample size of the study was extremely small",
+     "---- firm conclusions"
+    ],
+    "tip": "İsim sabitse (conclusion, attention, doubt) fiili kalıptan bulun: draw a conclusion, pay attention, cast doubt."
+   },
+   "vocab": [
+    {
+     "en": "draw a conclusion",
+     "tr": "sonuç çıkarmak"
+    },
+    {
+     "en": "caution against",
+     "tr": "-e karşı uyarmak"
+    },
+    {
+     "en": "sample size",
+     "tr": "örneklem büyüklüğü"
+    },
+    {
+     "en": "firm",
+     "tr": "kesin, sağlam"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-12",
+   "n": 12,
+   "section": "vocab",
+   "passage": null,
+   "stem": "The rapid urbanisation of the nineteenth century ---- rise to a host of public health problems, including cholera outbreaks caused by contaminated water supplies.",
+   "stemTr": "On dokuzuncu yüzyılın hızlı kentleşmesi, kirli su kaynaklarının yol açtığı kolera salgınları da dahil olmak üzere bir dizi halk sağlığı sorununa yol açtı.",
+   "options": {
+    "A": "gave",
+    "B": "took",
+    "C": "made",
+    "D": "brought",
+    "E": "kept"
+   },
+   "answer": "A",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'give rise to' = -e yol açmak, doğurmak; A.",
+    "why": "'give rise to sth' = bir şeyin ortaya çıkmasına neden olmak. Hızlı kentleşme → sağlık sorunları. Örnek: Ayşe'nin evdeki rutubet, küf sorununa yol açtı = 'gave rise to mould'. Bu kalıpta fiil hep 'give'dir.",
+    "others": {
+     "B": "'take rise' diye bir kalıp yok.",
+     "C": "'make rise' yanlış; make progress/way olur.",
+     "D": "bring about olur ama 'bring rise to' yanlış.",
+     "E": "'keep rise to' anlamsız."
+    },
+    "clues": [
+     "---- rise to a host of public health problems"
+    ],
+    "tip": "'rise to' kalıbını görünce 'give' arayın; aynı aileden 'lead to, result in, bring about' da 'yol açmak' demektir."
+   },
+   "vocab": [
+    {
+     "en": "give rise to",
+     "tr": "-e yol açmak"
+    },
+    {
+     "en": "a host of",
+     "tr": "bir sürü, çok sayıda"
+    },
+    {
+     "en": "outbreak",
+     "tr": "salgın"
+    },
+    {
+     "en": "contaminated",
+     "tr": "kirlenmiş"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-13",
+   "n": 13,
+   "section": "vocab",
+   "passage": null,
+   "stem": "In the ---- of the 2008 financial crisis, many governments introduced stricter regulations on banks to prevent a similar collapse.",
+   "stemTr": "2008 finansal krizinin hemen ardından pek çok hükümet benzer bir çöküşü önlemek için bankalara daha sıkı düzenlemeler getirdi.",
+   "options": {
+    "A": "verge",
+    "B": "brink",
+    "C": "wake",
+    "D": "sake",
+    "E": "terms"
+   },
+   "answer": "C",
+   "tags": [
+    "vocab.noun",
+    "vocab.collocation"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'in the wake of' = -in ardından, sonucunda; C.",
+    "why": "Hükümetler krizden SONRA önlem aldı. 'in the wake of sth' = bir olayın hemen ardından (genelde kötü bir olaydan sonra). Örnek: Depremin ardından Ayşe'nin şehrinde bina denetimleri sıklaştı = 'In the wake of the earthquake...'",
+    "others": {
+     "A": "on the verge of = -in eşiğinde; 'in the verge of' yanlış, anlam da 'krizin eşiğinde' olurdu.",
+     "B": "on the brink of = -in eşiğinde; edat 'on' olmalı ve kriz zaten yaşanmış.",
+     "D": "for the sake of = -in uğruna; 'in the sake of' yanlış.",
+     "E": "in terms of = açısından; 'in the terms of the crisis' anlamsız."
+    },
+    "clues": [
+     "In the ---- of the 2008 financial crisis",
+     "to prevent a similar collapse"
+    ],
+    "tip": "Edat + the + ---- + of kalıplarında edatı kontrol edin: in the wake of, on the verge/brink of, for the sake of, in terms of."
+   },
+   "vocab": [
+    {
+     "en": "in the wake of",
+     "tr": "-in ardından"
+    },
+    {
+     "en": "on the verge of",
+     "tr": "-in eşiğinde"
+    },
+    {
+     "en": "regulation",
+     "tr": "düzenleme, yönetmelik"
+    },
+    {
+     "en": "collapse",
+     "tr": "çöküş"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-14",
+   "n": 14,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Critics argue that the city's rapid economic growth has come at the ---- of its green spaces, as parks have been steadily replaced by shopping centres.",
+   "stemTr": "Eleştirmenler, parkların giderek alışveriş merkezleriyle yer değiştirmesiyle şehrin hızlı ekonomik büyümesinin yeşil alanları pahasına gerçekleştiğini savunuyor.",
+   "options": {
+    "A": "mercy",
+    "B": "expense",
+    "C": "disposal",
+    "D": "outset",
+    "E": "heart"
+   },
+   "answer": "B",
+   "tags": [
+    "vocab.noun",
+    "vocab.collocation"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'at the expense of' = -in pahasına; B.",
+    "why": "Parklar yıkılıp AVM yapılmış: büyüme, yeşil alanlar feda edilerek olmuş. 'come at the expense of sth' = bir şeyi kaybetme pahasına gerçekleşmek. Örnek: Ayşe'nin fazla mesaisi uykusu pahasına oluyor = 'at the expense of her sleep'.",
+    "others": {
+     "A": "at the mercy of = -in insafına kalmış; 'büyüme yeşil alanların insafına kaldı' anlamsız.",
+     "C": "at the disposal of = -in emrinde; anlam tutmaz.",
+     "D": "at the outset of = -in başında; büyüme parkların başında gelmez.",
+     "E": "at the heart of = -in merkezinde; 'büyüme parkların merkezinde geldi' anlamsız."
+    },
+    "clues": [
+     "has come at the ---- of its green spaces",
+     "steadily replaced by"
+    ],
+    "tip": "'at the ---- of' kalıbında anlamı mutlaka kontrol edin: expense (pahasına), mercy (insafına), heart (merkezinde), outset (başında)."
+   },
+   "vocab": [
+    {
+     "en": "at the expense of",
+     "tr": "-in pahasına"
+    },
+    {
+     "en": "at the mercy of",
+     "tr": "-in insafına kalmış"
+    },
+    {
+     "en": "steadily",
+     "tr": "sürekli, giderek"
+    },
+    {
+     "en": "green space",
+     "tr": "yeşil alan"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-15",
+   "n": 15,
+   "section": "vocab",
+   "passage": null,
+   "stem": "All pharmaceutical companies are required to ---- with strict safety regulations before a new drug can be approved for public use.",
+   "stemTr": "Tüm ilaç şirketlerinin, yeni bir ilaç halkın kullanımına onaylanmadan önce sıkı güvenlik düzenlemelerine uyması gerekir.",
+   "options": {
+    "A": "adhere",
+    "B": "consent",
+    "C": "comply",
+    "D": "interfere",
+    "E": "subscribe"
+   },
+   "answer": "C",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'comply with' = -e uymak (kurala, yönetmeliğe); C.",
+    "why": "Hem anlam hem edat 'comply with' gösteriyor: kurallara uymak. 'adhere' anlamca yakın ama 'adhere TO' der; bu yüzden tuzak. Örnek: Ayşe'nin işyerinde herkes kıyafet kuralına uymak zorunda = 'comply with the dress code' ya da 'adhere to the dress code'.",
+    "others": {
+     "A": "adhere de 'uymak' demek ama edatı 'to'dur (adhere to rules); 'with' ile kullanılmaz.",
+     "B": "consent to = razı olmak; edat 'to', anlam da kurallara 'razı olmak' değil.",
+     "D": "interfere with = müdahale etmek, engellemek; şirketlerin kurallara müdahale etmesi 'gerekmez'.",
+     "E": "subscribe to = abone olmak, (görüşü) benimsemek; edat 'to'."
+    },
+    "clues": [
+     "are required to",
+     "---- with strict safety regulations"
+    ],
+    "tip": "Anlamca iki şık yakınsa edat karar verir: comply WITH, adhere TO, conform TO."
+   },
+   "vocab": [
+    {
+     "en": "comply with",
+     "tr": "-e uymak"
+    },
+    {
+     "en": "adhere to",
+     "tr": "-e bağlı kalmak, uymak"
+    },
+    {
+     "en": "pharmaceutical",
+     "tr": "ilaçla ilgili"
+    },
+    {
+     "en": "interfere with",
+     "tr": "-e müdahale etmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-16",
+   "n": 16,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Ibn al-Haytham made a lasting ---- to the science of optics by demonstrating that vision occurs when light enters the eye rather than leaves it.",
+   "stemTr": "İbnü'l-Heysem, görmenin ışık gözden çıktığında değil, göze girdiğinde gerçekleştiğini göstererek optik bilimine kalıcı bir katkı yaptı.",
+   "options": {
+    "A": "attribution",
+    "B": "distribution",
+    "C": "reference",
+    "D": "contribution",
+    "E": "devotion"
+   },
+   "answer": "D",
+   "tags": [
+    "vocab.noun",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'make a contribution to' = -e katkıda bulunmak; D.",
+    "why": "Önemli bir keşif yapan bilim insanı o alana katkıda bulunur: 'make a (lasting/major) contribution to sth'. Örnek: Ayşe'nin önerisi projenin başarısına büyük katkı yaptı = 'made a big contribution to the project'.",
+    "others": {
+     "A": "attribution = (bir şeyi birine) atfetme; 'make an attribution to optics' anlamsız.",
+     "B": "distribution = dağıtım; bilime dağıtım yapılmaz.",
+     "C": "make reference to = -e değinmek; 'kalıcı bir değinme' bilimsel buluşu anlatmaz.",
+     "E": "devotion to = bağlılık; 'make a devotion' kalıbı yok."
+    },
+    "clues": [
+     "made a lasting ---- to the science of optics",
+     "by demonstrating that"
+    ],
+    "tip": "Benzer görünen -tion kelimelerinde (contribution, attribution, distribution) kökü düşünün: contribute = katkı, attribute = atfet, distribute = dağıt."
+   },
+   "vocab": [
+    {
+     "en": "make a contribution to",
+     "tr": "-e katkıda bulunmak"
+    },
+    {
+     "en": "optics",
+     "tr": "optik bilimi"
+    },
+    {
+     "en": "demonstrate",
+     "tr": "göstermek, kanıtlamak"
+    },
+    {
+     "en": "lasting",
+     "tr": "kalıcı"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-17",
+   "n": 17,
+   "section": "vocab",
+   "passage": null,
+   "stem": "The pupil of the eye automatically contracts in ---- to bright light, protecting the sensitive retina from damage.",
+   "stemTr": "Göz bebeği parlak ışığa tepki olarak otomatik biçimde küçülür ve hassas retinayı hasardan korur.",
+   "options": {
+    "A": "contrast",
+    "B": "addition",
+    "C": "relation",
+    "D": "favour",
+    "E": "response"
+   },
+   "answer": "E",
+   "tags": [
+    "vocab.noun",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'in response to' = -e tepki/karşılık olarak; E.",
+    "why": "Parlak ışık bir uyarıcı, göz bebeğinin küçülmesi ona verilen tepki. 'in response to sth' = bir şeye karşılık olarak. Örnek: Ayşe annesinin mesajına tepki olarak hemen aradı = 'in response to her mother's message'.",
+    "others": {
+     "A": "in contrast to = -in aksine; 'göz bebeği ışığın aksine küçülür' anlamsız.",
+     "B": "in addition to = -e ek olarak; ışığa 'ek olarak' küçülmek anlamsız.",
+     "C": "in relation to = ile ilgili olarak; tepki/neden ilişkisini vermiyor.",
+     "D": "in favour of = -in lehine; edatı 'of', anlam tutmaz."
+    },
+    "clues": [
+     "automatically contracts in ---- to bright light"
+    ],
+    "tip": "'in ---- to' kalıbında sebep-tepki varsa 'response', karşılaştırma varsa 'contrast', ekleme varsa 'addition' seçin."
+   },
+   "vocab": [
+    {
+     "en": "in response to",
+     "tr": "-e tepki olarak"
+    },
+    {
+     "en": "pupil",
+     "tr": "göz bebeği"
+    },
+    {
+     "en": "contract",
+     "tr": "büzülmek, küçülmek"
+    },
+    {
+     "en": "retina",
+     "tr": "ağ tabaka, retina"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-18",
+   "n": 18,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Children who are ---- of adequate sleep tend to perform worse on tests of memory and attention than their well-rested peers.",
+   "stemTr": "Yeterli uykudan yoksun bırakılan çocuklar, iyi dinlenmiş akranlarına göre hafıza ve dikkat testlerinde daha kötü performans gösterme eğilimindedir.",
+   "options": {
+    "A": "composed",
+    "B": "deprived",
+    "C": "aware",
+    "D": "capable",
+    "E": "reminded"
+   },
+   "answer": "B",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'be deprived of' = -den yoksun bırakılmak; B.",
+    "why": "Cümle, iyi dinlenmiş akranlarla (well-rested peers) karşılaştırıyor; demek ki boşluktaki çocuklar uykusuz. 'deprived of sth' = bir şeyden yoksun. Örnek: Ayşe sınav haftası uykudan yoksun kaldı = 'was deprived of sleep'.",
+    "others": {
+     "A": "composed of = -den oluşan; çocuklar uykudan oluşmaz.",
+     "C": "aware of = farkında; 'uykunun farkında olan çocuklar daha kötü' mantıksız.",
+     "D": "capable of = yapabilen; 'yeterli uykuya muktedir' anlamsız.",
+     "E": "reminded of = hatırlatılmış; anlam tutmaz."
+    },
+    "clues": [
+     "---- of adequate sleep",
+     "their well-rested peers"
+    ],
+    "tip": "Hepsi 'of' alıyorsa karşılaştırılan gruba (well-rested peers) bakın; zıttı boşluğa gelir."
+   },
+   "vocab": [
+    {
+     "en": "deprived of",
+     "tr": "-den yoksun"
+    },
+    {
+     "en": "adequate",
+     "tr": "yeterli"
+    },
+    {
+     "en": "well-rested",
+     "tr": "iyi dinlenmiş"
+    },
+    {
+     "en": "peer",
+     "tr": "akran"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-19",
+   "n": 19,
+   "section": "vocab",
+   "passage": null,
+   "stem": "The discovery of penicillin in 1928 laid the ---- for the development of modern antibiotics, which have since saved millions of lives.",
+   "stemTr": "Penisilinin 1928'de keşfi, o zamandan beri milyonlarca hayat kurtaran modern antibiyotiklerin geliştirilmesinin temelini attı.",
+   "options": {
+    "A": "emphasis",
+    "B": "foundation",
+    "C": "blame",
+    "D": "claim",
+    "E": "burden"
+   },
+   "answer": "B",
+   "tags": [
+    "vocab.noun",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'lay the foundation for' = -in temelini atmak; B.",
+    "why": "Bir keşif sonraki gelişmelerin başlangıcı oldu: 'lay the foundation(s) for sth' = bir şeyin temelini atmak. Örnek: Ayşe'nin lisede başladığı kodlama dersleri, bugünkü kariyerinin temelini attı.",
+    "others": {
+     "A": "lay emphasis on = -e vurgu yapmak; edat 'on' olur.",
+     "C": "lay the blame on = suçu -e atmak; anlam ve edat uymaz.",
+     "D": "lay claim to = -de hak iddia etmek; anlam tutmaz.",
+     "E": "'lay the burden for' yerleşik bir kalıp değil; yük bindirmek anlamı da uymaz."
+    },
+    "clues": [
+     "laid the ---- for the development"
+    ],
+    "tip": "'lay' fiiliyle kalıplar: lay the foundation for, lay emphasis on, lay the blame on, lay claim to. Edat ipucudur."
+   },
+   "vocab": [
+    {
+     "en": "lay the foundation for",
+     "tr": "-in temelini atmak"
+    },
+    {
+     "en": "lay emphasis on",
+     "tr": "-e vurgu yapmak"
+    },
+    {
+     "en": "since",
+     "tr": "o zamandan beri"
+    },
+    {
+     "en": "antibiotic",
+     "tr": "antibiyotik"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-20",
+   "n": 20,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Despite decades of research, the precise ---- of the disorder remains unknown, although researchers suspect that it arises from an interaction between genetic and environmental factors.",
+   "stemTr": "Onlarca yıllık araştırmaya rağmen bozukluğun kesin kökeni bilinmiyor; ancak araştırmacılar onun genetik ve çevresel etkenlerin etkileşiminden ortaya çıktığından şüpheleniyor.",
+   "options": {
+    "A": "treatment",
+    "B": "consequence",
+    "C": "frequency",
+    "D": "origin",
+    "E": "diagnosis"
+   },
+   "answer": "D",
+   "tags": [
+    "vocab.noun"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'it arises from ...' → bilinmeyen şey bozukluğun 'kökeni'; D.",
+    "why": "Boşluktan sonraki kısım ipucunu veriyor: 'it arises from genetic and environmental factors' (genetik ve çevresel etkenlerden doğuyor). Bir şeyin neden doğduğu, onun kökenidir. Örnek: Ayşe'nin baş ağrısının kaynağı bilinmiyor ama doktor uykusuzluktan kaynaklandığını düşünüyor.",
+    "others": {
+     "A": "treatment = tedavi; 'arises from' (-den kaynaklanır) tedaviyi değil, kökeni anlatır.",
+     "B": "consequence = sonuç; ardından gelen cümle sonucu değil, kaynağı tartışıyor.",
+     "C": "frequency = sıklık; 'genetik ve çevresel etkileşimden doğar' sıklığı açıklamaz.",
+     "E": "diagnosis = teşhis; teşhis genlerden 'doğmaz'."
+    },
+    "clues": [
+     "remains unknown",
+     "it arises from an interaction"
+    ],
+    "tip": "İsim sorusunda boşluktan sonraki cümlede o ismi açıklayan fiile bakın (arises from → origin/cause)."
+   },
+   "vocab": [
+    {
+     "en": "origin",
+     "tr": "köken, kaynak"
+    },
+    {
+     "en": "arise from",
+     "tr": "-den doğmak, kaynaklanmak"
+    },
+    {
+     "en": "disorder",
+     "tr": "bozukluk, rahatsızlık"
+    },
+    {
+     "en": "suspect",
+     "tr": "şüphelenmek, tahmin etmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-21",
+   "n": 21,
+   "section": "vocab",
+   "passage": null,
+   "stem": "The new policy aims to ---- the gap between rich and poor regions by directing more public investment to underdeveloped areas.",
+   "stemTr": "Yeni politika, daha fazla kamu yatırımını az gelişmiş bölgelere yönlendirerek zengin ve yoksul bölgeler arasındaki uçurumu daraltmayı amaçlıyor.",
+   "options": {
+    "A": "widen",
+    "B": "deepen",
+    "C": "expose",
+    "D": "narrow",
+    "E": "inherit"
+   },
+   "answer": "D",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Yoksul bölgeye yatırım → aradaki farkı 'daraltmak' = narrow the gap; D.",
+    "why": "Yöntem: daha çok yatırım az gelişmiş bölgelere. Amaç: zengin-yoksul farkını azaltmak. 'narrow (close, bridge) the gap' = farkı kapatmak. Örnek: Ayşe ekstra ders alarak sınıfın en iyisiyle arasındaki farkı kapatmaya çalışıyor.",
+    "others": {
+     "A": "widen = genişletmek; yoksul bölgeye yatırım uçurumu genişletmez, ters anlam.",
+     "B": "deepen = derinleştirmek; yine ters anlam.",
+     "C": "expose = ortaya çıkarmak, maruz bırakmak; yatırım yönlendirmek uçurumu 'ifşa etmek' değildir.",
+     "E": "inherit = miras almak; anlamsız."
+    },
+    "clues": [
+     "by directing more public investment to underdeveloped areas"
+    ],
+    "tip": "'by + -ing' ile verilen yöntem, boşluktaki fiilin yönünü (artırma mı azaltma mı) gösterir."
+   },
+   "vocab": [
+    {
+     "en": "narrow the gap",
+     "tr": "farkı daraltmak"
+    },
+    {
+     "en": "underdeveloped",
+     "tr": "az gelişmiş"
+    },
+    {
+     "en": "public investment",
+     "tr": "kamu yatırımı"
+    },
+    {
+     "en": "widen",
+     "tr": "genişletmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-22",
+   "n": 22,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Archaeologists were able to ---- the age of the wooden tools by measuring the amount of carbon-14 remaining in them.",
+   "stemTr": "Arkeologlar, ahşap aletlerde kalan karbon-14 miktarını ölçerek aletlerin yaşını belirleyebildiler.",
+   "options": {
+    "A": "undermine",
+    "B": "abandon",
+    "C": "conceal",
+    "D": "imitate",
+    "E": "determine"
+   },
+   "answer": "E",
+   "tags": [
+    "vocab.verb"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Ölçerek yaşı 'belirlemek' = determine; E.",
+    "why": "'by measuring' (ölçerek) yöntemi, bir bilgiye ulaşmayı anlatır: yaşı belirlemek. Örnek: Ayşe termometreyle ölçerek ateşinin kaç olduğunu belirledi = 'determined her temperature'.",
+    "others": {
+     "A": "undermine = zayıflatmak, baltalamak; yaşı zayıflatmak anlamsız.",
+     "B": "abandon = terk etmek; ölçüm yaparak yaşı terk etmek anlamsız.",
+     "C": "conceal = gizlemek; ölçüm bir şeyi gizlemez, ortaya çıkarır.",
+     "D": "imitate = taklit etmek; anlamsız."
+    },
+    "clues": [
+     "by measuring the amount of carbon-14"
+    ],
+    "tip": "Kolay görünen fiil sorularında 'by + -ing' yöntemine bakın; yöntem neye hizmet ediyorsa o fiil doğrudur."
+   },
+   "vocab": [
+    {
+     "en": "determine",
+     "tr": "belirlemek, saptamak"
+    },
+    {
+     "en": "undermine",
+     "tr": "baltalamak"
+    },
+    {
+     "en": "conceal",
+     "tr": "gizlemek"
+    },
+    {
+     "en": "remaining",
+     "tr": "kalan"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-23",
+   "n": 23,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Although the two species look ---- identical, genetic analysis has shown that they diverged from a common ancestor more than two million years ago.",
+   "stemTr": "İki tür neredeyse aynı görünse de genetik analiz, iki milyon yıldan uzun süre önce ortak bir atadan ayrıldıklarını göstermiştir.",
+   "options": {
+    "A": "deliberately",
+    "B": "reluctantly",
+    "C": "scarcely",
+    "D": "consistently",
+    "E": "virtually"
+   },
+   "answer": "E",
+   "tags": [
+    "vocab.adverb"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Although zıtlığı: 'neredeyse aynı görünüyorlar' ↔ 'aslında çok önce ayrıldılar'; E.",
+    "why": "Although iki yarının zıt olmasını ister. İkinci yarı 'genetik olarak çok farklılar' diyor; o hâlde ilk yarı 'çok benzer görünüyorlar' olmalı: 'virtually identical' = neredeyse tıpatıp aynı. Örnek: Ayşe ile kuzeni neredeyse ikiz gibi görünse de aralarında beş yaş var.",
+    "others": {
+     "A": "deliberately = kasıtlı olarak; türler 'kasten' benzer görünmez.",
+     "B": "reluctantly = isteksizce; görünüşü anlatmaz.",
+     "C": "scarcely = neredeyse hiç; 'neredeyse hiç aynı görünmese de... ayrıldılar' zıtlığı bozar.",
+     "D": "consistently = tutarlı biçimde; 'identical' ile anlamsız bir derece verir."
+    },
+    "clues": [
+     "Although",
+     "they diverged from a common ancestor"
+    ],
+    "tip": "Zarf sorusunda da bağlaca bakın: Although varsa zarfın verdiği anlam ikinci yarıyla zıt düşmeli."
+   },
+   "vocab": [
+    {
+     "en": "virtually",
+     "tr": "neredeyse, hemen hemen"
+    },
+    {
+     "en": "identical",
+     "tr": "tıpatıp aynı"
+    },
+    {
+     "en": "diverge",
+     "tr": "ayrılmak, farklılaşmak"
+    },
+    {
+     "en": "ancestor",
+     "tr": "ata"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-24",
+   "n": 24,
+   "section": "vocab",
+   "passage": null,
+   "stem": "As the global population continues to grow, farmers will need to increase food production significantly in order to ---- the rising demand.",
+   "stemTr": "Dünya nüfusu artmaya devam ettikçe çiftçilerin artan talebi karşılamak için gıda üretimini önemli ölçüde artırması gerekecek.",
+   "options": {
+    "A": "reduce",
+    "B": "ignore",
+    "C": "delay",
+    "D": "meet",
+    "E": "inflate"
+   },
+   "answer": "D",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'meet the demand' = talebi karşılamak; D.",
+    "why": "Nüfus artıyor → talep artıyor → çiftçi üretimi artırıyor ki talebi KARŞILASIN. 'meet the demand/needs/requirements' = talebi/ihtiyacı karşılamak. Örnek: Bayramda pastane, artan talebi karşılamak için iki kat tatlı yaptı.",
+    "others": {
+     "A": "reduce = azaltmak; üretimi artırmak talebi azaltmaz.",
+     "B": "ignore = görmezden gelmek; üretimi artırmanın amacı talebi görmezden gelmek olamaz.",
+     "C": "delay = geciktirmek; talep 'geciktirilmez', anlamsız.",
+     "E": "inflate = şişirmek; üretimi artırarak talebi şişirmek amaç değil."
+    },
+    "clues": [
+     "increase food production",
+     "in order to ---- the rising demand"
+    ],
+    "tip": "'demand, need, requirement, expectation, deadline' kelimeleri 'meet' fiiliyle kalıp oluşturur."
+   },
+   "vocab": [
+    {
+     "en": "meet the demand",
+     "tr": "talebi karşılamak"
+    },
+    {
+     "en": "significantly",
+     "tr": "önemli ölçüde"
+    },
+    {
+     "en": "rising",
+     "tr": "artan"
+    },
+    {
+     "en": "inflate",
+     "tr": "şişirmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-kelime-25",
+   "n": 25,
+   "section": "vocab",
+   "passage": null,
+   "stem": "The sharp decline in bee populations has been largely ---- to the widespread use of certain pesticides, along with habitat loss and disease.",
+   "stemTr": "Arı popülasyonlarındaki keskin düşüş büyük ölçüde, yaşam alanı kaybı ve hastalıkla birlikte, bazı tarım ilaçlarının yaygın kullanımına bağlanmıştır.",
+   "options": {
+    "A": "exposed",
+    "B": "restricted",
+    "C": "attributed",
+    "D": "committed",
+    "E": "accustomed"
+   },
+   "answer": "C",
+   "tags": [
+    "vocab.verb",
+    "vocab.collocation"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'be attributed to' = -e bağlanmak, sebebi ... olarak gösterilmek; C.",
+    "why": "Cümle bir düşüşün NEDENLERİNİ sayıyor: ilaçlar, yaşam alanı kaybı, hastalık. 'X is attributed to Y' = X'in sebebi Y olarak görülüyor. Örnek: Ayşe'nin başarısı düzenli çalışmasına bağlanıyor = 'is attributed to her regular study'. Not: 'restricted' tuzağı, 'along with' ile başka nedenler de sayıldığı için çöküyor.",
+    "others": {
+     "A": "exposed to = -e maruz kalmış; özne 'düşüş', bir düşüş ilaca maruz kalmaz.",
+     "B": "restricted to = -le sınırlı; düşüş yalnızca ilaçla sınırlı değil, 'along with' başka nedenler sayıyor.",
+     "D": "committed to = -e bağlı/kendini adamış; anlamsız.",
+     "E": "accustomed to = -e alışkın; düşüş bir şeye alışmaz."
+    },
+    "clues": [
+     "The sharp decline",
+     "along with habitat loss and disease"
+    ],
+    "tip": "Özne bir 'değişim' (decline, rise, increase) ve sonrasında nedenler sıralanıyorsa 'attributed to / due to / caused by' arayın."
+   },
+   "vocab": [
+    {
+     "en": "be attributed to",
+     "tr": "-e bağlanmak, -e atfedilmek"
+    },
+    {
+     "en": "pesticide",
+     "tr": "tarım ilacı, böcek ilacı"
+    },
+    {
+     "en": "habitat loss",
+     "tr": "yaşam alanı kaybı"
+    },
+    {
+     "en": "widespread",
+     "tr": "yaygın"
+    }
+   ]
+  }
+ ]
+}

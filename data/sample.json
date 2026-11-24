@@ -1,0 +1,1293 @@
+{
+ "id": "sample",
+ "title": "Örnek kitapçık",
+ "source": "Claude tarafından yazılmış YDS tarzı örnek sorular (test amaçlı)",
+ "passages": [
+  {
+   "id": "sample-p17",
+   "kind": "cloze",
+   "text": "Sleep is not simply a period of rest; it is an active process during which the brain (17)---- the information gathered throughout the day. Researchers have found that people who are deprived of sleep perform poorly on memory tests, (18)---- they have studied the material for hours. Moreover, a lack of sleep can (19)---- the immune system, making individuals more vulnerable to infections such as the common cold.",
+   "tr": "Uyku sadece dinlenme değil, beynin gün içinde topladığı bilgiyi işlediği aktif bir süreçtir. Uykusuz kalan kişiler saatlerce çalışmış olsalar bile hafıza testlerinde kötü sonuç alır. Ayrıca uykusuzluk bağışıklık sistemini zayıflatır.",
+   "questions": [
+    17,
+    18,
+    19
+   ]
+  },
+  {
+   "id": "sample-p43",
+   "kind": "reading",
+   "text": "Cities are often several degrees warmer than the surrounding countryside, a phenomenon known as the urban heat island effect. The main cause is the replacement of natural land cover with dense concentrations of pavement, buildings and other surfaces that absorb and retain heat. Dark roofs and asphalt roads, for example, can reach temperatures far higher than the air around them during summer afternoons and release this stored heat slowly at night. As a result, cities may not cool down sufficiently after sunset, which increases energy consumption for air conditioning and can pose serious health risks, particularly for elderly people. To address the problem, a number of cities have begun to plant more trees, create green roofs and use reflective materials for pavements. Although these measures cannot eliminate the effect entirely, early studies suggest that they can reduce peak temperatures by as much as two degrees.",
+   "tr": "Şehirler, ısıyı emip tutan asfalt ve binalar yüzünden çevrelerindeki kırsaldan daha sıcaktır (kentsel ısı adası). Gündüz depolanan ısı gece yavaşça salındığı için şehirler serinleyemez; bu da enerji tüketimini ve özellikle yaşlılar için sağlık risklerini artırır. Ağaç dikmek, yeşil çatılar ve yansıtıcı kaplamalar etkiyi tamamen yok edemese de en yüksek sıcaklığı 2 dereceye kadar düşürebilir.",
+   "questions": [
+    43,
+    44,
+    45
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "sample-01",
+   "n": 1,
+   "section": "vocab",
+   "passage": null,
+   "stem": "The government has decided to ---- the use of plastic bags in supermarkets in order to reduce environmental pollution.",
+   "stemTr": "Hükümet, çevre kirliliğini azaltmak için süpermarketlerde plastik poşet kullanımını kısıtlamaya karar verdi.",
+   "options": {
+    "A": "curtail",
+    "B": "enhance",
+    "C": "acquire",
+    "D": "postpone",
+    "E": "disguise"
+   },
+   "answer": "A",
+   "tags": [
+    "vocab.verb"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Kirliliği azaltmak için poşet kullanımı 'kısıtlanır' → curtail.",
+    "why": "Cümlenin amacı belli: 'in order to reduce pollution' (kirliliği azaltmak için). Kirliliği azaltmak isteyen biri poşet kullanımını artırmaz, kısar. Ayşe şeker tüketimini azaltmak isterse evdeki şekeri kısar; 'curtail' tam bu 'kısmak, azaltmak' anlamıdır.",
+    "others": {
+     "B": "enhance 'artırmak, geliştirmek'; poşet kullanımını artırmak kirliliği azaltmaz, amaçla çelişir.",
+     "C": "acquire 'edinmek, elde etmek'; hükümetin poşet kullanımını edinmesi anlamsız.",
+     "D": "postpone 'ertelemek'; bir kullanımı ertelemek doğal bir ifade değil, ayrıca kalıcı azaltma vermez.",
+     "E": "disguise 'gizlemek, kılık değiştirmek'; bağlamla ilgisi yok."
+    },
+    "clues": [
+     "in order to reduce environmental pollution"
+    ],
+    "tip": "Kelime sorusunda cümledeki amaç veya sonuç ifadesini bul (in order to, so that); boşluğa o amaca hizmet eden fiil gelir."
+   },
+   "vocab": [
+    {
+     "en": "curtail",
+     "tr": "kısıtlamak, azaltmak"
+    },
+    {
+     "en": "enhance",
+     "tr": "artırmak, iyileştirmek"
+    },
+    {
+     "en": "disguise",
+     "tr": "gizlemek, kılık değiştirmek"
+    }
+   ]
+  },
+  {
+   "id": "sample-02",
+   "n": 2,
+   "section": "vocab",
+   "passage": null,
+   "stem": "Although the company ---- several financial difficulties last year, it managed to keep all of its employees.",
+   "stemTr": "Şirket geçen yıl birkaç mali zorluk yaşamasına rağmen tüm çalışanlarını tutmayı başardı.",
+   "options": {
+    "A": "came across",
+    "B": "went through",
+    "C": "put off",
+    "D": "took after",
+    "E": "looked into"
+   },
+   "answer": "B",
+   "tags": [
+    "vocab.phrasal_verb",
+    "conj.contrast"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Zorlukları 'yaşamak, atlatmak' = go through.",
+    "why": "'Although' zıtlık kurar: zorluk yaşadı AMA kimseyi çıkarmadı. Zorluk, sıkıntı, ameliyat gibi şeyler için 'go through' kullanılır: 'John went through a hard time after the exam' (John sınavdan sonra zor bir dönem geçirdi).",
+    "others": {
+     "A": "come across 'tesadüfen rastlamak'; zorluğa rastlamak değil, yaşamak kastediliyor.",
+     "C": "put off 'ertelemek'; zorlukları ertelemek mantıksız.",
+     "D": "take after 'birine benzemek (aileden)'; şirket için kullanılmaz.",
+     "E": "look into 'incelemek, araştırmak'; zorlukları incelemek 'although' zıtlığını kurmaz."
+    },
+    "clues": [
+     "Although",
+     "financial difficulties"
+    ],
+    "tip": "Phrasal verb sorularında nesneye bak: difficulties, problems, a hard time → go through; information, a problem (incelemek) → look into."
+   },
+   "vocab": [
+    {
+     "en": "go through",
+     "tr": "(zor bir süreç) yaşamak, atlatmak"
+    },
+    {
+     "en": "come across",
+     "tr": "rastlamak"
+    },
+    {
+     "en": "take after",
+     "tr": "(aileden birine) benzemek"
+    }
+   ]
+  },
+  {
+   "id": "sample-03",
+   "n": 3,
+   "section": "vocab",
+   "passage": null,
+   "stem": "The new vaccine proved to be ---- effective, preventing infection in nearly 95 percent of the volunteers who received it.",
+   "stemTr": "Yeni aşı dikkat çekici derecede etkili çıktı ve aşıyı alan gönüllülerin neredeyse yüzde 95'inde enfeksiyonu önledi.",
+   "options": {
+    "A": "remarkably",
+    "B": "reluctantly",
+    "C": "barely",
+    "D": "hardly",
+    "E": "mutually"
+   },
+   "answer": "A",
+   "tags": [
+    "vocab.adverb"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "%95 koruma çok yüksek bir başarı → remarkably (dikkat çekici derecede).",
+    "why": "Cümlenin ikinci yarısı kanıt veriyor: gönüllülerin %95'i korunmuş. Bu, 'çok' etkili demek. Ayşe sınavdan 95 alırsa 'remarkably successful' olur, 'barely successful' değil.",
+    "others": {
+     "B": "reluctantly 'isteksizce'; bir aşı isteksizce etkili olamaz, insan davranışı için kullanılır.",
+     "C": "barely 'zar zor, ancak'; %95 başarıyla çelişir.",
+     "D": "hardly 'neredeyse hiç'; olumsuz anlam verir, %95 ile çelişir.",
+     "E": "mutually 'karşılıklı olarak'; etkililikle anlamsal bağı yok."
+    },
+    "clues": [
+     "nearly 95 percent"
+    ],
+    "tip": "Zarf sorularında cümledeki sayı veya sonuç ipucuna bak: yüksek oran → remarkably/considerably; düşük oran → barely/scarcely."
+   },
+   "vocab": [
+    {
+     "en": "remarkably",
+     "tr": "dikkat çekici derecede"
+    },
+    {
+     "en": "reluctantly",
+     "tr": "isteksizce"
+    },
+    {
+     "en": "barely",
+     "tr": "zar zor, ancak"
+    }
+   ]
+  },
+  {
+   "id": "sample-07",
+   "n": 7,
+   "section": "grammar",
+   "passage": null,
+   "stem": "By the time the rescue team ---- the village, most of the residents ---- to safer areas.",
+   "stemTr": "Kurtarma ekibi köye vardığında, köy sakinlerinin çoğu çoktan daha güvenli bölgelere tahliye edilmişti.",
+   "options": {
+    "A": "reached / had already been evacuated",
+    "B": "had reached / were evacuating",
+    "C": "reaches / have been evacuated",
+    "D": "was reaching / evacuated",
+    "E": "reached / would evacuate"
+   },
+   "answer": "A",
+   "tags": [
+    "grammar.tense_sequence",
+    "grammar.passive"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'By the time + past simple' → ana cümle past perfect; sakinler tahliye 'edildi' → edilgen.",
+    "why": "'By the time' (… olduğunda / olana kadar) geçmişte iki olay sıralar: ekibin varışı (past simple: reached) ve ondan ÖNCE bitmiş olay (past perfect: had been). Sakinler kendileri tahliye etmez, tahliye edilir; bu yüzden edilgen. Örnek: 'Ayşe eve vardığında yemek çoktan pişirilmişti' = By the time Ayşe arrived, the dinner had already been cooked.",
+    "others": {
+     "B": "'By the time' cümleciğinde past perfect (had reached) kullanılmaz; ayrıca sakinler tahliye etmiyor, ediliyor.",
+     "C": "Present (reaches) ile present perfect geçmişteki bir olayı anlatmaz; zaman uyumu bozuk.",
+     "D": "'evacuated' etken hâlde sakinlerin başkalarını tahliye ettiği anlamı çıkar; sıralama da belirsiz.",
+     "E": "'would evacuate' geçmişte gelecek bildirir; varıştan önce bitmiş olayı anlatamaz."
+    },
+    "clues": [
+     "By the time",
+     "most of the residents"
+    ],
+    "tip": "By the time + past simple → past perfect; by the time + present simple → future perfect. Sonra özneye bak: işi kendisi mi yapıyor, ona mı yapılıyor?"
+   },
+   "vocab": [
+    {
+     "en": "evacuate",
+     "tr": "tahliye etmek"
+    },
+    {
+     "en": "resident",
+     "tr": "sakin, oturan"
+    },
+    {
+     "en": "rescue team",
+     "tr": "kurtarma ekibi"
+    }
+   ]
+  },
+  {
+   "id": "sample-08",
+   "n": 8,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Had the researchers used a larger sample, their findings ---- more reliable.",
+   "stemTr": "Araştırmacılar daha büyük bir örneklem kullanmış olsalardı, bulguları daha güvenilir olurdu.",
+   "options": {
+    "A": "will be",
+    "B": "would have been",
+    "C": "had been",
+    "D": "are",
+    "E": "would be being"
+   },
+   "answer": "B",
+   "tags": [
+    "grammar.conditional",
+    "grammar.inversion"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Had + özne + V3' = If they had used… → 3. tip koşul → would have been.",
+    "why": "Cümle 'if' olmadan başlıyor ama 'Had the researchers used' aslında 'If the researchers had used' demek (devrik koşul). Geçmişte olmamış bir şeyden bahsediyor: büyük örneklem kullanmadılar. Sonuç kısmı da geçmişe ait hayal: would have + V3. Örnek: 'Had John studied, he would have passed' = Çalışsaydı geçerdi.",
+    "others": {
+     "A": "will be gerçek gelecek koşuludur (1. tip); geçmişteki hayali durumla uyuşmaz.",
+     "C": "had been koşul tarafının yapısıdır, sonuç tarafına gelmez.",
+     "D": "are şimdiki gerçek durumu anlatır; varsayımsal yapıyla uyuşmaz.",
+     "E": "would be being dil bilgisel olarak doğal değil ve geçmiş hayal anlamı vermez."
+    },
+    "clues": [
+     "Had the researchers used"
+    ],
+    "tip": "Cümle 'Had/Were/Should + özne' ile başlıyorsa if düşmüş devrik koşuldur: Had → would have V3, Were → would V1."
+   },
+   "vocab": [
+    {
+     "en": "sample",
+     "tr": "örneklem"
+    },
+    {
+     "en": "findings",
+     "tr": "bulgular"
+    },
+    {
+     "en": "reliable",
+     "tr": "güvenilir"
+    }
+   ]
+  },
+  {
+   "id": "sample-09",
+   "n": 9,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Some species of birds migrate thousands of kilometres every year, ---- others remain in the same region throughout their lives.",
+   "stemTr": "Bazı kuş türleri her yıl binlerce kilometre göç ederken, diğerleri yaşamları boyunca aynı bölgede kalır.",
+   "options": {
+    "A": "whereas",
+    "B": "so that",
+    "C": "unless",
+    "D": "as if",
+    "E": "in case"
+   },
+   "answer": "A",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Göç edenler ↔ yerinde kalanlar: iki zıt grup → whereas.",
+    "why": "'Some … others …' kalıbı iki grubu karşılaştırıyor: biri göç ediyor, diğeri kalıyor. Karşılaştırmalı zıtlık 'whereas' (oysa, -ken) ile kurulur. Örnek: 'Ayşe çay severken John kahve sever' = Ayşe likes tea, whereas John likes coffee.",
+    "others": {
+     "B": "so that amaç bildirir; kalan kuşlar göç edenler için kalmıyor.",
+     "C": "unless 'olmadıkça' koşul bildirir; iki grup arasında koşul ilişkisi yok.",
+     "D": "as if 'sanki' benzetme yapar; anlamsız.",
+     "E": "in case 'olur diye' tedbir bildirir; anlam ilişkisi yok."
+    },
+    "clues": [
+     "Some species",
+     "others remain"
+    ],
+    "tip": "'Some … others …' veya iki zıt fiil (migrate / remain) gördüğünde whereas / while bağlaçlarını ara."
+   },
+   "vocab": [
+    {
+     "en": "migrate",
+     "tr": "göç etmek"
+    },
+    {
+     "en": "species",
+     "tr": "tür"
+    },
+    {
+     "en": "whereas",
+     "tr": "oysa, -ken"
+    }
+   ]
+  },
+  {
+   "id": "sample-17",
+   "n": 17,
+   "section": "cloze",
+   "passage": "sample-p17",
+   "stem": "",
+   "stemTr": "(17) Uyku, beynin gün içinde toplanan bilgiyi işlediği aktif bir süreçtir.",
+   "options": {
+    "A": "processes",
+    "B": "has processed",
+    "C": "was processing",
+    "D": "had processed",
+    "E": "will have processed"
+   },
+   "answer": "A",
+   "tags": [
+    "grammar.tense"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Genel bir bilimsel gerçek → geniş zaman (processes).",
+    "why": "Paragraf uykunun her zaman nasıl işlediğini anlatıyor ('Sleep is … it is an active process'). Genel geçer gerçekler geniş zamanla söylenir: 'Su 100 derecede kaynar' = Water boils at 100°C. Beyin her uykuda bilgiyi işler → processes.",
+    "others": {
+     "B": "Present perfect belirli bir deneyim veya sonuç anlatır; genel gerçek için uygun değil.",
+     "C": "Past continuous geçmişte süren bir anı anlatır; paragraf şimdiki genel gerçekten bahsediyor.",
+     "D": "Past perfect geçmişteki başka bir olaydan önceyi gösterir; burada geçmiş bağlam yok.",
+     "E": "Future perfect gelecekte bitmiş olacak işi anlatır; genel gerçekle uyuşmaz."
+    },
+    "clues": [
+     "it is an active process"
+    ],
+    "tip": "Cloze'da önce paragrafın zamanına bak: çevredeki fiiller geniş zamandaysa boşluk da büyük olasılıkla geniş zamandır."
+   },
+   "vocab": [
+    {
+     "en": "process",
+     "tr": "işlemek; süreç"
+    },
+    {
+     "en": "gather",
+     "tr": "toplamak"
+    }
+   ]
+  },
+  {
+   "id": "sample-18",
+   "n": 18,
+   "section": "cloze",
+   "passage": "sample-p17",
+   "stem": "",
+   "stemTr": "(18) Uykusuz kalan insanlar, materyali saatlerce çalışmış olsalar bile hafıza testlerinde kötü performans gösterir.",
+   "options": {
+    "A": "because",
+    "B": "even if",
+    "C": "so that",
+    "D": "as long as",
+    "E": "in order that"
+   },
+   "answer": "B",
+   "tags": [
+    "conj.contrast",
+    "conj.condition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Saatlerce çalışmak iyi sonuç beklentisi yaratır ama sonuç kötü → beklenmedik zıtlık: even if.",
+    "why": "Normalde saatlerce çalışan biri testte iyi olur. Paragraf ise tersini söylüyor: uykusuzsa yine kötü. 'Even if' = '-se bile'. Örnek: 'Ayşe saatlerce çalışsa bile uykusuz girerse sınavda zorlanır.'",
+    "others": {
+     "A": "because sebep bildirir; saatlerce çalışmak kötü performansın sebebi değil.",
+     "C": "so that amaç bildirir ve ardından genelde can/could gelir; anlamsız.",
+     "D": "as long as '…dığı sürece' olumlu koşuldur; çalışmak kötü performansın koşulu olamaz.",
+     "E": "in order that amaç bildirir; burada amaç ilişkisi yok."
+    },
+    "clues": [
+     "perform poorly",
+     "studied the material for hours"
+    ],
+    "tip": "Boşluğun iki yanındaki fikirleri 'beklenen mi, beklenmeyen mi?' diye sor. Beklenmeyen sonuç → although / even if / even though."
+   },
+   "vocab": [
+    {
+     "en": "deprived of",
+     "tr": "-den yoksun bırakılmış"
+    },
+    {
+     "en": "perform poorly",
+     "tr": "kötü performans göstermek"
+    }
+   ]
+  },
+  {
+   "id": "sample-19",
+   "n": 19,
+   "section": "cloze",
+   "passage": "sample-p17",
+   "stem": "",
+   "stemTr": "(19) Ayrıca uykusuzluk bağışıklık sistemini zayıflatabilir ve insanları enfeksiyonlara karşı daha savunmasız hâle getirir.",
+   "options": {
+    "A": "strengthen",
+    "B": "weaken",
+    "C": "restore",
+    "D": "boost",
+    "E": "ensure"
+   },
+   "answer": "B",
+   "tags": [
+    "vocab.verb"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Sonuç 'enfeksiyona daha savunmasız' → bağışıklık zayıflar: weaken.",
+    "why": "Cümlenin sonu ipucunu veriyor: 'making individuals more vulnerable to infections'. Bağışıklık zayıflarsa insan daha kolay hastalanır. 'Moreover' da paragrafın olumsuz etkileri sıralamaya devam ettiğini gösteriyor.",
+    "others": {
+     "A": "strengthen 'güçlendirmek'; savunmasızlık sonucuyla çelişir.",
+     "C": "restore 'eski hâline getirmek'; olumlu anlam, sonuçla çelişir.",
+     "D": "boost 'artırmak, desteklemek'; olumlu anlam, sonuçla çelişir.",
+     "E": "ensure 'garanti etmek'; bağışıklığı garanti etmek savunmasızlık yaratmaz."
+    },
+    "clues": [
+     "Moreover",
+     "more vulnerable to infections"
+    ],
+    "tip": "Virgülden sonra gelen '-ing' sonuç cümlesi (making …) boşluğun yönünü verir; önce onu oku."
+   },
+   "vocab": [
+    {
+     "en": "vulnerable",
+     "tr": "savunmasız, hassas"
+    },
+    {
+     "en": "immune system",
+     "tr": "bağışıklık sistemi"
+    },
+    {
+     "en": "weaken",
+     "tr": "zayıflatmak"
+    }
+   ]
+  },
+  {
+   "id": "sample-27",
+   "n": 27,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Unless water resources are managed more carefully, ----.",
+   "stemTr": "Su kaynakları daha dikkatli yönetilmedikçe, birçok bölge yakın gelecekte ciddi kıtlıklarla karşı karşıya kalacak.",
+   "options": {
+    "A": "many regions will face severe shortages in the near future",
+    "B": "people used to waste much less water in the past",
+    "C": "the dam was completed ahead of schedule",
+    "D": "farmers had switched to more efficient irrigation methods",
+    "E": "rainfall has increased in some northern areas"
+   },
+   "answer": "A",
+   "tags": [
+    "conj.condition",
+    "grammar.conditional"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'Unless + present' gelecek koşulu kurar → sonuç 'will' ile: A.",
+    "why": "Unless = if … not (… olmadıkça). Koşul şimdiki zamanda (are managed), o yüzden sonuç gelecekte olmalı: will face. Ayrıca anlam uyuyor: dikkatli yönetmezsek kıtlık olur. Örnek: 'Ayşe çalışmadıkça sınavı geçemeyecek' = Unless Ayşe studies, she won't pass.",
+    "others": {
+     "B": "used to geçmiş alışkanlık anlatır; gelecek koşuluna bağlanamaz.",
+     "C": "Barajın tamamlanması geçmiş bir olay ve koşulla mantık ilişkisi yok.",
+     "D": "Past perfect geçmişteki bir sıralamayı anlatır; 'unless + present' ile zaman uyumu yok.",
+     "E": "Present perfect bir gözlem; dikkatli yönetimin olmamasının sonucu değil."
+    },
+    "clues": [
+     "Unless",
+     "are managed"
+    ],
+    "tip": "Cümle tamamlamada önce bağlaç + zamanı eşleştir: unless/if + present → will; if + past → would. Zamanı tutmayan şıkları anlamına bakmadan ele."
+   },
+   "vocab": [
+    {
+     "en": "shortage",
+     "tr": "kıtlık, eksiklik"
+    },
+    {
+     "en": "irrigation",
+     "tr": "sulama"
+    },
+    {
+     "en": "ahead of schedule",
+     "tr": "planlanandan erken"
+    }
+   ]
+  },
+  {
+   "id": "sample-28",
+   "n": 28,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, the museum attracted more visitors than ever before.",
+   "stemTr": "Yeni sergi geçen bahar açıldıktan sonra müze her zamankinden daha fazla ziyaretçi çekti.",
+   "options": {
+    "A": "After the new exhibition opened last spring",
+    "B": "Even though it is located in the city centre",
+    "C": "As soon as the tickets become cheaper",
+    "D": "Unless the renovation is finished on time",
+    "E": "Whether or not the curators agree"
+   },
+   "answer": "A",
+   "tags": [
+    "conj.time",
+    "grammar.tense_sequence"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Ana cümle geçmişte (attracted) → yan cümle de geçmiş olmalı: After … opened.",
+    "why": "Ziyaretçi artışı geçmişte olmuş bir olay. Bunun zamanını ve nedenini veren yan cümle de geçmişte olmalı. Sergi açıldı, sonra ziyaretçi arttı: mantık ve zaman uyumlu.",
+    "others": {
+     "B": "'Even though' zıtlık kurar; şehir merkezinde olmak ziyaretçi artışıyla zıt değil, zaman da şimdiki.",
+     "C": "'become' şimdiki/gelecek zaman; geçmişteki 'attracted' ile uyuşmaz.",
+     "D": "'Unless … is finished' gelecek koşulu; geçmiş olayla uyuşmaz.",
+     "E": "'Whether or not' anlamsal olarak bağlantısız ve zaman uyumu yok."
+    },
+    "clues": [
+     "attracted",
+     "than ever before"
+    ],
+    "tip": "Boşluk cümlenin başındaysa ana cümlenin zamanını belirle; zaman uyumu tutmayan 3 şık genelde hemen elenir."
+   },
+   "vocab": [
+    {
+     "en": "exhibition",
+     "tr": "sergi"
+    },
+    {
+     "en": "curator",
+     "tr": "müze küratörü"
+    },
+    {
+     "en": "attract",
+     "tr": "çekmek, cezbetmek"
+    }
+   ]
+  },
+  {
+   "id": "sample-37",
+   "n": 37,
+   "section": "trans_en_tr",
+   "passage": null,
+   "stem": "Although renewable energy sources have become cheaper in recent years, many countries still rely heavily on fossil fuels to meet their growing energy demands.",
+   "stemTr": "Soru: Yukarıdaki İngilizce cümlenin en uygun Türkçe karşılığını bulunuz.",
+   "options": {
+    "A": "Yenilenebilir enerji kaynakları son yıllarda daha ucuz hâle gelmiş olsa da birçok ülke artan enerji taleplerini karşılamak için hâlâ büyük ölçüde fosil yakıtlara bağımlıdır.",
+    "B": "Son yıllarda yenilenebilir enerji kaynakları ucuzladığı için birçok ülke artan enerji ihtiyacını fosil yakıtlarla karşılamaktan vazgeçmiştir.",
+    "C": "Birçok ülke artan enerji taleplerini karşılamak için fosil yakıtlara bağımlı olduğundan yenilenebilir enerji kaynakları son yıllarda ucuzlamıştır.",
+    "D": "Yenilenebilir enerji kaynaklarının son yıllarda ucuzlaması, birçok ülkenin fosil yakıtlara olan bağımlılığını büyük ölçüde azaltmıştır.",
+    "E": "Artan enerji talepleri, yenilenebilir enerji kaynakları ucuzlasa bile birçok ülkeyi gelecekte fosil yakıtlara bağımlı kılacaktır."
+   },
+   "answer": "A",
+   "tags": [
+    "trans.connector_match",
+    "trans.structure"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Although = -sa da; still = hâlâ; rely heavily = büyük ölçüde bağımlı → A.",
+    "why": "Önce bağlacı eşle: 'Although' zıtlık bildirir (-masına rağmen / -sa da). Sonra ana fikri: ülkeler HÂLÂ fosil yakıta bağımlı. A her ikisini de koruyor. Diğerleri ya bağlacı sebebe çeviriyor ya da 'bağımlılık azaldı' diyerek anlamı tersine çeviriyor.",
+    "others": {
+     "B": "'ucuzladığı için … vazgeçmiştir' hem bağlacı sebebe çeviriyor hem de 'still rely' anlamını tersine çeviriyor.",
+     "C": "Sebep-sonuç ters kurulmuş: fosil yakıt bağımlılığı yenilenebilirin ucuzlamasının sebebi gibi gösteriliyor.",
+     "D": "'bağımlılığı azaltmıştır' orijinaldeki 'still rely heavily' ile çelişiyor.",
+     "E": "'kılacaktır' gelecek zaman; orijinal cümle şimdiki durumu anlatıyor."
+    },
+    "clues": [
+     "Although",
+     "still rely heavily"
+    ],
+    "tip": "Çeviride sırayla: 1) bağlaç, 2) ana fiil ve zaman, 3) olumsuzluk/derece kelimeleri (still, heavily). Bu üçünü tutmayan şıkkı anlamına bakmadan ele."
+   },
+   "vocab": [
+    {
+     "en": "renewable",
+     "tr": "yenilenebilir"
+    },
+    {
+     "en": "rely on",
+     "tr": "-e bağımlı olmak, güvenmek"
+    },
+    {
+     "en": "fossil fuel",
+     "tr": "fosil yakıt"
+    },
+    {
+     "en": "demand",
+     "tr": "talep"
+    }
+   ]
+  },
+  {
+   "id": "sample-38",
+   "n": 38,
+   "section": "trans_en_tr",
+   "passage": null,
+   "stem": "Scientists warn that unless urgent measures are taken, coral reefs may disappear completely within the next few decades.",
+   "stemTr": "Soru: Yukarıdaki İngilizce cümlenin en uygun Türkçe karşılığını bulunuz.",
+   "options": {
+    "A": "Bilim insanları, acil önlemler alınmazsa mercan resiflerinin önümüzdeki birkaç on yıl içinde tamamen yok olabileceği konusunda uyarıyor.",
+    "B": "Bilim insanlarına göre acil önlemler alındığı takdirde mercan resifleri önümüzdeki birkaç on yıl içinde eski hâline dönebilir.",
+    "C": "Bilim insanları, mercan resiflerinin son birkaç on yılda tamamen yok olmasının acil önlemler alınmamasından kaynaklandığını söylüyor.",
+    "D": "Acil önlemler alınsa bile mercan resiflerinin önümüzdeki on yıllarda tamamen yok olacağı bilim insanlarınca öngörülüyor.",
+    "E": "Bilim insanları, mercan resiflerini kurtarmak için önümüzdeki birkaç on yıl içinde acil önlemler alınması gerektiğini vurguluyor."
+   },
+   "answer": "A",
+   "tags": [
+    "trans.connector_match",
+    "trans.tense_match"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "warn = uyarmak; unless = -mazsa; may disappear = yok olabilir → A.",
+    "why": "Üç parçayı eşle: ana fiil 'warn' (uyarıyor), koşul 'unless' (alınmazsa), modal 'may' (olabilir). A üçünü de birebir veriyor. E akla yakın ama 'warn' yerine 'vurguluyor', koşul yerine 'gerektiği' diyor; yani cümlenin iskeleti değişmiş.",
+    "others": {
+     "B": "'alındığı takdirde … eski hâline dönebilir' koşulu olumluya çevirip sonucu değiştiriyor.",
+     "C": "Geçmişe çevrilmiş ('son birkaç on yılda yok olması'); orijinal gelecekten bahsediyor.",
+     "D": "'alınsa bile' unless değil, even if karşılığı; 'yok olacağı' kesinlik bildirir, may'deki olasılık kaybolmuş.",
+     "E": "'warn' ve 'unless' yapısı kaybolmuş; cümle bir gereklilik vurgusuna dönüşmüş ve 'yok olabilir' bilgisi yok."
+    },
+    "clues": [
+     "warn",
+     "unless",
+     "may disappear"
+    ],
+    "tip": "Akla yatkın görünen şıkka kanma: çeviri sorusu anlam benzerliğini değil, yapı eşleşmesini ölçer. Modal (may/must/can) ve bağlaç birebir karşılanmalı."
+   },
+   "vocab": [
+    {
+     "en": "urgent measures",
+     "tr": "acil önlemler"
+    },
+    {
+     "en": "coral reef",
+     "tr": "mercan resifi"
+    },
+    {
+     "en": "decade",
+     "tr": "on yıl"
+    }
+   ]
+  },
+  {
+   "id": "sample-40",
+   "n": 40,
+   "section": "trans_tr_en",
+   "passage": null,
+   "stem": "Pek çok uzman, çocukların ekran başında geçirdiği sürenin sınırlandırılması gerektiğini düşünmektedir.",
+   "stemTr": "Soru: Yukarıdaki Türkçe cümlenin en uygun İngilizce karşılığını bulunuz.",
+   "options": {
+    "A": "Many experts think that the time children spend in front of screens should be limited.",
+    "B": "Many experts limited the time that children had spent in front of screens.",
+    "C": "Children who spend too much time in front of screens are thought to be limited by many experts.",
+    "D": "According to many experts, children should not be allowed to use screens at all.",
+    "E": "Many experts have found that children spend more time in front of screens than they should."
+   },
+   "answer": "A",
+   "tags": [
+    "trans.structure",
+    "trans.vocab_precision"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "düşünmektedir = think; sınırlandırılması gerektiği = should be limited → A.",
+    "why": "Türkçe cümlenin iskeleti: Uzmanlar [düşünüyor] ki [süre sınırlandırılmalı]. A bu iskeleti birebir koruyor: think that … should be limited. Örnek: 'Ayşe, şekerin azaltılması gerektiğini düşünüyor' = Ayşe thinks sugar should be reduced.",
+    "others": {
+     "B": "Uzmanlar süreyi kendileri sınırlamış gibi geçmiş zamana çevrilmiş; 'düşünmek' fiili yok.",
+     "C": "Sınırlandırılan çocuklar olmuş, süre değil; anlam kaymış.",
+     "D": "'hiç kullanmamalı' anlamı abartılı; Türkçede sadece sınırlandırma var.",
+     "E": "'düşünüyor' yerine 'bulmuş' ve 'gerekli' yerine bir tespit var; yapı tutmuyor."
+    },
+    "clues": [
+     "düşünmektedir",
+     "sınırlandırılması gerektiğini"
+    ],
+    "tip": "TR→EN çeviride Türkçe cümlenin en sonundaki ana fiili bul (düşünmektedir) ve o fiille başlayan şıkları öne al."
+   },
+   "vocab": [
+    {
+     "en": "screen time",
+     "tr": "ekran süresi"
+    },
+    {
+     "en": "limit",
+     "tr": "sınırlandırmak"
+    }
+   ]
+  },
+  {
+   "id": "sample-41",
+   "n": 41,
+   "section": "trans_tr_en",
+   "passage": null,
+   "stem": "Yeni ilacın yan etkileri henüz tam olarak bilinmediğinden doktorlar onu reçete ederken dikkatli davranıyor.",
+   "stemTr": "Soru: Yukarıdaki Türkçe cümlenin en uygun İngilizce karşılığını bulunuz.",
+   "options": {
+    "A": "Since the side effects of the new drug are not yet fully known, doctors are being cautious when prescribing it.",
+    "B": "Although the side effects of the new drug are fully known, doctors still hesitate to prescribe it.",
+    "C": "Doctors who prescribe the new drug carefully have not yet observed its side effects fully.",
+    "D": "The new drug will not be prescribed until doctors fully understand its side effects.",
+    "E": "Doctors were careful about the new drug because its side effects had been reported widely."
+   },
+   "answer": "A",
+   "tags": [
+    "trans.connector_match",
+    "trans.tense_match"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "-diğinden = since/because; henüz tam bilinmiyor = not yet fully known → A.",
+    "why": "'-diğinden' sebep bağlacıdır (since). 'Henüz tam olarak bilinmiyor' = not yet fully known. Ana fiil şimdiki zaman: 'dikkatli davranıyor' = are being cautious. A üçünü de tutturuyor.",
+    "others": {
+     "B": "Although zıtlık bildirir ve 'fully known' olumsuzluğu kaldırmış; anlam tersine dönmüş.",
+     "C": "Sebep ilişkisi yok; dikkatli reçete eden doktorlar diye bir özne kurulmuş.",
+     "D": "'until … ' ve gelecek zaman; Türkçede bugünkü bir davranış anlatılıyor.",
+     "E": "Geçmiş zamana çevrilmiş ve 'yaygın biçimde rapor edilmişti' anlamı eklenmiş."
+    },
+    "clues": [
+     "bilinmediğinden",
+     "henüz tam olarak"
+    ],
+    "tip": "Türkçedeki ek bağlaçları ezberle: -diğinden/-dığı için = since/because, -mesine rağmen = although, -dıkça = as long as."
+   },
+   "vocab": [
+    {
+     "en": "side effect",
+     "tr": "yan etki"
+    },
+    {
+     "en": "prescribe",
+     "tr": "reçete etmek"
+    },
+    {
+     "en": "cautious",
+     "tr": "dikkatli, temkinli"
+    }
+   ]
+  },
+  {
+   "id": "sample-43",
+   "n": 43,
+   "section": "reading",
+   "passage": "sample-p43",
+   "stem": "According to the passage, the urban heat island effect is mainly caused by ----.",
+   "stemTr": "Parçaya göre, kentsel ısı adası etkisinin temel nedeni ---- .",
+   "options": {
+    "A": "the replacement of natural surfaces with materials that store heat",
+    "B": "the increasing number of elderly people living in cities",
+    "C": "the excessive use of air conditioning during summer nights",
+    "D": "the lack of reflective materials in the countryside",
+    "E": "changes in global climate patterns over recent decades"
+   },
+   "answer": "A",
+   "tags": [
+    "reading.detail"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'The main cause is the replacement of natural land cover…' cümlesi doğrudan A'yı söylüyor.",
+    "why": "Soru 'mainly caused by' diyor; parçada 'The main cause is …' cümlesini ara. Orada doğal zeminin ısıyı emip tutan yüzeylerle değiştirilmesi yazıyor. A bunun eş anlamlı ifadesi (retain heat = store heat).",
+    "others": {
+     "B": "Yaşlılar sorunun sebebi değil, etkilenen grup olarak geçiyor.",
+     "C": "Klima kullanımı sonuç olarak geçiyor, sebep olarak değil.",
+     "D": "Yansıtıcı malzemeler çözüm önerisi; kırsalla ilgili bir eksiklikten söz edilmiyor.",
+     "E": "Küresel iklim değişikliğinden parçada hiç bahsedilmiyor."
+    },
+    "clues": [
+     "The main cause is",
+     "absorb and retain heat"
+    ],
+    "tip": "Detay sorularında sorudaki anahtar kelimeyi (cause) parçada tara; doğru şık genelde aynı bilgiyi farklı kelimelerle söyler."
+   },
+   "vocab": [
+    {
+     "en": "retain",
+     "tr": "tutmak, muhafaza etmek"
+    },
+    {
+     "en": "phenomenon",
+     "tr": "olgu, fenomen"
+    },
+    {
+     "en": "land cover",
+     "tr": "arazi örtüsü"
+    }
+   ]
+  },
+  {
+   "id": "sample-44",
+   "n": 44,
+   "section": "reading",
+   "passage": "sample-p43",
+   "stem": "It can be inferred from the passage that ----.",
+   "stemTr": "Parçadan ---- sonucu çıkarılabilir.",
+   "options": {
+    "A": "planting trees is the most expensive way to cool cities",
+    "B": "heat stored during the day can make nights in cities uncomfortably warm",
+    "C": "rural areas are more vulnerable to heat-related health risks than cities",
+    "D": "reflective pavements completely solve the problem of urban heat",
+    "E": "elderly people mostly prefer living in the countryside"
+   },
+   "answer": "B",
+   "tags": [
+    "reading.inference"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Gündüz depolanan ısı gece salınıyor ve şehir serinleyemiyor → geceler sıcak: B.",
+    "why": "Parça iki şey söylüyor: yüzeyler ısıyı gece yavaşça salıyor ve şehirler gün batımından sonra yeterince serinlemiyor. Bunları birleştirince 'geceler rahatsız edici derecede sıcak olabilir' çıkarımı yapılır. Çıkarım sorusunda cevap parçada kelimesi kelimesine yazmaz ama parçanın iki cümlesinden mantıkla çıkar.",
+    "others": {
+     "A": "Maliyet karşılaştırması parçada hiç yok.",
+     "C": "Parça tam tersini ima ediyor: risk şehirlerde daha yüksek.",
+     "D": "Parça 'cannot eliminate the effect entirely' diyor; 'completely solve' bununla çelişir.",
+     "E": "Yaşlıların nerede yaşamayı tercih ettiğine dair bilgi yok."
+    },
+    "clues": [
+     "release this stored heat slowly at night",
+     "may not cool down sufficiently after sunset"
+    ],
+    "tip": "Çıkarım sorularında 'completely, always, the most' gibi aşırı kelimeler içeren şıklar genelde yanlıştır; parçanın söylediğini bir adım öteye taşıyan ölçülü şıkkı seç."
+   },
+   "vocab": [
+    {
+     "en": "infer",
+     "tr": "çıkarım yapmak"
+    },
+    {
+     "en": "sufficiently",
+     "tr": "yeterince"
+    },
+    {
+     "en": "pose a risk",
+     "tr": "risk oluşturmak"
+    }
+   ]
+  },
+  {
+   "id": "sample-45",
+   "n": 45,
+   "section": "reading",
+   "passage": "sample-p43",
+   "stem": "The word \"eliminate\" in the passage is closest in meaning to ----.",
+   "stemTr": "Parçadaki \"eliminate\" kelimesi anlamca ---- kelimesine en yakındır.",
+   "options": {
+    "A": "remove completely",
+    "B": "measure",
+    "C": "postpone",
+    "D": "intensify",
+    "E": "predict"
+   },
+   "answer": "A",
+   "tags": [
+    "reading.vocab_in_context"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "eliminate = tamamen ortadan kaldırmak → remove completely.",
+    "why": "Cümle: 'Although these measures cannot eliminate the effect entirely, … they can reduce peak temperatures'. 'Azaltabilir ama tamamen ____ edemez' yapısı boşluğa 'yok etmek' anlamını koyar. Kelimeyi bilmesen bile bu zıtlıktan anlamı çıkarabilirsin.",
+    "others": {
+     "B": "measure 'ölçmek'; 'azaltabilir ama tamamen ölçemez' anlamsız.",
+     "C": "postpone 'ertelemek'; etkiyi ertelemek bağlamla uyuşmuyor.",
+     "D": "intensify 'yoğunlaştırmak'; önlemler etkiyi artırmaz, azaltır.",
+     "E": "predict 'tahmin etmek'; cümlede tahminden söz edilmiyor."
+    },
+    "clues": [
+     "cannot eliminate the effect entirely",
+     "can reduce"
+    ],
+    "tip": "Bağlamda kelime sorularında kelimenin geçtiği cümleyi oku ve kelimeyi silip yerine şıkları dene."
+   },
+   "vocab": [
+    {
+     "en": "eliminate",
+     "tr": "ortadan kaldırmak"
+    },
+    {
+     "en": "intensify",
+     "tr": "yoğunlaştırmak"
+    },
+    {
+     "en": "peak",
+     "tr": "en yüksek nokta, zirve"
+    }
+   ]
+  },
+  {
+   "id": "sample-63",
+   "n": 63,
+   "section": "dialogue",
+   "passage": null,
+   "stem": "Emma: I heard you've started working from home. How is it going?\nLeo: ----\nEmma: That's a common problem. Setting a fixed daily schedule might help.",
+   "stemTr": "Emma: Evden çalışmaya başladığını duydum. Nasıl gidiyor?\nLeo: Açıkçası iş zamanını özel zamanımdan ayırmakta zorlanıyorum.\nEmma: Bu yaygın bir sorun. Sabit bir günlük program yapmak işe yarayabilir.",
+   "options": {
+    "A": "It's great, I've never been more productive in my life.",
+    "B": "Honestly, I find it hard to separate work time from personal time.",
+    "C": "My office is just a ten-minute walk from my house.",
+    "D": "I'm planning to apply for a new job next month.",
+    "E": "The company has recently hired a lot of new staff."
+   },
+   "answer": "B",
+   "tags": [
+    "dialogue.response"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Emma 'yaygın bir sorun' ve 'program yap' diyor → Leo bir sorun söylemiş olmalı: B.",
+    "why": "Diyalogda boşluktan SONRAKİ cümle en güçlü ipucudur. Emma 'That's a common problem' diyor, yani Leo bir sorundan bahsetmiş. Çözüm olarak 'sabit program' öneriyor; bu da sorunun zaman yönetimiyle ilgili olduğunu gösterir. B tam olarak bu.",
+    "others": {
+     "A": "Olumlu bir cevap; Emma'nın 'common problem' demesiyle çelişir.",
+     "C": "Ofise yürüme mesafesi evden çalışmayla ilgili değil.",
+     "D": "Yeni işe başvuru 'common problem' ve 'schedule' önerisiyle bağlantısız.",
+     "E": "Şirketin işe alımları Leo'nun durumuyla ilgili değil."
+    },
+    "clues": [
+     "That's a common problem",
+     "Setting a fixed daily schedule"
+    ],
+    "tip": "Diyalogda önce boşluktan sonraki repliği oku; o cevap boşluğa ne tür bir cümle geldiğini (sorun, soru, teklif) söyler."
+   },
+   "vocab": [
+    {
+     "en": "separate",
+     "tr": "ayırmak"
+    },
+    {
+     "en": "fixed schedule",
+     "tr": "sabit program"
+    }
+   ]
+  },
+  {
+   "id": "sample-64",
+   "n": 64,
+   "section": "dialogue",
+   "passage": null,
+   "stem": "Customer: ----\nPharmacist: Yes, but you should take it after meals, not on an empty stomach.\nCustomer: Thanks, I'll keep that in mind.",
+   "stemTr": "Müşteri: Bu ağrı kesiciyi günde iki kez almak güvenli mi?\nEczacı: Evet, ama aç karnına değil, yemeklerden sonra almalısınız.\nMüşteri: Teşekkürler, aklımda tutarım.",
+   "options": {
+    "A": "How much does this painkiller cost?",
+    "B": "Is it safe to take this painkiller twice a day?",
+    "C": "Where can I find the nearest hospital?",
+    "D": "Why did the doctor prescribe this drug to me?",
+    "E": "Could you recommend a good dentist in this area?"
+   },
+   "answer": "B",
+   "tags": [
+    "dialogue.question"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'Yes, but …' cevabı Evet/Hayır sorusu ister ve ilaç alımıyla ilgili → B.",
+    "why": "Eczacı 'Yes' ile başlıyor; demek ki soru evet-hayır sorusu. 'How much', 'Where', 'Why' ile başlayan sorulara 'Yes' denmez. Kalan B ve E içinden sadece B ilacın nasıl alınacağıyla ilgili.",
+    "others": {
+     "A": "'How much' sorusuna fiyat söylenir, 'Yes' denmez.",
+     "C": "'Where' sorusuna yer söylenir; ilaç alma talimatı gelmez.",
+     "D": "'Why' sorusuna sebep söylenir, 'Yes' denmez.",
+     "E": "Evet-hayır sorusu ama diş hekimi önerisi ilacın yemekten sonra alınmasıyla ilgisiz."
+    },
+    "clues": [
+     "Yes, but",
+     "take it after meals"
+    ],
+    "tip": "Cevap 'Yes/No' ile başlıyorsa wh- sorularını (what, where, why, how much) hemen ele."
+   },
+   "vocab": [
+    {
+     "en": "painkiller",
+     "tr": "ağrı kesici"
+    },
+    {
+     "en": "on an empty stomach",
+     "tr": "aç karnına"
+    },
+    {
+     "en": "keep in mind",
+     "tr": "aklında tutmak"
+    }
+   ]
+  },
+  {
+   "id": "sample-68",
+   "n": 68,
+   "section": "restatement",
+   "passage": null,
+   "stem": "The project could not have been completed on time without the support of local volunteers.",
+   "stemTr": "Proje, yerel gönüllülerin desteği olmadan zamanında tamamlanamazdı.",
+   "options": {
+    "A": "Thanks to the support of local volunteers, the project was completed on time.",
+    "B": "Local volunteers supported the project, but it was still not completed on time.",
+    "C": "Had local volunteers not supported the project, it would have been finished earlier.",
+    "D": "The project was completed on time even though local volunteers didn't support it.",
+    "E": "Local volunteers are expected to support the project so that it can be completed on time."
+   },
+   "answer": "A",
+   "tags": [
+    "restate.logic",
+    "restate.negation"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Destek olmasaydı tamamlanamazdı' = 'destek sayesinde tamamlandı' → A.",
+    "why": "'could not have been completed without X' çift olumsuzluktur: X olmasaydı olmazdı → X oldu ve iş bitti. Ayşe: 'Annem olmasaydı bu yemeği yetiştiremezdim' = Annem sayesinde yetiştirdim. A aynı mantığı olumlu söylüyor.",
+    "others": {
+     "B": "Projenin zamanında bitmediğini söylüyor; orijinal bittiğini ima ediyor.",
+     "C": "'daha erken biterdi' anlamı tersine çeviriyor; destek olmasaydı bitmezdi.",
+     "D": "Gönüllülerin desteklemediğini söylüyor; orijinalde destek var.",
+     "E": "Geleceğe yönelik bir beklenti; orijinal geçmişte tamamlanmış bir işi anlatıyor."
+    },
+    "clues": [
+     "could not have been completed",
+     "without"
+    ],
+    "tip": "Yakın anlamda önce olumsuzluk sayısını kontrol et: 'not … without' iki olumsuz = olumlu anlam."
+   },
+   "vocab": [
+    {
+     "en": "volunteer",
+     "tr": "gönüllü"
+    },
+    {
+     "en": "on time",
+     "tr": "zamanında"
+    }
+   ]
+  },
+  {
+   "id": "sample-69",
+   "n": 69,
+   "section": "restatement",
+   "passage": null,
+   "stem": "Hardly had the meeting started when the fire alarm went off.",
+   "stemTr": "Toplantı başlar başlamaz yangın alarmı çaldı.",
+   "options": {
+    "A": "The fire alarm went off just after the meeting started.",
+    "B": "The meeting started late because of the fire alarm.",
+    "C": "The fire alarm rarely goes off during meetings.",
+    "D": "The meeting had already finished when the fire alarm went off.",
+    "E": "Nobody heard the fire alarm since the meeting was so loud."
+   },
+   "answer": "A",
+   "tags": [
+    "restate.tense_modality",
+    "grammar.inversion"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Hardly had … when …' = '… olur olmaz' → alarm toplantı başlar başlamaz çaldı: A.",
+    "why": "'Hardly' burada 'neredeyse hiç' demek değil; 'Hardly had X when Y' kalıbı 'X olur olmaz Y oldu' anlamına gelir (No sooner … than ile aynı). Ayşe eve girer girmez telefon çaldı = Hardly had Ayşe entered when the phone rang.",
+    "others": {
+     "B": "Toplantının geç başladığı söylenmiyor; alarm başladıktan sonra çaldı.",
+     "C": "'rarely' kelimesi 'hardly'nin yanlış okunmasından gelen bir tuzak; genelleme yapıyor.",
+     "D": "Toplantının bittiğini söylüyor; orijinalde yeni başlamıştı.",
+     "E": "Alarmın duyulmadığına dair bir bilgi yok."
+    },
+    "clues": [
+     "Hardly had",
+     "when"
+    ],
+    "tip": "Hardly/Scarcely … when ve No sooner … than kalıplarını 'olur olmaz' diye ezberle; şıklarda 'rarely' tuzağına dikkat."
+   },
+   "vocab": [
+    {
+     "en": "go off",
+     "tr": "(alarm) çalmak"
+    },
+    {
+     "en": "hardly … when",
+     "tr": "… olur olmaz"
+    }
+   ]
+  },
+  {
+   "id": "sample-72",
+   "n": 72,
+   "section": "para_completion",
+   "passage": null,
+   "stem": "Bees play a vital role in agriculture by pollinating a large proportion of the crops we eat. ---- Scientists believe that pesticides, habitat loss and disease are the main reasons behind this decline. If the trend continues, food prices could rise significantly.",
+   "stemTr": "Arılar, yediğimiz mahsullerin büyük kısmını tozlaştırarak tarımda hayati rol oynar. Ancak dünyanın birçok yerinde arı popülasyonları hızla düşüyor. Bilim insanları bu düşüşün başlıca nedenlerinin tarım ilaçları, yaşam alanı kaybı ve hastalıklar olduğuna inanıyor. Eğilim sürerse gıda fiyatları önemli ölçüde artabilir.",
+   "options": {
+    "A": "However, bee populations have been falling sharply in many parts of the world.",
+    "B": "Honey has been used as a natural medicine for thousands of years.",
+    "C": "For this reason, farmers prefer to grow crops that do not need pollination.",
+    "D": "Some species of bees can fly several kilometres in search of flowers.",
+    "E": "In addition, bees live in highly organised colonies led by a queen."
+   },
+   "answer": "A",
+   "tags": [
+    "para.cohesion"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Sonraki cümledeki 'this decline' (bu düşüş) bir düşüşten önce bahsedilmesini gerektirir → A.",
+    "why": "Boşluktan sonraki cümle 'this decline' diyor. 'Bu' kelimesi önceden söylenmiş bir şeyi işaret eder. Şıklar içinde düşüşten bahseden tek cümle A. Ayrıca 'However' önceki olumlu bilgiyle (arılar önemli) zıtlık kuruyor.",
+    "others": {
+     "B": "Bal ve ilaç konusu 'this decline' ifadesine bağlanamaz.",
+     "C": "Çiftçilerin tercihi bir düşüşten söz etmiyor; 'For this reason' da önceki cümleye mantıksız bağlanıyor.",
+     "D": "Arıların uçuş mesafesi bir düşüş bilgisi içermiyor.",
+     "E": "Koloni yapısı ilginç ama 'this decline' ile bağ kurmuyor."
+    },
+    "clues": [
+     "this decline"
+    ],
+    "tip": "Paragraf tamamlamada boşluktan sonraki cümlede 'this, these, such, it' gibi gösterici kelimeleri ara; boşluk onların neyi işaret ettiğini söyleyen cümledir."
+   },
+   "vocab": [
+    {
+     "en": "pollinate",
+     "tr": "tozlaştırmak"
+    },
+    {
+     "en": "decline",
+     "tr": "düşüş, azalma"
+    },
+    {
+     "en": "pesticide",
+     "tr": "tarım ilacı"
+    },
+    {
+     "en": "habitat",
+     "tr": "yaşam alanı"
+    }
+   ]
+  },
+  {
+   "id": "sample-73",
+   "n": 73,
+   "section": "para_completion",
+   "passage": null,
+   "stem": "---- Today, however, the same journey takes only about seven hours by plane. Faster travel has made it possible for millions of people to visit distant countries for business or pleasure.",
+   "stemTr": "On dokuzuncu yüzyılda Atlas Okyanusu'nu gemiyle geçmek haftalar sürebiliyordu. Bugün ise aynı yolculuk uçakla sadece yaklaşık yedi saat sürüyor. Daha hızlı seyahat, milyonlarca insanın iş ya da tatil için uzak ülkeleri ziyaret etmesini mümkün kıldı.",
+   "options": {
+    "A": "In the nineteenth century, crossing the Atlantic Ocean by ship could take several weeks.",
+    "B": "Many airlines now offer cheaper tickets to students.",
+    "C": "Planes consume large amounts of fuel on long flights.",
+    "D": "Tourism is one of the fastest growing industries in the world.",
+    "E": "Some people are still afraid of flying despite its safety."
+   },
+   "answer": "A",
+   "tags": [
+    "para.topic_flow",
+    "para.cohesion"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'Today, however, the same journey' → önce GEÇMİŞTEKİ aynı yolculuktan bahsedilmeli: A.",
+    "why": "İkinci cümle 'Bugün ise aynı yolculuk' diyor: 'however' geçmişle zıtlık kurar, 'the same journey' belirli bir yolculuğu işaret eder. Boşluk hem geçmişi hem de o yolculuğu tanıtmalı. A ikisini de veriyor: 19. yüzyılda Atlantik'i gemiyle geçmek.",
+    "others": {
+     "B": "Öğrenci biletleri 'the same journey' ifadesine karşılık gelecek bir yolculuk tanıtmıyor.",
+     "C": "Yakıt tüketimi geçmiş-bugün zıtlığını kurmuyor.",
+     "D": "Turizm genel bir bilgi; 'the same journey' ile bağlanamaz.",
+     "E": "Uçma korkusu konuyu hız karşılaştırmasından saptırır."
+    },
+    "clues": [
+     "Today, however",
+     "the same journey"
+    ],
+    "tip": "Boşluk paragrafın başındaysa ikinci cümledeki bağlaç ve göndergelere (however, the same, this) bak: ilk cümle onları hazırlamalı."
+   },
+   "vocab": [
+    {
+     "en": "journey",
+     "tr": "yolculuk"
+    },
+    {
+     "en": "distant",
+     "tr": "uzak"
+    }
+   ]
+  },
+  {
+   "id": "sample-76",
+   "n": 76,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Coffee is one of the most widely consumed beverages in the world. (II) It originated in Ethiopia, where, according to legend, a goatherd noticed that his goats became energetic after eating coffee berries. (III) From there, coffee spread to the Arabian Peninsula and later to Europe. (IV) Tea, on the other hand, contains less caffeine than coffee and is often preferred in the evening. (V) By the seventeenth century, coffee houses had become popular meeting places in many European cities.",
+   "stemTr": "(I) Kahve dünyada en çok tüketilen içeceklerden biridir. (II) Etiyopya'da ortaya çıkmıştır; efsaneye göre bir keçi çobanı keçilerinin kahve çekirdeği yedikten sonra enerjik olduğunu fark etmiştir. (III) Oradan Arap Yarımadası'na, sonra Avrupa'ya yayılmıştır. (IV) Çay ise kahveden daha az kafein içerir ve akşamları tercih edilir. (V) 17. yüzyılda kahvehaneler Avrupa şehirlerinde popüler buluşma yerleri olmuştu.",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "D",
+   "tags": [
+    "irrelevant.topic_shift"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Paragraf kahvenin tarihçesini anlatıyor; IV çaydan bahsederek konudan sapıyor.",
+    "why": "Cümleler kahvenin yolculuğunu sırayla izliyor: Etiyopya → Arap Yarımadası → Avrupa → kahvehaneler. IV ise birden çayın kafein miktarına geçiyor. 'On the other hand' gibi bir bağlaç cümleyi bağlı gösterse de konu kahvenin tarihinden çıkıyor.",
+    "others": {
+     "A": "I paragrafın konusunu (kahve) tanıtıyor.",
+     "B": "II kahvenin ortaya çıkışını anlatıyor; akışın başlangıcı.",
+     "C": "III 'From there' ile II'ye bağlanıyor ve yayılmayı sürdürüyor.",
+     "E": "V Avrupa'daki kahvehanelerle tarihçeyi tamamlıyor."
+    },
+    "clues": [
+     "Tea, on the other hand"
+    ],
+    "tip": "Anlam bozan cümlede paragrafın ana konusunu tek kelimeyle söyle (kahve). O kelimeyle ilgili olmayan cümle cevaptır; bağlaçlar seni yanıltmasın."
+   },
+   "vocab": [
+    {
+     "en": "beverage",
+     "tr": "içecek"
+    },
+    {
+     "en": "originate",
+     "tr": "ortaya çıkmak, kökenini almak"
+    },
+    {
+     "en": "goatherd",
+     "tr": "keçi çobanı"
+    }
+   ]
+  },
+  {
+   "id": "sample-77",
+   "n": 77,
+   "section": "irrelevant",
+   "passage": null,
+   "stem": "(I) Sleep plays a crucial role in children's development. (II) During deep sleep, the body releases growth hormones that help build muscles and bones. (III) Many adults drink coffee in the morning to feel more awake. (IV) Sleep also helps children consolidate what they have learned during the day. (V) Therefore, experts recommend that school-age children get at least nine hours of sleep every night.",
+   "stemTr": "(I) Uyku çocukların gelişiminde kritik rol oynar. (II) Derin uykuda vücut kas ve kemik gelişimine yardım eden büyüme hormonları salgılar. (III) Birçok yetişkin sabahları daha uyanık hissetmek için kahve içer. (IV) Uyku ayrıca çocukların gün içinde öğrendiklerini pekiştirmelerine yardım eder. (V) Bu nedenle uzmanlar okul çağındaki çocukların her gece en az dokuz saat uyumasını önerir.",
+   "options": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "answer": "C",
+   "tags": [
+    "irrelevant.perspective_shift",
+    "irrelevant.topic_shift"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Paragraf çocuklarda uykuyu anlatıyor; III yetişkinler ve kahveye geçiyor.",
+    "why": "Ana konu 'çocukların gelişiminde uyku'. II ve IV uykunun çocuklara faydalarını sıralıyor, V sonuç ('Therefore') çıkarıyor. III ise hem özneyi (yetişkinler) hem konuyu (kahve) değiştiriyor. IV'teki 'also' da II'ye bağlanıyor; arada III olunca akış kopuyor.",
+    "others": {
+     "A": "I ana konuyu tanıtıyor.",
+     "B": "II uykunun fiziksel gelişime katkısını anlatıyor.",
+     "D": "IV 'also' ile ikinci faydayı ekliyor.",
+     "E": "V 'Therefore' ile önceki faydalardan sonuç çıkarıyor."
+    },
+    "clues": [
+     "Many adults drink coffee"
+    ],
+    "tip": "Özne aniden değişiyorsa (children → adults) o cümleyi şüpheli say; özellikle 'also' ve 'therefore' öncesindeki cümleyle bağ kurup kurmadığını kontrol et."
+   },
+   "vocab": [
+    {
+     "en": "consolidate",
+     "tr": "pekiştirmek"
+    },
+    {
+     "en": "growth hormone",
+     "tr": "büyüme hormonu"
+    },
+    {
+     "en": "crucial",
+     "tr": "kritik, çok önemli"
+    }
+   ]
+  }
+ ]
+}

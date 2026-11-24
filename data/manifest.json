@@ -1,0 +1,42 @@
+{
+  "booklets": [
+    {
+      "id": "set-01",
+      "file": "data/generated/set-01.json",
+      "title": "Deneme seti 1"
+    },
+    {
+      "id": "set-02",
+      "file": "data/generated/set-02.json",
+      "title": "Deneme seti 2"
+    },
+    {
+      "id": "set-03",
+      "file": "data/generated/set-03.json",
+      "title": "Deneme seti 3"
+    },
+    {
+      "id": "set-04",
+      "file": "data/generated/set-04.json",
+      "title": "Deneme seti 4"
+    }
+  ],
+  "generated": [
+    {
+      "file": "data/generated/gen-kelime.json",
+      "title": "Ek: Kelime & collocation"
+    },
+    {
+      "file": "data/generated/gen-gramer.json",
+      "title": "Ek: Gramer"
+    },
+    {
+      "file": "data/generated/gen-cumle.json",
+      "title": "Ek: Cümle tamamlama"
+    },
+    {
+      "file": "data/generated/gen-paragraf.json",
+      "title": "Ek: Paragraf, diyalog, anlam bozan"
+    }
+  ]
+}

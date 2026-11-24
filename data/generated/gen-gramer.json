@@ -1,0 +1,1322 @@
+{
+ "id": "gen-gramer",
+ "title": "Gramer — Zayıf Nokta Seti (Zaman Uyumu, Edat, Bağlaç)",
+ "source": "Claude üretimi",
+ "passages": [],
+ "questions": [
+  {
+   "id": "gen-gramer-01",
+   "n": 1,
+   "section": "grammar",
+   "passage": null,
+   "stem": "By the time European explorers reached Easter Island in 1722, its inhabitants ---- most of the native palm forest, and as a result, the soil ---- much of its fertility.",
+   "stemTr": "Avrupalı kâşifler 1722'de Paskalya Adası'na vardığında, adalılar yerli palmiye ormanının çoğunu çoktan kesmişti ve bunun sonucunda toprak verimliliğinin büyük kısmını yitirmişti.",
+   "options": {
+    "A": "have cut down / has lost",
+    "B": "were cutting down / will lose",
+    "C": "cut down / is losing",
+    "D": "would cut down / loses",
+    "E": "had cut down / had lost"
+   },
+   "answer": "E",
+   "tags": [
+    "grammar.tense_sequence"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'By the time + Past Simple' → ana cümlede Past Perfect (önceden olmuş); E.",
+    "why": "Kâşiflerin gelişi geçmişte bir an (1722). Orman kesimi ve verim kaybı bu andan ÖNCE tamamlanmış. Geçmişteki bir andan önce bitmiş olay = Past Perfect (had + V3). Örnek: Ayşe eve vardığında misafirler çoktan gitmişti = 'By the time Ayşe arrived, the guests had left.'",
+    "others": {
+     "A": "Present Perfect bugüne bağlanır; 1722 gibi geçmiş bir referans noktasıyla kullanılmaz.",
+     "B": "'will lose' geçmişteki bir olay anlatısında gelecek zaman olamaz.",
+     "C": "'By the time + geçmiş' ana cümlede Past Perfect ister; 'is losing' de şimdiki zaman.",
+     "D": "'would' geçmişteki alışkanlık/gelecek; 'loses' geniş zaman, tarihsel anlatıya uymaz."
+    },
+    "clues": [
+     "By the time",
+     "reached Easter Island in 1722"
+    ],
+    "tip": "'By the time + V2' gördüğünüzde diğer yarıda 'had + V3' arayın; 'By the time + V1' ise 'will have + V3'."
+   },
+   "vocab": [
+    {
+     "en": "by the time",
+     "tr": "-dığında (çoktan)"
+    },
+    {
+     "en": "inhabitant",
+     "tr": "sakin, yerli halk"
+    },
+    {
+     "en": "fertility",
+     "tr": "verimlilik"
+    },
+    {
+     "en": "native",
+     "tr": "yerli"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-02",
+   "n": 2,
+   "section": "grammar",
+   "passage": null,
+   "stem": "The effectiveness of the vaccine varies considerably ---- age groups, with older adults generally showing a weaker immune response.",
+   "stemTr": "Aşının etkinliği yaş grupları arasında önemli ölçüde değişir; yaşlı yetişkinler genellikle daha zayıf bir bağışıklık tepkisi gösterir.",
+   "options": {
+    "A": "across",
+    "B": "beyond",
+    "C": "upon",
+    "D": "towards",
+    "E": "along"
+   },
+   "answer": "A",
+   "tags": [
+    "grammar.preposition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'vary across groups' = gruplar arasında değişmek; A.",
+    "why": "Etkinlik, bir yaş grubundan diğerine farklılaşıyor. 'vary across + çoğul grup' = farklı gruplar arasında/boyunca değişiklik göstermek. Örnek: Kahve fiyatları şehirler arasında değişir = 'Coffee prices vary across cities.'",
+    "others": {
+     "B": "beyond = ötesinde; 'yaş gruplarının ötesinde değişir' anlamsız.",
+     "C": "upon = üzerine; 'vary upon' kalıbı yok (depend upon olur).",
+     "D": "towards = -e doğru; değişimin yönünü değil, gruplar arasını anlatmak gerekiyor.",
+     "E": "along = boyunca (yol, kıyı); yaş grupları için kullanılmaz."
+    },
+    "clues": [
+     "varies considerably ---- age groups"
+    ],
+    "tip": "'vary' fiilinden sonra gruplar geliyorsa 'across' (ya da among/between); 'vary with' ise 'bir şeye bağlı olarak değişmek' demektir."
+   },
+   "vocab": [
+    {
+     "en": "vary across",
+     "tr": "-ler arasında değişmek"
+    },
+    {
+     "en": "considerably",
+     "tr": "önemli ölçüde"
+    },
+    {
+     "en": "immune response",
+     "tr": "bağışıklık tepkisi"
+    },
+    {
+     "en": "effectiveness",
+     "tr": "etkinlik"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-03",
+   "n": 3,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Regular physical activity not only strengthens the heart ---- the risk of developing type 2 diabetes.",
+   "stemTr": "Düzenli fiziksel aktivite yalnızca kalbi güçlendirmekle kalmaz, aynı zamanda tip 2 diyabet gelişme riskini de azaltır.",
+   "options": {
+    "A": "and also reducing",
+    "B": "but reducing also",
+    "C": "but also reduces",
+    "D": "as well as reduce",
+    "E": "or else reduces"
+   },
+   "answer": "C",
+   "tags": [
+    "conj.correlative",
+    "grammar.parallelism"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'not only ... but also'; ikinci fiil de birinci gibi 'reduces'; C.",
+    "why": "İkili bağlaçlar eşleriyle gelir: not only → but also. İki tarafta aynı biçimde fiil olmalı: 'strengthens ... reduces'. Örnek: Ayşe yalnızca yemek yapmıyor, aynı zamanda bulaşıkları da yıkıyor = 'Ayşe not only cooks but also washes the dishes.'",
+    "others": {
+     "A": "'not only' 'and' ile değil 'but (also)' ile eşleşir; ayrıca 'reducing' paralelliği bozar.",
+     "B": "'strengthens' ile paralel olması için 'reduces' gerekir; -ing biçimi uymaz.",
+     "D": "'not only' ile 'as well as' eşleşmez; 'reduce' de çekimsiz kalır.",
+     "E": "'or else' = yoksa; 'not only' ile kullanılmaz ve anlam ters."
+    },
+    "clues": [
+     "not only strengthens the heart"
+    ],
+    "tip": "Önce eşi bulun (not only → but also, both → and, either → or, neither → nor), sonra iki tarafın aynı biçimde (fiil-fiil, -ing/-ing) olduğunu kontrol edin."
+   },
+   "vocab": [
+    {
+     "en": "not only ... but also",
+     "tr": "yalnızca ... değil, aynı zamanda"
+    },
+    {
+     "en": "strengthen",
+     "tr": "güçlendirmek"
+    },
+    {
+     "en": "develop (a disease)",
+     "tr": "(hastalığa) yakalanmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-04",
+   "n": 4,
+   "section": "grammar",
+   "passage": null,
+   "stem": "The dinosaur fossils found in Antarctica suggest that the continent ---- much warmer in the past, since such large reptiles could not survive in its present climate.",
+   "stemTr": "Antarktika'da bulunan dinozor fosilleri, bu kadar büyük sürüngenler kıtanın bugünkü ikliminde hayatta kalamayacağı için, kıtanın geçmişte çok daha sıcak olmuş olması gerektiğini gösteriyor.",
+   "options": {
+    "A": "must have been",
+    "B": "should have been",
+    "C": "needn't have been",
+    "D": "can't have been",
+    "E": "would rather be"
+   },
+   "answer": "A",
+   "tags": [
+    "grammar.modal_perfect"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Kanıta dayanan güçlü çıkarım (geçmiş) = must have been; A.",
+    "why": "Kanıt (fosiller) var, sonuç kesine yakın bir tahmin: 'kesin sıcakmış'. Geçmişe dair güçlü çıkarım = must have + V3. Örnek: Yerler ıslak; Ayşe 'Gece yağmur yağmış olmalı' der = 'It must have rained.' 'can't have' tam tersi çıkarım, 'should have' ise eleştiri bildirir.",
+    "others": {
+     "B": "should have V3 = olmalıydı ama olmadı (pişmanlık/eleştiri); kanıta dayalı çıkarım değil.",
+     "C": "needn't have V3 = gerek yoktu ama yapıldı; anlamsız.",
+     "D": "can't have V3 = olmuş olamaz; fosiller sıcaklığı destekliyor, ters çıkarım.",
+     "E": "would rather = tercih etmek; kıta bir şeyi tercih etmez."
+    },
+    "clues": [
+     "fossils found in Antarctica suggest",
+     "could not survive in its present climate"
+    ],
+    "tip": "Cümlede kanıt (evidence, fossils, suggest) varsa 'must have V3' (kesin evet) ya da 'can't have V3' (kesin hayır) arasında seçim yapın; kanıtın yönüne bakın."
+   },
+   "vocab": [
+    {
+     "en": "must have been",
+     "tr": "olmuş olmalı"
+    },
+    {
+     "en": "reptile",
+     "tr": "sürüngen"
+    },
+    {
+     "en": "suggest",
+     "tr": "göstermek, işaret etmek"
+    },
+    {
+     "en": "present",
+     "tr": "şimdiki"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-05",
+   "n": 5,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Since the invention of the printing press in the fifteenth century, the cost of books ---- dramatically, which ---- literacy to spread far beyond a small elite.",
+   "stemTr": "On beşinci yüzyılda matbaanın icadından bu yana kitapların maliyeti çarpıcı biçimde düştü ve bu, okuryazarlığın küçük bir seçkin kesimin çok ötesine yayılmasını sağladı.",
+   "options": {
+    "A": "fell / will allow",
+    "B": "had fallen / was allowing",
+    "C": "was falling / has allowed",
+    "D": "would fall / had allowed",
+    "E": "has fallen / has allowed"
+   },
+   "answer": "E",
+   "tags": [
+    "grammar.tense_sequence"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Since + geçmiş nokta' → Present Perfect: has fallen / has allowed; E.",
+    "why": "'Since the fifteenth century' = 15. yüzyıldan BUGÜNE kadar. Geçmişte başlayıp bugüne uzanan süreç Present Perfect (has/have + V3) ister. Sonuç da bugüne kadar etkili: 'has allowed'. Örnek: Ayşe 2020'den beri İstanbul'da yaşıyor = 'Ayşe has lived in Istanbul since 2020.'",
+    "others": {
+     "A": "'Since + geçmiş zaman noktası' ana cümlede Present Perfect ister; 'will allow' da zamanı kaydırır.",
+     "B": "Past Perfect için geçmişte başka bir referans an yok; 'since' bugüne kadar gelir.",
+     "C": "'Since ...' ile Past Continuous kullanılmaz; süreç bugüne kadar geliyor.",
+     "D": "'would fall' geçmişteki gelecek; 'since' kalıbıyla uyuşmaz."
+    },
+    "clues": [
+     "Since the invention of the printing press"
+    ],
+    "tip": "'Since + tarih/olay' veya 'over the past/last ... years' gördüğünüzde ilk aday Present Perfect'tir."
+   },
+   "vocab": [
+    {
+     "en": "printing press",
+     "tr": "matbaa"
+    },
+    {
+     "en": "literacy",
+     "tr": "okuryazarlık"
+    },
+    {
+     "en": "elite",
+     "tr": "seçkin kesim"
+    },
+    {
+     "en": "dramatically",
+     "tr": "çarpıcı biçimde"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-06",
+   "n": 6,
+   "section": "grammar",
+   "passage": null,
+   "stem": "---- the absence of reliable written records, historians must rely on archaeological evidence to reconstruct the daily lives of early farming communities.",
+   "stemTr": "Güvenilir yazılı kayıtların yokluğunda tarihçiler, ilk tarım topluluklarının gündelik yaşamını yeniden kurmak için arkeolojik kanıtlara dayanmak zorundadır.",
+   "options": {
+    "A": "At",
+    "B": "On",
+    "C": "By",
+    "D": "In",
+    "E": "Under"
+   },
+   "answer": "D",
+   "tags": [
+    "grammar.preposition"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'in the absence of' = -in yokluğunda; D.",
+    "why": "Sabit kalıp: 'in the absence of sth' = bir şey olmadığında. Yazılı kayıt yok → arkeolojiye dayanmak gerekiyor. Örnek: Öğretmen yokken (in the absence of the teacher) sınıfı Ayşe yönetti. Zıttı: 'in the presence of' (-in huzurunda/varlığında).",
+    "others": {
+     "A": "'at the absence of' yanlış; kalıp 'in the absence of'.",
+     "B": "'on the absence of' yanlış.",
+     "C": "'by the absence of' bu anlamda kullanılmaz.",
+     "E": "'under the absence' yanlış; under the influence/control olur."
+    },
+    "clues": [
+     "---- the absence of reliable written records"
+    ],
+    "tip": "Edat + the + isim + of kalıplarını grup hâlinde ezberleyin: in the absence of, in the light of, on behalf of, at the expense of, by means of."
+   },
+   "vocab": [
+    {
+     "en": "in the absence of",
+     "tr": "-in yokluğunda"
+    },
+    {
+     "en": "reliable",
+     "tr": "güvenilir"
+    },
+    {
+     "en": "rely on",
+     "tr": "-e dayanmak"
+    },
+    {
+     "en": "reconstruct",
+     "tr": "yeniden kurmak/canlandırmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-07",
+   "n": 7,
+   "section": "grammar",
+   "passage": null,
+   "stem": "The ancient manuscript, which ---- in a monastery library for centuries, ---- by a team of linguists only last year.",
+   "stemTr": "Yüzyıllar boyunca bir manastır kütüphanesinde saklanmış olan antik el yazması, ancak geçen yıl bir dilbilimci ekibi tarafından çözüldü.",
+   "options": {
+    "A": "has kept / deciphered",
+    "B": "had been kept / was deciphered",
+    "C": "was keeping / has deciphered",
+    "D": "is kept / had deciphered",
+    "E": "will be kept / is deciphered"
+   },
+   "answer": "B",
+   "tags": [
+    "grammar.passive",
+    "grammar.tense_sequence"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Önce saklanmış (had been kept), sonra geçen yıl çözülmüş (was deciphered); B.",
+    "why": "El yazması ne saklar ne çözer; saklanır ve çözülür → iki boşluk da edilgen. Sıralama: önce yüzyıllarca saklanmış (Past Perfect Passive: had been kept), sonra geçen yıl çözülmüş (Past Simple Passive: was deciphered). Örnek: Ayşe'nin yıllarca çekmecede saklanan günlüğü geçen hafta bulundu = 'had been kept ... was found'.",
+    "others": {
+     "A": "El yazması bir şeyi 'saklamaz', saklanır (edilgen); 'deciphered' etken olup özne el yazması olunca anlamsız.",
+     "C": "İkisi de etken; ayrıca 'last year' Present Perfect ile kullanılmaz.",
+     "D": "'is kept' şimdiki durum, 'for centuries' geçmiş öyküsüyle uyumsuz; 'had deciphered' etken.",
+     "E": "Gelecek ve şimdiki zaman 'last year' ile çelişir."
+    },
+    "clues": [
+     "for centuries",
+     "by a team of linguists only last year"
+    ],
+    "tip": "Önce 'özne işi yapıyor mu, işten etkileniyor mu?' diye sorun (by + kişi varsa edilgen); sonra zaman ifadesine (last year, for centuries) göre zamanı seçin."
+   },
+   "vocab": [
+    {
+     "en": "manuscript",
+     "tr": "el yazması"
+    },
+    {
+     "en": "monastery",
+     "tr": "manastır"
+    },
+    {
+     "en": "decipher",
+     "tr": "(yazı) çözmek"
+    },
+    {
+     "en": "linguist",
+     "tr": "dilbilimci"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-08",
+   "n": 8,
+   "section": "grammar",
+   "passage": null,
+   "stem": "The new irrigation system is designed ---- to conserve water ---- to increase crop yields in arid regions.",
+   "stemTr": "Yeni sulama sistemi kurak bölgelerde hem su tasarrufu sağlamak hem de ürün verimini artırmak için tasarlandı.",
+   "options": {
+    "A": "either / nor",
+    "B": "neither / or",
+    "C": "both / and",
+    "D": "whether / nor",
+    "E": "not only / and"
+   },
+   "answer": "C",
+   "tags": [
+    "conj.correlative"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "İki amacı birden vermek: both ... and; C.",
+    "why": "Sistemin iki olumlu amacı var: su tasarrufu VE verim artışı. İkisini birden anlatan eş: 'both ... and'. Örnek: Ayşe hem çalışıyor hem okuyor = 'Ayşe both works and studies.' Eşleşmesi bozuk şıkları hemen eleyin.",
+    "others": {
+     "A": "'either' yalnızca 'or' ile eşleşir; 'nor' ile olmaz.",
+     "B": "'neither' yalnızca 'nor' ile eşleşir; ayrıca olumsuz anlam amaçla çelişir.",
+     "D": "'whether' 'or' ile gelir; 'nor' ile eşleşmez.",
+     "E": "'not only' 'but also' ile eşleşir; 'and' ile olmaz."
+    },
+    "clues": [
+     "is designed ---- to conserve water ---- to increase crop yields"
+    ],
+    "tip": "Çift boşluklu ikili bağlaç sorusunda önce yanlış eşleşmeleri (either/nor, neither/or, not only/and) eleyin; kalanlar arasında anlama bakın."
+   },
+   "vocab": [
+    {
+     "en": "irrigation",
+     "tr": "sulama"
+    },
+    {
+     "en": "conserve",
+     "tr": "korumak, tasarruf etmek"
+    },
+    {
+     "en": "crop yield",
+     "tr": "ürün verimi"
+    },
+    {
+     "en": "arid",
+     "tr": "kurak"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-09",
+   "n": 9,
+   "section": "grammar",
+   "passage": null,
+   "stem": "When researchers re-examined the patient records, they ---- that nearly a third of the participants ---- the medication as prescribed during the trial.",
+   "stemTr": "Araştırmacılar hasta kayıtlarını yeniden incelediklerinde, katılımcıların neredeyse üçte birinin deneme sırasında ilacı reçete edildiği şekilde almamış olduğunu fark ettiler.",
+   "options": {
+    "A": "realise / have not taken",
+    "B": "had realised / do not take",
+    "C": "realised / had not taken",
+    "D": "will realise / did not take",
+    "E": "have realised / would not take"
+   },
+   "answer": "C",
+   "tags": [
+    "grammar.tense_sequence"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "İnceleme ve fark etme geçmişte (realised); ilacı almama ondan da önce (had not taken); C.",
+    "why": "Olay sırası: 1) deneme sırasında ilaç alınmadı, 2) sonra araştırmacılar kayıtları inceledi ve fark etti. Fark etme = Past Simple (realised); ondan önce olan = Past Perfect (had not taken). Örnek: Ayşe cüzdanına baktığında kartını evde unuttuğunu fark etti = 'she realised she had left her card at home'.",
+    "others": {
+     "A": "'When ... re-examined' geçmişte; ana cümle geniş zaman olamaz.",
+     "B": "Fark etme, incelemeden önce olamaz; 'do not take' da şimdiki zaman.",
+     "D": "Geçmişteki bir olayın sonucu gelecek zamanla anlatılmaz.",
+     "E": "'When + Past Simple' ile Present Perfect kullanılmaz."
+    },
+    "clues": [
+     "When researchers re-examined",
+     "during the trial"
+    ],
+    "tip": "İki geçmiş olay varsa sırayı çizin: daha önce olan Past Perfect, sonraki Past Simple."
+   },
+   "vocab": [
+    {
+     "en": "re-examine",
+     "tr": "yeniden incelemek"
+    },
+    {
+     "en": "as prescribed",
+     "tr": "reçete edildiği şekilde"
+    },
+    {
+     "en": "participant",
+     "tr": "katılımcı"
+    },
+    {
+     "en": "trial",
+     "tr": "klinik deneme"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-10",
+   "n": 10,
+   "section": "grammar",
+   "passage": null,
+   "stem": "The fall of the Western Roman Empire has been attributed ---- a combination of factors, ranging ---- economic instability to repeated military defeats.",
+   "stemTr": "Batı Roma İmparatorluğu'nun çöküşü, ekonomik istikrarsızlıktan tekrarlanan askerî yenilgilere kadar uzanan bir dizi etkene bağlanmıştır.",
+   "options": {
+    "A": "to / from",
+    "B": "for / in",
+    "C": "with / between",
+    "D": "on / at",
+    "E": "by / of"
+   },
+   "answer": "A",
+   "tags": [
+    "grammar.preposition"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'attributed to' + 'ranging from ... to ...'; A.",
+    "why": "İki sabit kalıp: 'attribute X to Y' (X'i Y'ye bağlamak) ve 'range from A to B' (A'dan B'ye uzanmak). İkinci boşluktan sonra gelen 'to repeated military defeats' ilk boşluğun 'from' olduğunu ele veriyor. Örnek: Ayşe'nin kitapları romandan bilim kurguya kadar uzanıyor = 'range from novels to science fiction'.",
+    "others": {
+     "B": "'attributed for' ve 'ranging in ... to' kalıpları yanlış.",
+     "C": "'attributed with' kişiye nitelik yüklemek içindir; 'ranging between ... to' yanlış (between ... and olur).",
+     "D": "Her iki edat da bu kalıplara uymaz.",
+     "E": "'attributed by' bu anlamda kullanılmaz; 'ranging of' yanlış."
+    },
+    "clues": [
+     "has been attributed ----",
+     "to repeated military defeats"
+    ],
+    "tip": "Çift edatlı sorularda kalıbın ikinci yarısını arayın: 'to' görürseniz 'from ... to', 'and' görürseniz 'between ... and'."
+   },
+   "vocab": [
+    {
+     "en": "attribute to",
+     "tr": "-e bağlamak, atfetmek"
+    },
+    {
+     "en": "range from ... to",
+     "tr": "-den -e uzanmak"
+    },
+    {
+     "en": "instability",
+     "tr": "istikrarsızlık"
+    },
+    {
+     "en": "defeat",
+     "tr": "yenilgi"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-11",
+   "n": 11,
+   "section": "grammar",
+   "passage": null,
+   "stem": "If the early warning system ---- properly, thousands of coastal residents ---- before the tsunami struck.",
+   "stemTr": "Erken uyarı sistemi düzgün çalışmış olsaydı, binlerce kıyı sakini tsunami vurmadan önce tahliye edilebilirdi.",
+   "options": {
+    "A": "worked / would be evacuated",
+    "B": "has worked / will be evacuated",
+    "C": "works / would have evacuated",
+    "D": "would work / had been evacuated",
+    "E": "had worked / could have been evacuated"
+   },
+   "answer": "E",
+   "tags": [
+    "grammar.conditional",
+    "grammar.passive"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Geçmişe dair gerçekleşmemiş koşul: If + had V3, could have been V3; E.",
+    "why": "Tsunami geçmişte oldu ve sistem çalışmadı. Geçmişte olmayan bir şeyi hayal ediyoruz → 3. tip koşul: If + had + V3, would/could + have + V3. Sakinler tahliye 'edilir', bu yüzden edilgen: could have been evacuated. Örnek: Ayşe alarmı kursaydı otobüsü kaçırmazdı = 'If Ayşe had set the alarm, she wouldn't have missed the bus.'",
+    "others": {
+     "A": "Bu yapı şimdiki/genel hayalî durum içindir; 'before the tsunami struck' geçmişi anlatıyor.",
+     "B": "Gerçek koşul (1. tip) geçmişte olmuş bir felakete uymaz.",
+     "C": "Zamanlar karışık; ayrıca sakinler tahliye 'edilir', etken 'would have evacuated' yanlış.",
+     "D": "If cümlesine 'would' gelmez; sonuç cümlesine de 'had been' gelmez, yapı ters kurulmuş."
+    },
+    "clues": [
+     "If the early warning system",
+     "before the tsunami struck"
+    ],
+    "tip": "If'li cümlede önce olayın zamanına bakın: geçmişte olmuş ve değiştirilemiyorsa 'had V3 / would have V3'."
+   },
+   "vocab": [
+    {
+     "en": "early warning system",
+     "tr": "erken uyarı sistemi"
+    },
+    {
+     "en": "evacuate",
+     "tr": "tahliye etmek"
+    },
+    {
+     "en": "resident",
+     "tr": "sakin, oturan kişi"
+    },
+    {
+     "en": "strike",
+     "tr": "vurmak (afet)"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-12",
+   "n": 12,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Effective teachers are those who explain concepts clearly, encourage students to ask questions, and ---- feedback that helps learners improve.",
+   "stemTr": "Etkili öğretmenler, kavramları açıkça anlatan, öğrencileri soru sormaya teşvik eden ve öğrencilerin gelişmesine yardımcı olan geri bildirim veren kişilerdir.",
+   "options": {
+    "A": "providing",
+    "B": "provide",
+    "C": "to provide",
+    "D": "provided",
+    "E": "by providing"
+   },
+   "answer": "B",
+   "tags": [
+    "grammar.parallelism"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'who explain ..., encourage ..., and provide ...' — üç fiil aynı biçimde; B.",
+    "why": "'and' bir listeyi bağlıyor: who explain, encourage, and ____. Üçü de 'who'ya bağlı aynı biçimde fiil olmalı: provide. Örnek: Ayşe sabahları kalkar, koşar ve kahvaltı yapar = 'gets up, runs, and has breakfast' (runs yerine running denmez).",
+    "others": {
+     "A": "Listede 'explain' ve 'encourage' çekimli fiil; -ing paralelliği bozar.",
+     "C": "'to' ile mastar listeyi bozar; 'who explain ..., encourage ..., and provide' olmalı.",
+     "D": "V3/geçmiş biçim, diğer iki fiille (şimdiki zaman) uyumsuz.",
+     "E": "'by + -ing' yöntem bildirir; listedeki üçüncü öğe olamaz."
+    },
+    "clues": [
+     "who explain concepts clearly, encourage students"
+    ],
+    "tip": "Liste + 'and' görürseniz ilk öğelerin biçimini kopyalayın: fiil-fiil-fiil, -ing/-ing/-ing, isim-isim-isim."
+   },
+   "vocab": [
+    {
+     "en": "feedback",
+     "tr": "geri bildirim"
+    },
+    {
+     "en": "encourage",
+     "tr": "teşvik etmek"
+    },
+    {
+     "en": "concept",
+     "tr": "kavram"
+    },
+    {
+     "en": "learner",
+     "tr": "öğrenen"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-13",
+   "n": 13,
+   "section": "grammar",
+   "passage": null,
+   "stem": "By the time the new space telescope becomes fully operational next year, engineers ---- more than a decade designing and testing its instruments.",
+   "stemTr": "Yeni uzay teleskobu gelecek yıl tam olarak çalışır hâle geldiğinde mühendisler, aletlerini tasarlayıp test ederek on yıldan fazla zaman harcamış olacak.",
+   "options": {
+    "A": "had spent",
+    "B": "have spent",
+    "C": "spent",
+    "D": "will have spent",
+    "E": "would spend"
+   },
+   "answer": "D",
+   "tags": [
+    "grammar.tense_sequence",
+    "grammar.tense"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'By the time + Present Simple (gelecek)' → Future Perfect: will have spent; D.",
+    "why": "'next year' gelecek; 'By the time' o ana kadar tamamlanmış olacak şeyi sorar. Gelecekteki bir ana kadar bitmiş olacak = will have + V3. Zaman bağlaçlarından sonra 'will' yerine Present Simple (becomes) gelir. Örnek: Ayşe mezun olduğunda İngilizceyi on yıl çalışmış olacak = 'By the time Ayşe graduates, she will have studied English for ten years.'",
+    "others": {
+     "A": "Past Perfect geçmişteki bir andan önceyi anlatır; referans an 'next year' (gelecek).",
+     "B": "Present Perfect bugüne kadar olanı anlatır; 'by the time ... next year' gelecekteki bir ana kadar demek.",
+     "C": "Past Simple geçmişte bitmiş eylemdir; gelecekteki bir ana göre sayım yapamaz.",
+     "E": "'would' geçmişte gelecek/koşul bildirir; bu yapıya uymaz."
+    },
+    "clues": [
+     "By the time",
+     "next year"
+    ],
+    "tip": "'By the time / by + gelecek zaman' → 'will have V3'. 'By the time / by + geçmiş zaman' → 'had V3'."
+   },
+   "vocab": [
+    {
+     "en": "fully operational",
+     "tr": "tam olarak işler durumda"
+    },
+    {
+     "en": "instrument",
+     "tr": "alet, cihaz"
+    },
+    {
+     "en": "decade",
+     "tr": "on yıl"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-14",
+   "n": 14,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Neither the government's subsidies ---- the central bank's interest rate cuts ---- able to prevent the economy from sliding into recession.",
+   "stemTr": "Ne hükümetin sübvansiyonları ne de merkez bankasının faiz indirimleri ekonominin resesyona girmesini önleyebildi.",
+   "options": {
+    "A": "or / were",
+    "B": "and / was",
+    "C": "but / have been",
+    "D": "nor / were",
+    "E": "nor / has"
+   },
+   "answer": "D",
+   "tags": [
+    "conj.correlative"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'neither ... nor' + fiil yakın özneye (cuts, çoğul) uyar → were; D.",
+    "why": "Önce eş: neither → nor. Sonra fiil: 'neither A nor B' yapısında fiil kendisine YAKIN olan özneye uyar. Yakın özne 'interest rate cuts' (çoğul) → were. Örnek: Ne Ayşe ne de kardeşleri evdeydi = 'Neither Ayşe nor her brothers were at home.'",
+    "others": {
+     "A": "'neither' yalnızca 'nor' ile eşleşir.",
+     "B": "'neither ... and' yanlış eşleşme; ayrıca fiil uyumu bozuk.",
+     "C": "'neither ... but' yanlış eşleşme.",
+     "E": "'has able' dilbilgisel olarak yanlış; 'be able to' gerekir."
+    },
+    "clues": [
+     "Neither the government's subsidies",
+     "the central bank's interest rate cuts"
+    ],
+    "tip": "neither ... nor / either ... or sonrası fiili hep ikinci (yakın) özneye göre çekin."
+   },
+   "vocab": [
+    {
+     "en": "subsidy",
+     "tr": "sübvansiyon, devlet desteği"
+    },
+    {
+     "en": "interest rate cut",
+     "tr": "faiz indirimi"
+    },
+    {
+     "en": "recession",
+     "tr": "durgunluk, resesyon"
+    },
+    {
+     "en": "slide into",
+     "tr": "-e kaymak"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-15",
+   "n": 15,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Contrary ---- popular belief, goldfish have a memory span of several months rather than just a few seconds.",
+   "stemTr": "Yaygın inanışın aksine, japon balıklarının hafıza süresi yalnızca birkaç saniye değil, birkaç aydır.",
+   "options": {
+    "A": "to",
+    "B": "with",
+    "C": "of",
+    "D": "in",
+    "E": "by"
+   },
+   "answer": "A",
+   "tags": [
+    "grammar.preposition"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'contrary to' = -in aksine; A.",
+    "why": "'contrary to sth' = bir şeyin tersine/aksine. Cümle yaygın inancı (balıklar her şeyi saniyeler içinde unutur) çürütüyor. Örnek: Beklentilerin aksine Ayşe sınavı ilk denemede geçti = 'Contrary to expectations, Ayşe passed...'",
+    "others": {
+     "B": "'contrary with' yanlış; kalıp 'contrary to'.",
+     "C": "'contrary of' yanlış.",
+     "D": "'contrary in' yanlış.",
+     "E": "'contrary by' yanlış."
+    },
+    "clues": [
+     "---- popular belief",
+     "rather than just a few seconds"
+    ],
+    "tip": "Sıfat + edat kalıpları sabittir: contrary to, similar to, due to, prior to, regardless of, irrespective of."
+   },
+   "vocab": [
+    {
+     "en": "contrary to",
+     "tr": "-in aksine"
+    },
+    {
+     "en": "popular belief",
+     "tr": "yaygın inanış"
+    },
+    {
+     "en": "memory span",
+     "tr": "hafıza süresi"
+    },
+    {
+     "en": "rather than",
+     "tr": "-den ziyade, yerine"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-16",
+   "n": 16,
+   "section": "grammar",
+   "passage": null,
+   "stem": "The researchers ---- the data more carefully before publishing their findings, as several serious errors were later discovered by other scientists.",
+   "stemTr": "Araştırmacılar bulgularını yayımlamadan önce verileri daha dikkatli kontrol etmeliydi; çünkü daha sonra başka bilim insanları birkaç ciddi hata buldu.",
+   "options": {
+    "A": "must have checked",
+    "B": "should have checked",
+    "C": "needn't have checked",
+    "D": "would rather check",
+    "E": "may check"
+   },
+   "answer": "B",
+   "tags": [
+    "grammar.modal_perfect"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Geçmişte yapılmayan doğru davranışı eleştirmek = should have V3; B.",
+    "why": "Hatalar sonradan bulundu; demek ki dikkatli kontrol YAPILMADI ama yapılması gerekirdi. Geçmişe yönelik eleştiri/pişmanlık = should have + V3. 'more carefully' de 'daha dikkatli yapmalıydılar' fikrini destekliyor. Örnek: Ayşe şemsiyesini almalıydı, ıslandı = 'She should have taken her umbrella.'",
+    "others": {
+     "A": "'kesin kontrol etmişlerdir' anlamı; sonradan bulunan hatalarla çelişir.",
+     "C": "'kontrol etmelerine gerek yoktu' anlamı; hatalar varken mantıksız.",
+     "D": "tercih bildirir ve şimdiki/gelecek zamandır; geçmişteki bir eksikliği eleştirmez.",
+     "E": "şimdiki/gelecek olasılık; 'before publishing' geçmişte kaldı."
+    },
+    "clues": [
+     "more carefully before publishing",
+     "several serious errors were later discovered"
+    ],
+    "tip": "Geçmişte bir hata/kötü sonuç anlatılıyorsa 'should have V3' (yapmalıydı ama yapmadı) arayın."
+   },
+   "vocab": [
+    {
+     "en": "should have V3",
+     "tr": "-meliydi (ama yapmadı)"
+    },
+    {
+     "en": "findings",
+     "tr": "bulgular"
+    },
+    {
+     "en": "publish",
+     "tr": "yayımlamak"
+    },
+    {
+     "en": "discover",
+     "tr": "bulmak, keşfetmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-17",
+   "n": 17,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Physicians in the early twentieth century believed that stomach ulcers ---- mainly by stress and spicy food, but in the 1980s two Australian researchers proved that most cases ---- by a bacterium.",
+   "stemTr": "Yirminci yüzyıl başındaki hekimler mide ülserlerinin esas olarak stres ve baharatlı yiyeceklerden kaynaklandığına inanıyordu; ancak 1980'lerde iki Avustralyalı araştırmacı vakaların çoğunun bir bakteriden kaynaklandığını kanıtladı.",
+   "options": {
+    "A": "have been caused / will be caused",
+    "B": "had caused / caused",
+    "C": "were caused / are caused",
+    "D": "are causing / have caused",
+    "E": "would cause / had caused"
+   },
+   "answer": "C",
+   "tags": [
+    "grammar.tense_sequence",
+    "grammar.passive"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "'by + etken' → edilgen; eski inanç geçmiş (were caused), kanıtlanan gerçek bugün de geçerli (are caused); C.",
+    "why": "İki boşluktan sonra da 'by' var: ülserler bir şeyden kaynaklanır → edilgen. İlk boşluk geçmişteki bir inancın aktarımı → were caused. İkincisi bugün de doğru olan bilimsel bir gerçek → are caused (geniş zaman). Örnek: Eskiden Ayşe'nin annesi soğuk havanın gribe neden olduğuna inanırdı ama doktor gribin virüsten kaynaklandığını söyledi = 'flu is caused by a virus'.",
+    "others": {
+     "A": "Geçmişteki bir inancı Present Perfect ile aktaramayız; 'will be caused' bilimsel gerçeği geleceğe atar.",
+     "B": "Etken yapı: ülserler bir şeye neden olmaz, 'by stress' ile neden olunur (edilgen gerekir).",
+     "D": "Etken ve zamanlar karışık; 'by' ile edilgen gerekir.",
+     "E": "Etken ve anlamsız; ülserler stresi 'neden olmaz'."
+    },
+    "clues": [
+     "mainly by stress and spicy food",
+     "most cases ---- by a bacterium"
+    ],
+    "tip": "Boşluktan hemen sonra 'by + kim/ne' varsa önce edilgen şıklara bakın; kalıcı bilimsel gerçekler geçmiş anlatıda bile geniş zamanda kalabilir."
+   },
+   "vocab": [
+    {
+     "en": "ulcer",
+     "tr": "ülser"
+    },
+    {
+     "en": "physician",
+     "tr": "hekim"
+    },
+    {
+     "en": "spicy",
+     "tr": "baharatlı, acı"
+    },
+    {
+     "en": "prove",
+     "tr": "kanıtlamak"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-18",
+   "n": 18,
+   "section": "grammar",
+   "passage": null,
+   "stem": "---- the patient's symptoms improve within a week, ---- further tests will be needed to identify the underlying cause.",
+   "stemTr": "Ya hastanın belirtileri bir hafta içinde düzelecek ya da altta yatan nedeni belirlemek için ek testler gerekecek.",
+   "options": {
+    "A": "Neither / nor",
+    "B": "Both / and",
+    "C": "Whether / or",
+    "D": "Not only / but also",
+    "E": "Either / or"
+   },
+   "answer": "E",
+   "tags": [
+    "conj.correlative"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "İki ihtimalden biri gerçekleşecek: Either ... or; E.",
+    "why": "Durum iki seçenekli: belirtiler ya düzelecek, ya da test gerekecek. 'either A or B' = ya A ya B. Örnek: Ayşe ya bu akşam arayacak ya da yarın mesaj atacak = 'Either Ayşe will call tonight, or she will text tomorrow.' 'Whether' ile cümle tamamlanamıyor; 'neither' ve 'not only' başta devrik yapı ister.",
+    "others": {
+     "A": "Başta 'neither' gelirse devrik yapı gerekir; ayrıca 'ikisi de olmayacak' anlamı mantıksız.",
+     "B": "'both ... and' iki tam cümleyi bu şekilde bağlamaz; ayrıca iki seçenek aynı anda geçerli olamaz.",
+     "C": "'Whether ... or ...' bir yan cümle kurar; ana cümle olmadığı için cümle eksik kalır.",
+     "D": "Başta 'not only' gelirse devrik yapı gerekir (Not only do the symptoms...); anlam da uymaz."
+    },
+    "clues": [
+     "improve within a week",
+     "further tests will be needed"
+    ],
+    "tip": "Seçenekler arasında tercih/olasılık varsa either ... or; ikisi de olumsuzsa neither ... nor (başta devrik); ikisi de oluyorsa both ... and."
+   },
+   "vocab": [
+    {
+     "en": "underlying cause",
+     "tr": "altta yatan neden"
+    },
+    {
+     "en": "further",
+     "tr": "ek, daha fazla"
+    },
+    {
+     "en": "identify",
+     "tr": "belirlemek, saptamak"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-19",
+   "n": 19,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Patients with diabetes are advised to keep their blood sugar levels ---- check by monitoring their diet and exercising regularly.",
+   "stemTr": "Diyabet hastalarına, beslenmelerini izleyerek ve düzenli egzersiz yaparak kan şekeri düzeylerini kontrol altında tutmaları önerilir.",
+   "options": {
+    "A": "on",
+    "B": "at",
+    "C": "by",
+    "D": "out of",
+    "E": "in"
+   },
+   "answer": "E",
+   "tags": [
+    "grammar.preposition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'keep sth in check' = bir şeyi kontrol altında tutmak; E.",
+    "why": "'keep sth in check' = bir şeyin artmasını/taşmasını engellemek. Kan şekeri diyet ve egzersizle kontrol altında tutulur. Örnek: Ayşe harcamalarını kontrol altında tutmak için bütçe yapıyor = 'to keep her spending in check'.",
+    "others": {
+     "A": "'on check' diye bir kalıp yok.",
+     "B": "'at check' yanlış.",
+     "C": "'by check' yanlış.",
+     "D": "'out of check' kalıp değildir; anlam da tersine döner."
+    },
+    "clues": [
+     "keep their blood sugar levels ---- check"
+    ],
+    "tip": "'keep ... in check', 'under control', 'on track', 'at bay' gibi kalıpları edatıyla birlikte öğrenin."
+   },
+   "vocab": [
+    {
+     "en": "keep in check",
+     "tr": "kontrol altında tutmak"
+    },
+    {
+     "en": "blood sugar",
+     "tr": "kan şekeri"
+    },
+    {
+     "en": "monitor",
+     "tr": "izlemek, takip etmek"
+    },
+    {
+     "en": "be advised to",
+     "tr": "-mesi önerilmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-20",
+   "n": 20,
+   "section": "grammar",
+   "passage": null,
+   "stem": "---- the Industrial Revolution not taken place, atmospheric carbon dioxide levels would probably have remained close to their pre-industrial values.",
+   "stemTr": "Sanayi Devrimi gerçekleşmemiş olsaydı, atmosferdeki karbondioksit düzeyleri muhtemelen sanayi öncesi değerlerine yakın kalırdı.",
+   "options": {
+    "A": "If",
+    "B": "Had",
+    "C": "Should",
+    "D": "Were",
+    "E": "Unless"
+   },
+   "answer": "B",
+   "tags": [
+    "grammar.conditional",
+    "grammar.inversion"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "3. tip koşulun devrik hâli: Had + özne + (not) V3; B.",
+    "why": "Sonuç kısmı 'would have remained' → 3. tip koşul (geçmişte olmayan bir şeyi hayal etme). Normalde: 'If the Industrial Revolution had not taken place'. 'If' düşüp 'had' başa geçince: 'Had the Industrial Revolution not taken place'. Örnek: Ayşe erken çıksaydı treni kaçırmazdı = 'Had Ayşe left earlier, she wouldn't have missed the train.'",
+    "others": {
+     "A": "'If' ile cümle 'If the Industrial Revolution had not taken place' olmalıydı; 'had' eksik kalır.",
+     "C": "'Should' devriği 1. tip koşul içindir ve fiil yalın gelir; 'taken' ile kullanılmaz.",
+     "D": "'Were' devriği 2. tip içindir ve 'taken' ile 'were not taken place' yanlış olur.",
+     "E": "'Unless ... not' çifte olumsuzluk yaratır ve yardımcı fiil yine eksik kalır."
+    },
+    "clues": [
+     "not taken place",
+     "would probably have remained"
+    ],
+    "tip": "Boşluk cümle başında ve sonrasında 'özne + V3' varsa 'Had'; 'özne + to/sıfat' varsa 'Were'; 'özne + yalın fiil' varsa 'Should'."
+   },
+   "vocab": [
+    {
+     "en": "take place",
+     "tr": "gerçekleşmek, olmak"
+    },
+    {
+     "en": "pre-industrial",
+     "tr": "sanayi öncesi"
+    },
+    {
+     "en": "atmospheric",
+     "tr": "atmosferik"
+    },
+    {
+     "en": "remain",
+     "tr": "kalmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-21",
+   "n": 21,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Mount Vesuvius ---- for nearly five centuries when it suddenly erupted in 1631, killing thousands of people in the surrounding villages.",
+   "stemTr": "Vezüv Yanardağı 1631'de aniden patlayıp çevredeki köylerde binlerce kişiyi öldürdüğünde, yaklaşık beş yüzyıldır uykudaydı.",
+   "options": {
+    "A": "has been dormant",
+    "B": "is dormant",
+    "C": "will have been dormant",
+    "D": "had been dormant",
+    "E": "would be dormant"
+   },
+   "answer": "D",
+   "tags": [
+    "grammar.tense_sequence"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Geçmişteki bir olaya (1631) kadar süren durum = had been; D.",
+    "why": "Patlama 1631'de (geçmiş). Ondan önce beş yüzyıl boyunca süren uyku hâli → geçmişteki bir andan önceye uzanan süre = Past Perfect: had been dormant. Örnek: Ayşe telefon çaldığında iki saattir uyuyordu = 'She had been asleep for two hours when the phone rang.'",
+    "others": {
+     "A": "Present Perfect bugüne bağlanır; 1631 geçmiş bir referans noktası.",
+     "B": "Şimdiki durum; 1631'deki patlamadan önceki süreyi anlatamaz.",
+     "C": "Gelecekteki bir ana kadar süreyi anlatır; olay geçmişte.",
+     "E": "Geçmişte gelecek/varsayım bildirir; süre anlatmaz."
+    },
+    "clues": [
+     "for nearly five centuries",
+     "when it suddenly erupted in 1631"
+    ],
+    "tip": "'for + süre ... when + geçmiş olay' kalıbında süre kısmı 'had been / had been -ing' olur."
+   },
+   "vocab": [
+    {
+     "en": "dormant",
+     "tr": "uykuda, etkin olmayan"
+    },
+    {
+     "en": "erupt",
+     "tr": "püskürmek, patlamak"
+    },
+    {
+     "en": "surrounding",
+     "tr": "çevredeki"
+    },
+    {
+     "en": "century",
+     "tr": "yüzyıl"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-22",
+   "n": 22,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Economists disagree ---- whether raising the minimum wage leads ---- higher unemployment among young workers.",
+   "stemTr": "Ekonomistler asgari ücreti artırmanın genç işçiler arasında daha yüksek işsizliğe yol açıp açmadığı konusunda anlaşamıyor.",
+   "options": {
+    "A": "with / in",
+    "B": "about / to",
+    "C": "from / for",
+    "D": "against / on",
+    "E": "for / with"
+   },
+   "answer": "B",
+   "tags": [
+    "grammar.preposition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'disagree about (whether)' + 'lead to' (-e yol açmak); B.",
+    "why": "Bir konu hakkında anlaşamamak = 'disagree about/over/on sth'. Bir sonuca yol açmak = 'lead to sth'. İkinci boşluk kesin karar verdirir: 'leads to higher unemployment'. Örnek: Ayşe ile kardeşi tatile nereye gidecekleri konusunda anlaşamıyor = 'disagree about where to go'.",
+    "others": {
+     "A": "'disagree with' bir kişiye/görüşe karşı çıkmak içindir, 'whether'den önce gelmez; 'lead in' de yanlış.",
+     "C": "'disagree from' ve 'lead for' yanlış.",
+     "D": "'disagree against' yanlış; 'lead on' (kandırmak) anlam vermez.",
+     "E": "'disagree for' yanlış; 'lead with' (bir şeyle başlamak) bu anlamda değil."
+    },
+    "clues": [
+     "Economists disagree ---- whether",
+     "leads ---- higher unemployment"
+    ],
+    "tip": "Çift boşlukta emin olduğunuz kalıptan başlayın (lead to, result in, depend on); bu tek başına çoğu şıkkı eler."
+   },
+   "vocab": [
+    {
+     "en": "disagree about",
+     "tr": "konusunda anlaşamamak"
+    },
+    {
+     "en": "lead to",
+     "tr": "-e yol açmak"
+    },
+    {
+     "en": "minimum wage",
+     "tr": "asgari ücret"
+    },
+    {
+     "en": "unemployment",
+     "tr": "işsizlik"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-23",
+   "n": 23,
+   "section": "grammar",
+   "passage": null,
+   "stem": "It ---- that up to 40 percent of the food produced worldwide is wasted before it ever reaches consumers.",
+   "stemTr": "Dünya genelinde üretilen gıdanın yüzde 40'a kadarının tüketiciye hiç ulaşmadan israf edildiği tahmin edilmektedir.",
+   "options": {
+    "A": "estimates",
+    "B": "has estimated",
+    "C": "is estimated",
+    "D": "is estimating",
+    "E": "will estimate"
+   },
+   "answer": "C",
+   "tags": [
+    "grammar.passive"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'It is estimated/believed/thought that ...' kişisiz edilgen yapı; C.",
+    "why": "Tahmini kimin yaptığı söylenmiyor; 'It' boş özne. Bu kalıp hep edilgendir: It is estimated/said/believed that... Örnek: Türkiye'de her yıl milyonlarca ekmeğin çöpe atıldığı tahmin ediliyor = 'It is estimated that...'",
+    "others": {
+     "A": "'It estimates' = 'o tahmin ediyor'; 'it' bir kişi/kurum değil, boş özne; edilgen gerekir.",
+     "B": "Yine etken; tahmin eden belirtilmemiş, 'It' tahmin yapamaz.",
+     "D": "Etken ve süreç bildirir; boş 'It' ile kullanılmaz.",
+     "E": "Etken ve gelecek; genel kabul gören bir rakamı anlatmaz."
+    },
+    "clues": [
+     "It ---- that up to 40 percent"
+    ],
+    "tip": "'It ---- that' kalıbında 'It' bir şey yapamaz; 'is + V3' (is thought, is believed, is estimated) arayın."
+   },
+   "vocab": [
+    {
+     "en": "estimate",
+     "tr": "tahmin etmek"
+    },
+    {
+     "en": "waste",
+     "tr": "israf etmek"
+    },
+    {
+     "en": "consumer",
+     "tr": "tüketici"
+    },
+    {
+     "en": "up to",
+     "tr": "-e kadar"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-24",
+   "n": 24,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Children learn a second language most effectively when they are exposed to it early, frequently, and ----.",
+   "stemTr": "Çocuklar ikinci bir dili en etkili biçimde, ona erken, sık ve anlamlı bir şekilde maruz kaldıklarında öğrenirler.",
+   "options": {
+    "A": "meaningfully",
+    "B": "meaningful",
+    "C": "meaning",
+    "D": "to mean",
+    "E": "means"
+   },
+   "answer": "A",
+   "tags": [
+    "grammar.parallelism"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Liste zarflardan oluşuyor (early, frequently) → üçüncüsü de zarf: meaningfully; A.",
+    "why": "'exposed to it early, frequently, and ____' — öğeler fiili nasıl/ne zaman sorusuyla niteleyen zarflar. Paralellik için üçüncüsü de zarf olmalı: meaningfully. Örnek: Ayşe hızlı, dikkatli ve düzenli çalışıyor = 'quickly, carefully, and regularly' (regular değil).",
+    "others": {
+     "B": "Sıfat; listedeki 'early, frequently' gibi zarf olmalı.",
+     "C": "İsim/ -ing; listeyle paralel değil.",
+     "D": "Mastar; listeyle paralel değil ve anlamsız.",
+     "E": "İsim (araç) ya da çekimli fiil; listeye uymaz."
+    },
+    "clues": [
+     "early, frequently, and ----"
+    ],
+    "tip": "Listenin son öğesi boşsa ilk öğelerin türünü (zarf mı, sıfat mı, isim mi) kopyalayın."
+   },
+   "vocab": [
+    {
+     "en": "be exposed to",
+     "tr": "-e maruz kalmak"
+    },
+    {
+     "en": "meaningfully",
+     "tr": "anlamlı biçimde"
+    },
+    {
+     "en": "frequently",
+     "tr": "sık sık"
+    },
+    {
+     "en": "effectively",
+     "tr": "etkili biçimde"
+    }
+   ]
+  },
+  {
+   "id": "gen-gramer-25",
+   "n": 25,
+   "section": "grammar",
+   "passage": null,
+   "stem": "Historians ---- that the ancient city was abandoned because of a prolonged drought, but recent excavations ---- evidence of a sudden military attack.",
+   "stemTr": "Tarihçiler uzun süre antik kentin uzun bir kuraklık yüzünden terk edildiğini varsaymıştı; ancak son kazılar ani bir askerî saldırının kanıtlarını ortaya çıkardı.",
+   "options": {
+    "A": "have long assumed / had uncovered",
+    "B": "long assume / were uncovering",
+    "C": "will long assume / uncover",
+    "D": "had long assumed / have uncovered",
+    "E": "were long assuming / will uncover"
+   },
+   "answer": "D",
+   "tags": [
+    "grammar.tense_sequence"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "Eski varsayım yeni bulgudan ÖNCE (had long assumed); yeni bulgu bugüne etkili (have uncovered); D.",
+    "why": "Sıra: önce tarihçiler uzun süre kuraklık dedi, sonra son kazılar yeni kanıt buldu. Eski ve artık geçerliliği sarsılan varsayım = Past Perfect (had long assumed). 'recent' (son) kazıların bulgusu bugüne bağlı = Present Perfect (have uncovered). Örnek: Ayşe yıllarca kedisinin süt sevdiğini sanmıştı, ama veteriner kedilerin sütü sindiremediğini söyledi.",
+    "others": {
+     "A": "'recent excavations' yakın geçmiş ve bugüne etkili; Past Perfect için daha sonraki bir geçmiş an yok.",
+     "B": "Geniş zaman eski bir varsayımı anlatmaz; 'were uncovering' arka plan süreci, sonuç bildirmez.",
+     "C": "Gelecek zaman eski varsayımla çelişir; 'uncover' genel gerçek gibi durur.",
+     "E": "'will uncover' kazıların bulgusunu geleceğe atar; 'recent' ile çelişir."
+    },
+    "clues": [
+     "was abandoned because of a prolonged drought",
+     "but recent excavations"
+    ],
+    "tip": "'had long believed/assumed ... but recent research has shown' YDS'nin klasik zaman kalıbıdır: eski inanç Past Perfect, yeni bulgu Present Perfect."
+   },
+   "vocab": [
+    {
+     "en": "assume",
+     "tr": "varsaymak"
+    },
+    {
+     "en": "abandon",
+     "tr": "terk etmek"
+    },
+    {
+     "en": "prolonged",
+     "tr": "uzun süren"
+    },
+    {
+     "en": "excavation",
+     "tr": "kazı"
+    },
+    {
+     "en": "uncover",
+     "tr": "ortaya çıkarmak"
+    }
+   ]
+  }
+ ]
+}

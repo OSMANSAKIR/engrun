@@ -1,0 +1,1324 @@
+{
+ "id": "gen-cumle",
+ "title": "Cümle Tamamlama — Zayıf Nokta Seti (Zıtlık, Koşul, Sebep)",
+ "source": "Claude üretimi",
+ "passages": [],
+ "questions": [
+  {
+   "id": "gen-cumle-01",
+   "n": 1,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Although early humans had no written language, ----.",
+   "stemTr": "İlk insanların yazılı bir dili olmasa da, bitkiler ve hayvanlar hakkındaki karmaşık bilgileri sözlü gelenekler aracılığıyla aktarmayı başardılar.",
+   "options": {
+    "A": "writing systems first emerged in Mesopotamia around 3200 BC",
+    "B": "they managed to pass on complex knowledge about plants and animals through oral traditions",
+    "C": "they were unable to share much information with future generations",
+    "D": "it is difficult to know exactly how they communicated with each other",
+    "E": "oral traditions were gradually replaced by written records"
+   },
+   "answer": "B",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'Yazı yoktu' ↔ 'yine de bilgi aktarmayı başardılar'; B.",
+    "why": "Although'lu ilk yarı bir eksiklik söylüyor: yazı yok. Zıt ikinci yarı 'buna rağmen başardılar' olmalı. 'managed to' (-meyi başardı) zıtlığın ipucu. Örnek: Ayşe'nin arabası olmasa da her gün işe zamanında varmayı başarıyor. 'Bilgi aktaramadılar' şıkkı aynı yönde olduğu için tuzak.",
+    "others": {
+     "A": "Yazının ilk ortaya çıkışından bahsediyor; 'yazıları yoktu' ile zıtlık kurmuyor, sadece ilgili bir bilgi.",
+     "C": "Aynı yönde: yazı yok → bilgi aktaramadılar. Although zıtlık ister, bu tuzak.",
+     "D": "Aynı yönde bir sonuç (yazı yok, bilmek zor); zıtlık yok.",
+     "E": "Yazının geldiği sonraki dönemi anlatıyor; 'yazıları yoktu' ile çelişir, zıtlık değil."
+    },
+    "clues": [
+     "Although",
+     "had no written language"
+    ],
+    "tip": "Although/Though/Even though/Whereas/While/Despite gördüysen iki yarım birbirine ZIT olmalı; ilk yarıyı destekleyen (aynı yönde) şık tuzaktır."
+   },
+   "vocab": [
+    {
+     "en": "pass on",
+     "tr": "aktarmak, devretmek"
+    },
+    {
+     "en": "oral tradition",
+     "tr": "sözlü gelenek"
+    },
+    {
+     "en": "manage to",
+     "tr": "-meyi başarmak"
+    },
+    {
+     "en": "emerge",
+     "tr": "ortaya çıkmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-02",
+   "n": 2,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, the octopus is capable of solving complex puzzles and even using tools.",
+   "stemTr": "Omurgası olmamasına ve yalnızca bir iki yıl yaşamasına rağmen ahtapot karmaşık bulmacaları çözebilir, hatta alet kullanabilir.",
+   "options": {
+    "A": "Even though it lacks a backbone and lives for only a year or two",
+    "B": "Since octopuses belong to the same group of animals as snails and clams",
+    "C": "Unless it is kept in an aquarium with other octopuses",
+    "D": "As if it were a highly trained laboratory animal",
+    "E": "So that it can escape from predators more easily"
+   },
+   "answer": "A",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Omurgasız ve kısa ömürlü' ↔ 'ama çok zeki' zıtlığı; A.",
+    "why": "Ana cümle şaşırtıcı bir yetenek söylüyor: bulmaca çözüyor, alet kullanıyor. Bunu 'beklenmedik' yapan zıt bilgi: omurgası yok, ömrü kısa. Zıtlık bağlacı 'Even though' bunu kuruyor. 'Since ... snails and clams' tuzağı: aynı bilgi sebep olarak verilince saçmalaşıyor. Örnek: Ayşe hiç ders almamasına rağmen piyano çalabiliyor.",
+    "others": {
+     "B": "Sebep bağlacı: 'salyangozlarla akraba olduğu için zeki' mantıksız. Aslında bu bilgi zıtlıkla (although) kullanılmalıydı.",
+     "C": "'Akvaryumda tutulmadıkça bulmaca çözebilir' mantıksız bir koşul.",
+     "D": "'As if' (-mış gibi) yan cümlesi cümle başında bu yapıyla anlam kurmaz.",
+     "E": "Amaç bildirir; 'bulmaca çözebilme yeteneği' kasıtlı bir eylem değil, amaç ilişkisi kurulmaz."
+    },
+    "clues": [
+     "the octopus is capable of",
+     "and even using tools"
+    ],
+    "tip": "Boşluk cümle başındaysa önce ana cümleyi okuyun: şaşırtıcı/olumlu bir sonuç varsa başa 'beklenmedik kılan' zıt bilgiyi (Even though ...) koyan şıkkı arayın."
+   },
+   "vocab": [
+    {
+     "en": "backbone",
+     "tr": "omurga"
+    },
+    {
+     "en": "lack",
+     "tr": "-den yoksun olmak"
+    },
+    {
+     "en": "be capable of",
+     "tr": "-ebilmek, yeteneğinde olmak"
+    },
+    {
+     "en": "predator",
+     "tr": "yırtıcı hayvan"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-03",
+   "n": 3,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Antibiotics will lose their effectiveness against common infections ----.",
+   "stemTr": "Doktorlar antibiyotikleri soğuk algınlığı ve grip gibi tedavi edemeyecekleri hastalıklar için yazmayı bırakmadıkça, antibiyotikler yaygın enfeksiyonlara karşı etkinliklerini yitirecek.",
+   "options": {
+    "A": "provided that they are used only when absolutely necessary",
+    "B": "as long as patients complete the full course of treatment",
+    "C": "so that bacteria can develop resistance more slowly",
+    "D": "even though they were discovered almost a century ago",
+    "E": "unless doctors stop prescribing them for illnesses they cannot treat, such as colds and flu"
+   },
+   "answer": "E",
+   "tags": [
+    "conj.condition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Unless' = -mezse: yanlış reçeteyi bırakmazsak antibiyotikler etkisiz kalacak; E.",
+    "why": "Ana cümle kötü bir sonuç: antibiyotikler etkisini yitirecek. Bu kötü sonuç ancak bir şey YAPILMAZSA olur: 'unless doctors stop...' = doktorlar bırakmazsa. 'provided that / as long as' şıkları iyi davranışı koşul yapıyor, bu da kötü sonuçla çelişiyor. Örnek: Ayşe düzenli çalışmazsa sınavda başarısız olacak = 'Ayşe will fail unless she studies regularly.'",
+    "others": {
+     "A": "'Yalnızca gerektiğinde kullanılmaları şartıyla etkinliklerini yitirecekler' mantık olarak ters.",
+     "B": "'Tedaviyi tamamladıkları sürece etkisiz olacak' ters mantık; doğru kullanım etkinliği korur.",
+     "C": "Amaç bağlacı: 'etkinliklerini yitirecekler ki bakteriler direnci yavaş geliştirsin' anlamsız.",
+     "D": "Keşif tarihi ile etkinlik kaybı arasında zıtlık yok."
+    },
+    "clues": [
+     "will lose their effectiveness"
+    ],
+    "tip": "Koşul bağlacında cümleyi Türkçeye 'eğer' ile çevirip sesli okuyun: unless = '-mezse', provided that / as long as = '-mesi şartıyla', only if = 'ancak ... -se'. Mantık tersine dönüyorsa şık yanlıştır."
+   },
+   "vocab": [
+    {
+     "en": "prescribe",
+     "tr": "reçete etmek"
+    },
+    {
+     "en": "effectiveness",
+     "tr": "etkinlik"
+    },
+    {
+     "en": "resistance",
+     "tr": "direnç"
+    },
+    {
+     "en": "full course of treatment",
+     "tr": "tedavinin tamamı"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-04",
+   "n": 4,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, the majority of patients tolerate it well and report only mild side effects such as headaches.",
+   "stemTr": "Yeni migren ilacı bazı kullanıcılarda baş dönmesine yol açabilse de hastaların çoğu onu iyi tolere ediyor ve yalnızca baş ağrısı gibi hafif yan etkiler bildiriyor.",
+   "options": {
+    "A": "Since the drug causes severe nausea in most patients",
+    "B": "As the number of migraine sufferers has risen worldwide",
+    "C": "Before the drug was approved by health authorities",
+    "D": "In case patients forget to take it regularly",
+    "E": "Although the new migraine drug can cause dizziness in some users"
+   },
+   "answer": "E",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Bazılarında baş dönmesi' ↔ 'çoğu iyi tolere ediyor'; E.",
+    "why": "Ana cümle olumlu: çoğu hasta ilacı iyi tolere ediyor. Başa gelecek zıt bilgi olumsuz bir yan etki olmalı: 'bazı kullanıcılarda baş dönmesi yapabilir'. 'some users' ↔ 'the majority' karşıtlığı da ipucu. Örnek: Kahve bazı insanların uykusunu kaçırsa da çoğu insan akşam bile rahatça içebiliyor.",
+    "others": {
+     "A": "'Çoğu hastada şiddetli bulantı yaptığı için çoğu hasta iyi tolere ediyor' çelişki.",
+     "B": "Hasta sayısının artması ilacın iyi tolere edilmesinin sebebi değil.",
+     "C": "Zaman uyumsuz: onaydan önce (geçmiş) ↔ hastalar iyi tolere ediyor (şimdi).",
+     "D": "'In case' = ihtimaline karşı; ilacın iyi tolere edilmesiyle ilgisiz."
+    },
+    "clues": [
+     "the majority of patients tolerate it well",
+     "only mild side effects"
+    ],
+    "tip": "'some' ↔ 'the majority / most' gibi miktar karşıtlığı zıtlık bağlacının güçlü ipucudur."
+   },
+   "vocab": [
+    {
+     "en": "tolerate",
+     "tr": "tolere etmek, kaldırabilmek"
+    },
+    {
+     "en": "side effect",
+     "tr": "yan etki"
+    },
+    {
+     "en": "dizziness",
+     "tr": "baş dönmesi"
+    },
+    {
+     "en": "nausea",
+     "tr": "bulantı"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-05",
+   "n": 5,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Because the human body cannot produce vitamin C on its own, ----.",
+   "stemTr": "İnsan vücudu C vitaminini kendi başına üretemediği için onu düzenli olarak beslenmemizdeki meyve ve sebzelerden almalıyız.",
+   "options": {
+    "A": "it is stored in large quantities in the liver for many years",
+    "B": "a deficiency of this vitamin has never been observed in humans",
+    "C": "we must obtain it regularly from the fruits and vegetables in our diet",
+    "D": "some animals, such as dogs, are able to synthesise it themselves",
+    "E": "taking very large doses of it has no effect on the body"
+   },
+   "answer": "C",
+   "tags": [
+    "conj.cause_effect"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Sebep: vücut üretemiyor → Sonuç: dışarıdan almalıyız; C.",
+    "why": "'Because' sebebi veriyor; ikinci yarı bunun doğal SONUCU olmalı. Vücut üretemiyorsa C vitaminini besinlerden almak zorundayız. Örnek: Ayşe'nin evinde kuyu olmadığı için suyunu marketten alıyor.",
+    "others": {
+     "A": "Vücut üretemiyorsa büyük miktarda depolanması sonuç olamaz; sebep-sonuç kurulmaz.",
+     "B": "Üretemiyorsak eksiklik görülebilir; bu şık mantığı ters çevirir.",
+     "D": "Başka canlılarla karşılaştırma; 'because' ile sonuç bildirmez.",
+     "E": "Üretememekle büyük dozun etkisizliği arasında sebep-sonuç yok."
+    },
+    "clues": [
+     "Because",
+     "cannot produce vitamin C on its own"
+    ],
+    "tip": "Because/Since/As ile başlayan cümlede ikinci yarı ilk yarının mantıklı sonucu olmalı; 'bu yüzden' diyerek iki yarıyı birleştirip okuyun."
+   },
+   "vocab": [
+    {
+     "en": "on its own",
+     "tr": "kendi başına"
+    },
+    {
+     "en": "obtain",
+     "tr": "elde etmek"
+    },
+    {
+     "en": "deficiency",
+     "tr": "eksiklik"
+    },
+    {
+     "en": "synthesise",
+     "tr": "sentezlemek, üretmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-06",
+   "n": 6,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, the new vaccine will be distributed to the general public by the end of the year.",
+   "stemTr": "Klinik denemelerin son aşaması güvenliğini doğrulaması şartıyla, yeni aşı yıl sonuna kadar halka dağıtılacak.",
+   "options": {
+    "A": "Unless the trials prove that it is safe and effective",
+    "B": "Even if serious side effects are detected in the final trials",
+    "C": "Although it has already been approved by health authorities",
+    "D": "Since the trials were cancelled due to safety concerns",
+    "E": "Provided that the final phase of clinical trials confirms its safety"
+   },
+   "answer": "E",
+   "tags": [
+    "conj.condition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Provided that' = -mesi şartıyla: güvenli çıkarsa dağıtılacak; E.",
+    "why": "Ana cümle gelecekte olacak olumlu bir şey: aşı dağıtılacak. Bunun mantıklı şartı, denemelerin güvenliği doğrulaması. 'Provided that' = şartıyla. 'Unless' tam ters mantık kurar (tuzak). Örnek: Hava güzel olursa (provided that the weather is nice) Ayşe pikniğe gidecek.",
+    "others": {
+     "A": "'Güvenli olduğunu kanıtlamazlarsa dağıtılacak' mantığı tersine çevirir.",
+     "B": "'Ciddi yan etki bulunsa bile dağıtılacak' sağlık mantığına aykırı.",
+     "C": "Onaylanmış olması dağıtılmasıyla zıt değil, aynı yönde; although yanlış.",
+     "D": "Denemeler güvenlik nedeniyle iptal edildiyse aşı dağıtılmaz; sebep-sonuç çelişkili."
+    },
+    "clues": [
+     "the new vaccine will be distributed"
+    ],
+    "tip": "Koşul bağlacında cümleyi Türkçeye 'eğer' ile çevirip sesli okuyun: unless = '-mezse', provided that / as long as = '-mesi şartıyla', only if = 'ancak ... -se'. Mantık tersine dönüyorsa şık yanlıştır."
+   },
+   "vocab": [
+    {
+     "en": "provided that",
+     "tr": "-mesi şartıyla"
+    },
+    {
+     "en": "distribute",
+     "tr": "dağıtmak"
+    },
+    {
+     "en": "clinical trial",
+     "tr": "klinik deneme"
+    },
+    {
+     "en": "confirm",
+     "tr": "doğrulamak"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-07",
+   "n": 7,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Whereas the left hemisphere of the brain is mainly responsible for language and logical reasoning, ----.",
+   "stemTr": "Beynin sol yarım küresi esas olarak dil ve mantıksal akıl yürütmeden sorumluyken, sağ yarım küre yüzleri tanıma ve duyguları işlemede daha büyük rol oynar.",
+   "options": {
+    "A": "it also controls the movement of the right side of the body",
+    "B": "damage to this area can cause severe speech problems",
+    "C": "the brain consumes about 20 percent of the body's energy",
+    "D": "language skills develop rapidly during early childhood",
+    "E": "the right hemisphere plays a greater role in recognising faces and processing emotions"
+   },
+   "answer": "E",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Whereas iki şeyi karşılaştırır: sol yarım küre ↔ sağ yarım küre; E.",
+    "why": "'Whereas' (-iken, oysa) iki farklı öznenin farklı özelliklerini karşılaştırır. Sol yarım küre dil ve mantıkla ilgiliyse, diğer yarıda sağ yarım kürenin FARKLI görevi gelmeli. Örnek: Ayşe sabahçıyken kardeşi gece kuşudur = 'Whereas Ayşe is a morning person, her brother is a night owl.'",
+    "others": {
+     "A": "'also' ekleme yapar; aynı yarım küreye bir görev daha ekliyor, zıtlık yok.",
+     "B": "Sol yarım küreyi destekleyen aynı yönde bilgi; whereas karşılaştırma ister.",
+     "C": "Beynin genel enerji kullanımı; iki şeyi karşılaştırmıyor.",
+     "D": "Dil gelişimi; sol yarım küreyle karşıtlık kurmuyor."
+    },
+    "clues": [
+     "Whereas",
+     "the left hemisphere"
+    ],
+    "tip": "Whereas/While gördüğünüzde 'karşılaştırılan ikinci özne kim?' diye sorun (left ↔ right, men ↔ women, past ↔ present)."
+   },
+   "vocab": [
+    {
+     "en": "hemisphere",
+     "tr": "yarım küre"
+    },
+    {
+     "en": "be responsible for",
+     "tr": "-den sorumlu olmak"
+    },
+    {
+     "en": "reasoning",
+     "tr": "akıl yürütme"
+    },
+    {
+     "en": "recognise",
+     "tr": "tanımak"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-08",
+   "n": 8,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, many coastal cities are investing heavily in sea walls and flood barriers.",
+   "stemTr": "Önümüzdeki on yıllarda deniz seviyelerinin önemli ölçüde yükselmesi beklendiğinden pek çok kıyı kenti deniz duvarlarına ve taşkın bariyerlerine büyük yatırım yapıyor.",
+   "options": {
+    "A": "Since storms have become much less frequent and less severe",
+    "B": "As sea levels are projected to rise significantly over the coming decades",
+    "C": "Unless the level of the oceans begins to rise",
+    "D": "Even though climate scientists warn of increased flooding",
+    "E": "Before the first sea walls were built in the Netherlands"
+   },
+   "answer": "B",
+   "tags": [
+    "conj.cause_effect"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Sebep: deniz yükselecek → Sonuç: kentler bariyere yatırım yapıyor; B.",
+    "why": "Ana cümle bir önlemi anlatıyor: deniz duvarı ve taşkın bariyeri. Önlemin mantıklı sebebi deniz seviyesinin yükselecek olması. 'As' burada 'çünkü' anlamında. 'Even though' şıkkı tuzak: bilim insanlarının uyarısı yatırıma engel değil, sebep. Örnek: Kar yağacağı söylendiği için Ayşe kış lastiği taktırdı.",
+    "others": {
+     "A": "Fırtınalar azaldıysa bariyere yatırım yapmak için sebep olmaz; mantık ters.",
+     "C": "'Okyanuslar yükselmeye başlamazsa yatırım yapıyorlar' mantıksız.",
+     "D": "Uyarılar yatırımın sebebidir, zıttı değil; even though yanlış.",
+     "E": "Zaman uyumsuz ve ilgisiz: geçmişteki bir olaydan önce ↔ bugün yatırım yapıyorlar."
+    },
+    "clues": [
+     "are investing heavily in sea walls and flood barriers"
+    ],
+    "tip": "Ana cümle bir önlem/tedbir anlatıyorsa başa o önlemin SEBEBİNİ (As, Since, Because, Due to) koyan şıkkı arayın."
+   },
+   "vocab": [
+    {
+     "en": "be projected to",
+     "tr": "-mesi öngörülmek"
+    },
+    {
+     "en": "flood barrier",
+     "tr": "taşkın bariyeri"
+    },
+    {
+     "en": "invest in",
+     "tr": "-e yatırım yapmak"
+    },
+    {
+     "en": "coastal",
+     "tr": "kıyı"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-09",
+   "n": 9,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Despite the fact that the Great Wall of China is often described as visible from space, ----.",
+   "stemTr": "Çin Seddi'nin sık sık uzaydan görülebildiği söylense de, astronotlar onun yörüngeden çıplak gözle görülmesinin son derece zor olduğunu bildirmiştir.",
+   "options": {
+    "A": "it was built over many centuries by several different dynasties",
+    "B": "millions of tourists visit it every year to admire its scale",
+    "C": "this claim has been confirmed by numerous satellite photographs",
+    "D": "its construction required an enormous amount of labour",
+    "E": "astronauts have reported that it is extremely difficult to see with the naked eye from orbit"
+   },
+   "answer": "E",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'Uzaydan görünür deniyor' ↔ 'astronotlar görmek çok zor diyor'; E.",
+    "why": "'Despite the fact that' bir iddia veriyor: uzaydan görünür. Zıt ikinci yarı bu iddiayı çürütmeli: astronotlar görmenin çok zor olduğunu söylüyor. 'confirmed' (doğrulandı) şıkkı aynı yönde olduğu için tuzak. Örnek: Ayşe'nin telefonu su geçirmez diye satılsa da, ilk yağmurda bozuldu.",
+    "others": {
+     "A": "Yapım tarihi; 'uzaydan görünür' iddiasıyla zıtlık yok.",
+     "B": "Turist sayısı; iddiayla zıtlık kurmuyor.",
+     "C": "Aynı yönde: iddiayı destekliyor; 'despite' zıtlık ister.",
+     "D": "İş gücü bilgisi; zıtlık yok."
+    },
+    "clues": [
+     "Despite the fact that",
+     "is often described as visible from space"
+    ],
+    "tip": "'is often described / is widely believed / is commonly thought' + zıtlık bağlacı → diğer yarıda iddiayı çürüten bilgi gelir."
+   },
+   "vocab": [
+    {
+     "en": "despite the fact that",
+     "tr": "-mesine rağmen"
+    },
+    {
+     "en": "with the naked eye",
+     "tr": "çıplak gözle"
+    },
+    {
+     "en": "orbit",
+     "tr": "yörünge"
+    },
+    {
+     "en": "dynasty",
+     "tr": "hanedan"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-10",
+   "n": 10,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, it can be stored at room temperature for many years without spoiling.",
+   "stemTr": "Bal sıkıca kapatılmış bir kapta saklanması şartıyla oda sıcaklığında bozulmadan yıllarca saklanabilir.",
+   "options": {
+    "A": "Provided that honey is kept in a tightly sealed container",
+    "B": "Unless it is sealed tightly to keep out moisture",
+    "C": "Even if honey absorbs water from the air",
+    "D": "Whereas fresh fruit spoils within a few days",
+    "E": "In case it is exposed to direct sunlight"
+   },
+   "answer": "A",
+   "tags": [
+    "conj.condition",
+    "grammar.pronoun"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "'Provided that' = şartıyla: balın uzun ömrü kapalı kap şartına bağlı; A.",
+    "why": "Ana cümlede 'it' var; şıkta 'it'in neyi gösterdiği açıkça verilmeli. 'Provided that honey is kept...' hem 'it' = bal gönderimini kuruyor hem de mantıklı şartı veriyor. Whereas şıkkı tuzak: 'it' en yakın isim olan 'fresh fruit'e gider ve cümle saçmalaşır. Örnek: Ekmek dondurucuda saklanması şartıyla aylarca bozulmaz.",
+    "others": {
+     "B": "'Sıkıca kapatılmazsa yıllarca bozulmaz' mantığı tersine çevirir.",
+     "C": "Nem çeken bal bozulur/mayalanır; 'nem çekse bile bozulmaz' mantıksız.",
+     "D": "Ana cümledeki 'it' meyveye gider; 'taze meyve yıllarca bozulmaz' çelişki olur, gönderim bozuk.",
+     "E": "'Güneşe maruz kalma ihtimaline karşı yıllarca saklanabilir' anlamsız."
+    },
+    "clues": [
+     "it can be stored",
+     "without spoiling"
+    ],
+    "tip": "Ana cümlede 'it/they/this' varsa şıkta bu zamirin gösterdiği ismi bulun; isim yoksa ya da yanlış isme gidiyorsa şık yanlıştır."
+   },
+   "vocab": [
+    {
+     "en": "sealed container",
+     "tr": "kapalı kap"
+    },
+    {
+     "en": "spoil",
+     "tr": "bozulmak"
+    },
+    {
+     "en": "moisture",
+     "tr": "nem"
+    },
+    {
+     "en": "absorb",
+     "tr": "emmek, çekmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-11",
+   "n": 11,
+   "section": "sentence",
+   "passage": null,
+   "stem": "While some species of bacteria cause serious diseases in humans, ----.",
+   "stemTr": "Bazı bakteri türleri insanlarda ciddi hastalıklara yol açarken, pek çok diğeri sindirim ve bazı vitaminlerin üretimi için gereklidir.",
+   "options": {
+    "A": "many others are essential for digestion and the production of certain vitamins",
+    "B": "antibiotics are commonly used to treat bacterial infections",
+    "C": "they can spread rapidly through contaminated food and water",
+    "D": "viruses are much smaller than bacteria",
+    "E": "the first bacteria were observed under a microscope in the 1670s"
+   },
+   "answer": "A",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'some' (bazıları) zararlı ↔ 'many others' (diğerleri) yararlı; A.",
+    "why": "'While' burada 'oysa, -iken' anlamında karşıtlık kuruyor. 'some species' kötü bir şey yapıyorsa, karşı tarafta 'others' iyi bir şey yapmalı. Örnek: Bazı mantarlar zehirliyken, diğerleri çok lezzetlidir = 'While some mushrooms are poisonous, others are delicious.'",
+    "others": {
+     "B": "Tedaviden bahsediyor; bakterilerin bir grubunu diğeriyle karşılaştırmıyor.",
+     "C": "Aynı yönde: hastalık yapan bakterilerin zararını sürdürüyor.",
+     "D": "Virüs-bakteri boyutu; 'some species ↔ others' karşılaştırmasını kurmuyor.",
+     "E": "Tarihî bilgi; zıtlık yok."
+    },
+    "clues": [
+     "While some species of bacteria",
+     "cause serious diseases"
+    ],
+    "tip": "İlk yarıda 'some' varsa doğru şık çoğu zaman 'others / many others / the rest' ile başlar."
+   },
+   "vocab": [
+    {
+     "en": "digestion",
+     "tr": "sindirim"
+    },
+    {
+     "en": "essential",
+     "tr": "gerekli, temel"
+    },
+    {
+     "en": "contaminated",
+     "tr": "kirlenmiş"
+    },
+    {
+     "en": "species",
+     "tr": "tür"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-12",
+   "n": 12,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, the city's air quality has improved significantly over the past five years.",
+   "stemTr": "Araç emisyonlarına getirilen sıkı sınırlar ve toplu taşımanın genişletilmesi sayesinde şehrin hava kalitesi son beş yılda önemli ölçüde iyileşti.",
+   "options": {
+    "A": "Despite the closure of several coal-fired power plants",
+    "B": "Thanks to strict limits on vehicle emissions and the expansion of public transport",
+    "C": "Due to the rapid increase in the number of private cars",
+    "D": "Unless factories reduce the amount of smoke they release",
+    "E": "As soon as the new motorway is completed"
+   },
+   "answer": "B",
+   "tags": [
+    "conj.cause_effect"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Olumlu sonuç (hava iyileşti) ← olumlu sebep (emisyon sınırı, toplu taşıma); B.",
+    "why": "Ana cümle olumlu bir değişim: hava kalitesi iyileşti. Başa bu iyileşmenin sebebi gelmeli. 'Thanks to' (sayesinde) olumlu sebep bildirir. 'Despite' şıkkı tuzak: santrallerin kapanması iyileşmeye engel değil, sebep. Örnek: Düzenli yürüyüş sayesinde Ayşe'nin kolesterolü düştü.",
+    "others": {
+     "A": "Termik santral kapanması iyileşmenin sebebidir; 'despite' (rağmen) mantığı ters çevirir.",
+     "C": "Özel araç artışı havayı kirletir; iyileşmenin sebebi olamaz.",
+     "D": "'Fabrikalar azaltmazsa iyileşti' hem mantık hem zaman uyumsuz.",
+     "E": "'Otoyol tamamlanır tamamlanmaz' gelecek bildirir; 'has improved' (son beş yıl) ile çelişir."
+    },
+    "clues": [
+     "air quality has improved significantly"
+    ],
+    "tip": "Thanks to / Due to / Because of + SEBEP; Despite / In spite of + ENGEL. Önce şıktaki bilginin sonucu destekleyip desteklemediğine bakın, sonra bağlacı kontrol edin."
+   },
+   "vocab": [
+    {
+     "en": "thanks to",
+     "tr": "sayesinde"
+    },
+    {
+     "en": "emission",
+     "tr": "emisyon, salınım"
+    },
+    {
+     "en": "expansion",
+     "tr": "genişleme"
+    },
+    {
+     "en": "coal-fired power plant",
+     "tr": "kömürlü termik santral"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-13",
+   "n": 13,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Endangered species can recover remarkably quickly ----.",
+   "stemTr": "Yaşam alanları daha fazla tahribattan korunduğu sürece nesli tükenmekte olan türler dikkat çekici bir hızla toparlanabilir.",
+   "options": {
+    "A": "unless conservation programmes are launched to protect them",
+    "B": "even if their natural habitats continue to be destroyed",
+    "C": "as long as their habitats are protected from further destruction",
+    "D": "because poaching and habitat loss remain widespread",
+    "E": "before they were officially listed as endangered"
+   },
+   "answer": "C",
+   "tags": [
+    "conj.condition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'as long as' = -dığı sürece: korunma şartıyla toparlanırlar; C.",
+    "why": "Ana cümle olumlu bir sonuç: türler hızla toparlanabilir. Şartı da olumlu olmalı: yaşam alanları korunursa. 'as long as' = -dığı sürece. 'unless' ve 'even if' şıkları mantığı ters çevirdiği için tuzak. Örnek: Düzenli sulandığı sürece bu bitki çabuk büyür.",
+    "others": {
+     "A": "'Koruma programı başlatılmazsa hızla toparlanırlar' mantığı tersine çevirir.",
+     "B": "'Yaşam alanları yok edilmeye devam etse bile toparlanırlar' mantıksız.",
+     "D": "Kaçak avlanma ve yaşam alanı kaybı toparlanmanın sebebi olamaz.",
+     "E": "Zaman uyumsuz: 'can recover' (genel) ↔ 'were listed' (geçmiş); anlam da kurulmuyor."
+    },
+    "clues": [
+     "can recover remarkably quickly"
+    ],
+    "tip": "Koşul bağlacında cümleyi Türkçeye 'eğer' ile çevirip sesli okuyun: unless = '-mezse', provided that / as long as = '-mesi şartıyla', only if = 'ancak ... -se'. Mantık tersine dönüyorsa şık yanlıştır."
+   },
+   "vocab": [
+    {
+     "en": "endangered species",
+     "tr": "nesli tükenmekte olan tür"
+    },
+    {
+     "en": "as long as",
+     "tr": "-dığı sürece"
+    },
+    {
+     "en": "poaching",
+     "tr": "kaçak avlanma"
+    },
+    {
+     "en": "recover",
+     "tr": "toparlanmak, iyileşmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-14",
+   "n": 14,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, the country's economy actually grew faster in the following decade than at any other time in its history.",
+   "stemTr": "Pek çok ekonomist savaşın ülkeyi iflasa sürükleyeceğini tahmin etse de, ülke ekonomisi aslında sonraki on yılda tarihindeki diğer tüm dönemlerden daha hızlı büyüdü.",
+   "options": {
+    "A": "Because unemployment rose sharply and exports collapsed",
+    "B": "If the government had not reduced taxes",
+    "C": "Unless foreign investors withdraw their money",
+    "D": "Although many economists had predicted that the war would leave the country bankrupt",
+    "E": "So that the country could repay its war debts"
+   },
+   "answer": "D",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "'actually' sürprizi: kötü tahmin ↔ en hızlı büyüme; D.",
+    "why": "Ana cümledeki 'actually' (aslında) bir beklentinin boşa çıktığını gösterir. Beklenti kötüydü (iflas), gerçek tam tersi (rekor büyüme) → zıtlık bağlacı: Although. Örnek: Herkes Ayşe'nin yeni işinde zorlanacağını düşünse de, aslında ilk ayda terfi aldı.",
+    "others": {
+     "A": "İşsizlik ve ihracat çöküşü hızlı büyümenin sebebi olamaz.",
+     "B": "3. tip koşul 'would have grown' ister; 'actually grew' ile uyumsuz.",
+     "C": "Şimdiki/gelecek koşul; geçmişte olmuş büyümeyle zaman ve mantık uyumsuz.",
+     "E": "Amaç bağlacı; ekonomi kasıtlı bir özne değil, 'borç ödesin diye büyüdü' anlam kurmaz."
+    },
+    "clues": [
+     "actually grew faster",
+     "than at any other time"
+    ],
+    "tip": "Ana cümlede 'actually, in fact, surprisingly' varsa genelde başta yanlış çıkan bir beklenti vardır → zıtlık bağlacı."
+   },
+   "vocab": [
+    {
+     "en": "bankrupt",
+     "tr": "iflas etmiş"
+    },
+    {
+     "en": "predict",
+     "tr": "tahmin etmek"
+    },
+    {
+     "en": "withdraw",
+     "tr": "çekmek, geri çekmek"
+    },
+    {
+     "en": "repay",
+     "tr": "geri ödemek"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-15",
+   "n": 15,
+   "section": "sentence",
+   "passage": null,
+   "stem": "The Black Death killed such a large proportion of Europe's population in the fourteenth century ----.",
+   "stemTr": "Kara Ölüm on dördüncü yüzyılda Avrupa nüfusunun öyle büyük bir kısmını öldürdü ki ortaya çıkan iş gücü açığı hayatta kalan köylülerin daha yüksek ücret talep etmesine olanak tanıdı.",
+   "options": {
+    "A": "because it was spread by fleas living on rats",
+    "B": "that the resulting labour shortage allowed surviving peasants to demand higher wages",
+    "C": "although many people fled from the cities to the countryside",
+    "D": "so that landowners could increase their wealth",
+    "E": "as a result of the poor hygiene in medieval towns"
+   },
+   "answer": "B",
+   "tags": [
+    "conj.cause_effect"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'such a + sıfat + isim ... that + sonuç' kalıbı; B.",
+    "why": "'such a large proportion' gördüğünüz anda cümlenin 'that + sonuç' ile bitmesi gerekir: öyle çok kişi öldü ki... Sonuç: iş gücü azaldı, köylüler daha yüksek ücret isteyebildi. Örnek: Ayşe öyle yorgundu ki yemek yemeden uyudu = 'Ayşe was so tired that she fell asleep...'",
+    "others": {
+     "A": "'such ... ' yapısı 'that' ile tamamlanmalı; 'because' bu kalıbı kapatmaz.",
+     "C": "'such' yapısı 'that' ister; ayrıca zıtlık kurulmuyor.",
+     "D": "'so that' amaç bildirir; vebanın bir amacı olamaz ve 'such ... so that' yanlış eşleşme.",
+     "E": "'such' kalıbını tamamlamıyor; 'that' gerekli."
+    },
+    "clues": [
+     "such a large proportion"
+    ],
+    "tip": "'so + sıfat/zarf' veya 'such (a) + sıfat + isim' gördüğünüzde boşlukta 'that' ile başlayan sonuç arayın."
+   },
+   "vocab": [
+    {
+     "en": "proportion",
+     "tr": "oran, kısım"
+    },
+    {
+     "en": "labour shortage",
+     "tr": "iş gücü açığı"
+    },
+    {
+     "en": "peasant",
+     "tr": "köylü"
+    },
+    {
+     "en": "wage",
+     "tr": "ücret"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-16",
+   "n": 16,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, the patient must not eat or drink anything for at least eight hours.",
+   "stemTr": "Genel anestezi altında ameliyat olmadan önce hasta en az sekiz saat boyunca hiçbir şey yiyip içmemelidir.",
+   "options": {
+    "A": "Although fasting is necessary before most operations",
+    "B": "Unless the operation requires general anaesthesia",
+    "C": "Before undergoing surgery under general anaesthesia",
+    "D": "Whereas a light meal is usually recommended before an operation",
+    "E": "Since the patient's operation was cancelled yesterday"
+   },
+   "answer": "C",
+   "tags": [
+    "conj.time"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "Aç kalma kuralının zamanı: ameliyattan ÖNCE; C.",
+    "why": "'must not eat or drink for eight hours' bir hazırlık kuralı. Ne zaman? Ameliyattan önce. 'Before undergoing surgery' zaman bağlacıyla bunu veriyor. 'Unless' şıkkı tuzak: mantığı tersine çevirir. Örnek: Kan tahlilinden önce Ayşe'nin 12 saat aç kalması gerekiyordu.",
+    "others": {
+     "A": "Oruç gerekliyse 'yememeli' aynı yönde; although zıtlık ister.",
+     "B": "'Genel anestezi gerekmiyorsa aç kalmalı' mantığı tersine çevirir.",
+     "D": "Hafif yemek önerisi ile 'hiçbir şey yememeli' kuralı bu yapıda saçma bir karşıtlık kurar ve bilgiyle çelişir.",
+     "E": "Ameliyat iptal edildiyse aç kalması için sebep kalmaz."
+    },
+    "clues": [
+     "must not eat or drink anything",
+     "for at least eight hours"
+    ],
+    "tip": "Ana cümle bir kural/talimat ise başa genelde o kuralın ne zaman veya hangi durumda geçerli olduğunu söyleyen zaman/koşul ifadesi gelir."
+   },
+   "vocab": [
+    {
+     "en": "undergo surgery",
+     "tr": "ameliyat olmak"
+    },
+    {
+     "en": "general anaesthesia",
+     "tr": "genel anestezi"
+    },
+    {
+     "en": "fasting",
+     "tr": "aç kalma, oruç"
+    },
+    {
+     "en": "at least",
+     "tr": "en az"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-17",
+   "n": 17,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Students who suffer from test anxiety can perform as well as their calmer classmates ----.",
+   "stemTr": "Sınav kaygısı yaşayan öğrenciler, ancak sınavdan önce streslerini yönetme stratejileri öğretilirse daha sakin sınıf arkadaşları kadar iyi performans gösterebilir.",
+   "options": {
+    "A": "unless they are given relaxation training beforehand",
+    "B": "because their anxiety prevents them from concentrating",
+    "C": "even though they have learned to control their anxiety",
+    "D": "only if they are taught strategies to manage their stress before the exam",
+    "E": "so that they can be admitted to the best universities"
+   },
+   "answer": "D",
+   "tags": [
+    "conj.condition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "'only if' = ancak ... -se: başarı strateji öğrenme şartına bağlı; D.",
+    "why": "Kaygılı öğrenci normalde dezavantajlı; sakin arkadaşlarıyla eşitlenmesi ancak bir ŞARTLA olur: stres yönetimi öğrenirse. 'only if' tek şartı vurgular. 'unless' şıkkı aynı konuyu ters mantıkla verdiği için tuzak. Örnek: Ayşe ancak sabah erken kalkarsa otobüse yetişebilir.",
+    "others": {
+     "A": "'Rahatlama eğitimi verilmezse onlar kadar iyi olurlar' ters mantık.",
+     "B": "Kaygı konsantrasyonu engelliyorsa aynı başarıyı açıklamaz; çelişki.",
+     "C": "Kaygıyı kontrol etmeyi öğrenmek başarının sebebidir, zıttı değil; even though yanlış.",
+     "E": "Amaç bildirir; 'iyi performans gösterebilirler ki üniversiteye girsinler' koşulu açıklamaz."
+    },
+    "clues": [
+     "who suffer from test anxiety",
+     "as well as their calmer classmates"
+    ],
+    "tip": "Koşul bağlacında cümleyi Türkçeye 'eğer' ile çevirip sesli okuyun: unless = '-mezse', provided that / as long as = '-mesi şartıyla', only if = 'ancak ... -se'. Mantık tersine dönüyorsa şık yanlıştır."
+   },
+   "vocab": [
+    {
+     "en": "test anxiety",
+     "tr": "sınav kaygısı"
+    },
+    {
+     "en": "only if",
+     "tr": "ancak ... -se"
+    },
+    {
+     "en": "relaxation",
+     "tr": "rahatlama"
+    },
+    {
+     "en": "concentrate",
+     "tr": "konsantre olmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-18",
+   "n": 18,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, ancient Egyptians removed the internal organs of the dead before mummification.",
+   "stemTr": "Bedenin hızla çürümesini önlemek için eski Mısırlılar mumyalamadan önce ölülerin iç organlarını çıkarırdı.",
+   "options": {
+    "A": "To prevent the body from decaying quickly",
+    "B": "Because the pharaohs wanted to be buried together with their servants",
+    "C": "Unless the body was buried in the hot desert sand",
+    "D": "As soon as the pyramids were completed",
+    "E": "Whereas the rest of the body was left to decay naturally"
+   },
+   "answer": "A",
+   "tags": [
+    "conj.purpose"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Organları çıkarmanın amacı: bedenin çürümesini önlemek; A.",
+    "why": "Ana cümle bir işlem anlatıyor: organlar çıkarılıyor. Neden/ne için? Organlar ilk çürüyen kısım; çıkarılırsa beden korunur. 'To prevent ...' amaç bildirir. Örnek: Ayşe meyvelerin bozulmaması için onları buzdolabına koydu.",
+    "others": {
+     "B": "Firavunların hizmetkârlarıyla gömülme isteği organların çıkarılmasını açıklamaz; sebep-sonuç kurulmaz.",
+     "C": "Anlamsız koşul; mumyalama uygulamasını açıklamaz.",
+     "D": "Organ çıkarma piramit inşasına bağlı değil; zaman ilişkisi anlamsız.",
+     "E": "Mumyalamanın amacı bedeni korumaktır; 'bedenin geri kalanı çürümeye bırakıldı' çelişki."
+    },
+    "clues": [
+     "removed the internal organs",
+     "before mummification"
+    ],
+    "tip": "Ana cümle bilinçli bir eylemse (removed, built, introduced) başa çoğu zaman AMAÇ (to, in order to, so that) gelir."
+   },
+   "vocab": [
+    {
+     "en": "internal organ",
+     "tr": "iç organ"
+    },
+    {
+     "en": "mummification",
+     "tr": "mumyalama"
+    },
+    {
+     "en": "decay",
+     "tr": "çürümek"
+    },
+    {
+     "en": "prevent from",
+     "tr": "-mesini önlemek"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-19",
+   "n": 19,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Even though the Amazon rainforest covers only a small fraction of the Earth's surface, ----.",
+   "stemTr": "Amazon yağmur ormanı Dünya yüzeyinin yalnızca küçük bir bölümünü kaplasa da, gezegendeki bilinen tüm türlerin tahminen yüzde 10'una ev sahipliği yapar.",
+   "options": {
+    "A": "it is home to an estimated 10 percent of all known species on the planet",
+    "B": "it is being cleared at an alarming rate for cattle ranching",
+    "C": "it covers a much smaller area than the Sahara Desert",
+    "D": "most of it lies within the borders of Brazil",
+    "E": "deforestation has reduced its size considerably"
+   },
+   "answer": "A",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'Küçük alan' ↔ 'türlerin çok büyük kısmı'; A.",
+    "why": "Even though ilk yarıda bir küçüklük veriyor: yüzeyin küçük bir kısmı. Zıt ikinci yarı büyüklük/önem olmalı: türlerin yüzde 10'u orada. Örnek: Ayşe'nin dükkânı küçük olsa da mahallenin en çok müşteri çeken yeri.",
+    "others": {
+     "B": "Ormanın tahribatı; 'küçük alan' ile zıtlık kurmuyor.",
+     "C": "Aynı yönde: 'küçük' fikrini tekrar ediyor.",
+     "D": "Coğrafi konum; zıtlık yok.",
+     "E": "Aynı yönde: küçülmeyi anlatıyor, zıtlık değil."
+    },
+    "clues": [
+     "Even though",
+     "only a small fraction"
+    ],
+    "tip": "'only, small, few, little' ile kurulan zıtlık cümlesinin karşılığı 'large, most, many, a great deal' gibi büyüklük bildiren şıktır."
+   },
+   "vocab": [
+    {
+     "en": "fraction",
+     "tr": "küçük bir kısım"
+    },
+    {
+     "en": "be home to",
+     "tr": "-e ev sahipliği yapmak"
+    },
+    {
+     "en": "cattle ranching",
+     "tr": "büyükbaş hayvancılık"
+    },
+    {
+     "en": "deforestation",
+     "tr": "ormansızlaşma"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-20",
+   "n": 20,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, the bridge would have collapsed during the earthquake.",
+   "stemTr": "Mühendisler bir yıl önce temellerini güçlendirmemiş olsaydı, köprü depremde çökmüş olurdu.",
+   "options": {
+    "A": "If the engineers reinforce its foundations regularly",
+    "B": "Although the bridge was one of the strongest in the region",
+    "C": "Since the bridge has been closed to traffic for repairs",
+    "D": "Had engineers not reinforced its foundations a year earlier",
+    "E": "Provided that engineers inspect it every year"
+   },
+   "answer": "D",
+   "tags": [
+    "conj.condition",
+    "grammar.conditional"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "'would have collapsed' → 3. tip koşul: Had + özne + not + V3; D.",
+    "why": "Ana cümle 'would have collapsed' = çökmüş olurdu (ama çökmedi). Bu, geçmişte gerçekleşmemiş bir durumu anlatan 3. tip koşul. Koşul kısmı 'If engineers had not reinforced' olmalı; devrik hâli 'Had engineers not reinforced'. Örnek: Ayşe kemerini takmamış olsaydı kazada yaralanırdı = 'Had Ayşe not worn her seatbelt, she would have been injured.'",
+    "others": {
+     "A": "1. tip koşul (şimdiki/gelecek); 'would have collapsed' ile zaman uyumsuz.",
+     "B": "Zıtlık kurmuyor: 'güçlü olmasına rağmen çökmüş olurdu' hayalî sonuçla mantık kurmaz.",
+     "C": "Sebep-sonuç ve zaman uyumsuz; trafiğe kapalı olmak çökmeyi açıklamaz.",
+     "E": "Gelecek/genel koşul; 'would have collapsed' geçmişe aittir."
+    },
+    "clues": [
+     "would have collapsed"
+    ],
+    "tip": "Ana cümlede 'would have V3' varsa koşul kısmında 'If + had V3' ya da devrik 'Had + özne + V3' arayın."
+   },
+   "vocab": [
+    {
+     "en": "reinforce",
+     "tr": "güçlendirmek"
+    },
+    {
+     "en": "foundation",
+     "tr": "temel"
+    },
+    {
+     "en": "collapse",
+     "tr": "çökmek"
+    },
+    {
+     "en": "inspect",
+     "tr": "denetlemek"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-21",
+   "n": 21,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Frogs are often regarded as reliable indicators of environmental health, ----.",
+   "stemTr": "Kurbağalar, geçirgen derileri onları sudaki ve havadaki kirleticilere karşı son derece duyarlı kıldığı için sık sık çevre sağlığının güvenilir göstergeleri olarak kabul edilir.",
+   "options": {
+    "A": "although they have been studied by biologists for centuries",
+    "B": "since their permeable skin makes them highly sensitive to pollutants in water and air",
+    "C": "whereas some of them can live for more than twenty years",
+    "D": "unless they lay their eggs in clean water",
+    "E": "so that they are able to survive in extreme conditions"
+   },
+   "answer": "B",
+   "tags": [
+    "conj.cause_effect"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Neden gösterge? Çünkü derileri kirliliğe çok duyarlı; B.",
+    "why": "Ana cümle bir yargı: kurbağalar çevre sağlığının göstergesi. Doğal soru: neden? Çünkü derileri geçirgen, kirleticiyi hemen emiyorlar; çevrede bir sorun olunca ilk onlar etkileniyor. 'since' = çünkü. Örnek: Madenciler kanaryayı madene götürürdü, çünkü kuş zehirli gaza insandan önce tepki verirdi.",
+    "others": {
+     "A": "Yüzyıllardır incelenmeleri gösterge olmalarıyla zıt değil; zıtlık yok.",
+     "C": "Ömür bilgisi; gösterge olmalarıyla karşılaştırma kurmuyor.",
+     "D": "'Temiz suya yumurtlamazlarsa gösterge kabul edilirler' anlamsız.",
+     "E": "Amaç bildirir; gösterge kabul edilmek, zorlu koşullarda yaşamak için değildir."
+    },
+    "clues": [
+     "reliable indicators of environmental health"
+    ],
+    "tip": "Ana cümle bir yargı/değerlendirme ise (is regarded as, is considered) boşlukta genelde bu yargının GEREKÇESİ (since, because, as) gelir."
+   },
+   "vocab": [
+    {
+     "en": "indicator",
+     "tr": "gösterge"
+    },
+    {
+     "en": "permeable",
+     "tr": "geçirgen"
+    },
+    {
+     "en": "pollutant",
+     "tr": "kirletici"
+    },
+    {
+     "en": "be regarded as",
+     "tr": "olarak kabul edilmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-22",
+   "n": 22,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, the patient's condition deteriorated rapidly over the following days.",
+   "stemTr": "Mevcut en gelişmiş tedaviyi almasına rağmen hastanın durumu sonraki günlerde hızla kötüleşti.",
+   "options": {
+    "A": "Thanks to the early diagnosis made by her doctor",
+    "B": "As soon as she had fully recovered from the operation",
+    "C": "Despite receiving the most advanced treatment available",
+    "D": "Due to the rapid improvement in her blood test results",
+    "E": "In order to avoid unnecessary complications"
+   },
+   "answer": "C",
+   "tags": [
+    "conj.contrast"
+   ],
+   "difficulty": 1,
+   "explain": {
+    "short": "'En iyi tedavi' ↔ 'ama durum kötüleşti'; C.",
+    "why": "Ana cümle olumsuz: durum hızla kötüleşti. Başa olumlu ama işe yaramayan bir şey gelmeli: en gelişmiş tedavi. 'Despite + -ing/isim' = -mesine rağmen. 'Thanks to' ve 'Due to' şıkları olumlu sebebi olumsuz sonuca bağladığı için yanlış. Örnek: Ayşe bütün gece çalışmasına rağmen sınavdan düşük aldı.",
+    "others": {
+     "A": "Erken teşhis sayesinde kötüleşme olmaz; olumlu sebep olumsuz sonuçla çelişir.",
+     "B": "Tamamen iyileştikten hemen sonra hızla kötüleşti: çelişkili.",
+     "D": "Kan değerlerinin iyileşmesi kötüleşmenin sebebi olamaz.",
+     "E": "Amaç: 'komplikasyondan kaçınmak için durumu kötüleşti' anlamsız."
+    },
+    "clues": [
+     "deteriorated rapidly"
+    ],
+    "tip": "Ana cümle olumsuz bir sonuçsa ve şıklarda olumlu bilgiler varsa, olumlu bilgi ancak 'Despite / Although' ile bağlanabilir."
+   },
+   "vocab": [
+    {
+     "en": "deteriorate",
+     "tr": "kötüleşmek"
+    },
+    {
+     "en": "advanced",
+     "tr": "gelişmiş, ileri"
+    },
+    {
+     "en": "diagnosis",
+     "tr": "teşhis"
+    },
+    {
+     "en": "recover",
+     "tr": "iyileşmek"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-23",
+   "n": 23,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Coral reefs are able to recover from bleaching events ----.",
+   "stemTr": "Su sıcaklıkları oldukça hızlı biçimde normale dönmesi şartıyla mercan resifleri ağarma olaylarından toparlanabilir.",
+   "options": {
+    "A": "unless ocean temperatures drop back to normal levels",
+    "B": "since they cover less than one percent of the ocean floor",
+    "C": "even if the bleaching continues for several years without a break",
+    "D": "provided that water temperatures return to normal fairly quickly",
+    "E": "although they support about a quarter of all marine species"
+   },
+   "answer": "D",
+   "tags": [
+    "conj.condition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Toparlanma şartı: su sıcaklığı hızla normale dönmeli; D.",
+    "why": "Ağarmanın sebebi sıcak su. Toparlanmanın mantıklı şartı suyun normale dönmesi. 'provided that' = -mesi şartıyla. 'unless' aynı bilgiyi ters mantıkla verdiği için tuzak: 'normale dönmezse toparlanır' saçma. Örnek: Kırık kemik, alçı zamanında takılması şartıyla düzgün kaynar.",
+    "others": {
+     "A": "'Sıcaklık normale dönmezse toparlanırlar' mantık ters.",
+     "B": "Kapladıkları alan toparlanmanın sebebi değil.",
+     "C": "'Yıllarca kesintisiz sürse bile toparlanırlar' mantıksız.",
+     "E": "Tür zenginliği ile toparlanma arasında zıtlık yok."
+    },
+    "clues": [
+     "are able to recover from bleaching events"
+    ],
+    "tip": "Koşul bağlacında cümleyi Türkçeye 'eğer' ile çevirip sesli okuyun: unless = '-mezse', provided that / as long as = '-mesi şartıyla', only if = 'ancak ... -se'. Mantık tersine dönüyorsa şık yanlıştır."
+   },
+   "vocab": [
+    {
+     "en": "coral reef",
+     "tr": "mercan resifi"
+    },
+    {
+     "en": "bleaching",
+     "tr": "ağarma (mercan)"
+    },
+    {
+     "en": "marine",
+     "tr": "denizel"
+    },
+    {
+     "en": "recover from",
+     "tr": "-den toparlanmak"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-24",
+   "n": 24,
+   "section": "sentence",
+   "passage": null,
+   "stem": "----, sleep also plays a crucial role in strengthening memories and clearing waste products from the brain.",
+   "stemTr": "Vücudun dinlenmesini ve dokularını onarmasını sağlamanın yanı sıra uyku, anıları güçlendirmede ve beyindeki atık maddeleri temizlemede de çok önemli rol oynar.",
+   "options": {
+    "A": "Instead of contributing to the consolidation of new information",
+    "B": "Because most adults need between seven and nine hours of it",
+    "C": "Even though it has no effect on physical health whatsoever",
+    "D": "In addition to allowing the body to rest and repair its tissues",
+    "E": "Unless the person has been awake for more than twenty-four hours"
+   },
+   "answer": "D",
+   "tags": [
+    "conj.addition"
+   ],
+   "difficulty": 2,
+   "explain": {
+    "short": "Ana cümledeki 'also' → başta bir işlev daha eklenmeli: In addition to; D.",
+    "why": "'sleep ALSO plays a role' = uyku BİR DE şu işi yapar. Demek ki başta uykunun başka bir işlevi söylenmeli: vücudu dinlendirmek ve onarmak. 'In addition to' (-in yanı sıra) bu eklemeyi kurar. Örnek: Ayşe öğretmenliğin yanı sıra hafta sonları gönüllü olarak da çalışıyor.",
+    "others": {
+     "A": "'Yeni bilgiyi pekiştirmek yerine anıları güçlendirir' kendi içinde çelişki; 'also' ile de uyumsuz.",
+     "B": "Kaç saat uyku gerektiği, uykunun hafızadaki rolünün sebebi değil.",
+     "C": "'also' önceden bir işlev söylenmesini bekler; 'hiç etkisi yok' bunu sağlamaz.",
+     "E": "Anlamsız koşul; uykunun genel işlevini sınırlamaz."
+    },
+    "clues": [
+     "sleep also plays a crucial role"
+    ],
+    "tip": "Ana cümlede 'also, too, as well' varsa başta bir ekleme (In addition to, Besides, As well as, Apart from) arayın."
+   },
+   "vocab": [
+    {
+     "en": "in addition to",
+     "tr": "-in yanı sıra"
+    },
+    {
+     "en": "consolidation",
+     "tr": "pekiştirme"
+    },
+    {
+     "en": "crucial",
+     "tr": "çok önemli"
+    },
+    {
+     "en": "tissue",
+     "tr": "doku"
+    }
+   ]
+  },
+  {
+   "id": "gen-cumle-25",
+   "n": 25,
+   "section": "sentence",
+   "passage": null,
+   "stem": "Marie Curie was the first person to win Nobel Prizes in two different sciences, ----.",
+   "stemTr": "Marie Curie iki farklı bilim dalında Nobel Ödülü kazanan ilk kişiydi; bu, bugüne kadar hâlâ eşi görülmemiş bir başarıdır.",
+   "options": {
+    "A": "although she was born in Warsaw in 1867",
+    "B": "unless her husband Pierre had shared the first prize with her",
+    "C": "an achievement that remains unmatched to this day",
+    "D": "so that she could continue her research on radioactivity",
+    "E": "whose discovery of radium led to both of the prizes in physics"
+   },
+   "answer": "C",
+   "tags": [
+    "grammar.relative_clause"
+   ],
+   "difficulty": 3,
+   "explain": {
+    "short": "Cümlenin tamamını niteleyen açıklama: 'an achievement that ...'; C.",
+    "why": "Virgülden sonra cümlede anlatılan olayın tamamını özetleyen bir isim öbeği gelebilir: 'an achievement that remains unmatched' = hâlâ eşi olmayan bir başarı. Bu, ilk kişi olma bilgisini doğal biçimde tamamlıyor. Örnek: Ayşe maratonu üç saatte bitirdi, bu da kulüp rekoru oldu = '..., a club record.' Diğer şıklar ya mantık ya da dilbilgisi olarak uymuyor.",
+    "others": {
+     "A": "Doğum yeri ve yılı ödüllerle zıtlık kurmuyor.",
+     "B": "Anlamsız koşul; zamanlar da uyumsuz.",
+     "D": "'Araştırmaya devam edebilsin diye ilk kişi oldu' amaç ilişkisi saçma.",
+     "E": "'whose' en yakın isme (sciences) gider; ayrıca iki ödül de fizikte değildi, cümleyle çelişir."
+    },
+    "clues": [
+     "the first person to win",
+     "in two different sciences"
+    ],
+    "tip": "Cümle tam görünüyorsa ve virgülden sonra boşluk varsa: önceki cümleyi niteleyen 'which ...' ya da 'a/an + isim + that ...' (a discovery that, a decision that) açıklaması arayın."
+   },
+   "vocab": [
+    {
+     "en": "achievement",
+     "tr": "başarı"
+    },
+    {
+     "en": "unmatched",
+     "tr": "eşsiz, eşi görülmemiş"
+    },
+    {
+     "en": "to this day",
+     "tr": "bugüne kadar"
+    },
+    {
+     "en": "radioactivity",
+     "tr": "radyoaktivite"
+    }
+   ]
+  }
+ ]
+}

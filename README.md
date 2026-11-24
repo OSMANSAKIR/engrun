@@ -44,10 +44,16 @@ Buradaki sorular ÖSYM sorusu **değildir**. Sınavın biçimini, zorluğunu ve 
 | `data/manifest.json` | Yüklenecek soru dosyalarının listesi |
 | `data/generated/` | Özgün soru setleri (`set-01`…`set-04` tam denemeler) |
 | `data/dict.json` | İngilizce-Türkçe sözlük (sorulardaki tüm kelimeler) |
+| `tools/export_site.sh` | Yayınlanacak dosyaları başka bir klasöre (ör. bir sitenin `public/` klasörüne) kopyalar |
 | `fonts/` | Bungee, JetBrains Mono, Nunito (SIL OFL 1.1) |
 | `tools/SCHEMA.md` | Soru JSON biçimi ve özgün soru kuralları |
 | `tools/validate.py` | Soru dosyalarını denetler |
 | `tools/wordlist.py`, `tools/build_dict.py` | Sözlükte eksik kelimeleri bulur ve sözlüğe ekler |
+
+## Lisans
+- **Kod** (`index.html`, `tools/`): [MIT](LICENSE)
+- **Sorular ve sözlük** (`data/`): [CC BY-NC 4.0](data/LICENSE.md). Kaynak göstererek, ticari olmayan her amaçla kullanabilirsin.
+- **Fontlar** (`fonts/`): SIL Open Font License 1.1
 
 ## Sınav takvimi
 Tarihler ÖSYM'nin 2026-2027 takviminden alınmıştır (`EXAM_CALENDAR`, `index.html`). Takvim değişebilir;

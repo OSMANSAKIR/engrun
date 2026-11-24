@@ -224,6 +224,7 @@ To add it to another site, `tools/export_site.sh <target-folder>` copies only th
 | `data/generated/gen-*.json` | Extra questions by topic (vocabulary, grammar, sentence, paragraph; 25 each) |
 | `data/dict.json` | English-Turkish dictionary (every word in the questions) |
 | `assets/engrun-logo.svg` | Logo |
+| `assets/engrun-icon.svg`, `assets/favicon-32.png` | Tab icon (square) |
 | `fonts/` | Bungee, JetBrains Mono, Nunito (SIL OFL 1.1) |
 | `tools/SCHEMA.md` | Question JSON format, section and tag lists, rules for original questions |
 | `tools/validate.py` | Checks question files: format, counts, answer-letter balance, duplicate IDs |
@@ -289,4 +290,4 @@ check [osym.gov.tr](https://www.osym.gov.tr) before you register.
 - **Code** (`index.html`, `tools/`): [MIT](LICENSE)
 - **Questions and dictionary** (`data/`): [CC BY-NC 4.0](data/LICENSE.md). Free to use for any non-commercial purpose with attribution.
 - **Fonts** (`fonts/`): SIL Open Font License 1.1
-- **Logo** (`assets/engrun-logo.svg`): © Osman Şakır, all rights reserved.
+- **Logo and icon** (`assets/`): © Osman Şakır, all rights reserved.

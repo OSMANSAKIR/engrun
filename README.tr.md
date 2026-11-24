@@ -222,6 +222,7 @@ Başka bir siteye eklemek için `tools/export_site.sh <hedef-klasör>` komutu ya
 | `data/generated/gen-*.json` | Konu bazlı ek sorular (kelime, gramer, cümle, paragraf; her biri 25 soru) |
 | `data/dict.json` | İngilizce-Türkçe sözlük (sorulardaki tüm kelimeler) |
 | `assets/engrun-logo.svg` | Logo |
+| `assets/engrun-icon.svg`, `assets/favicon-32.png` | Sekme ikonu (kare) |
 | `fonts/` | Bungee, JetBrains Mono, Nunito (SIL OFL 1.1) |
 | `tools/SCHEMA.md` | Soru JSON biçimi, bölüm ve etiket listesi, özgün soru kuralları |
 | `tools/validate.py` | Soru dosyalarını denetler: biçim, soru sayıları, harf dağılımı, tekrar eden kimlikler |
@@ -287,4 +288,4 @@ başvurudan önce [osym.gov.tr](https://www.osym.gov.tr)'den kontrol et.
 - **Kod** (`index.html`, `tools/`): [MIT](LICENSE)
 - **Sorular ve sözlük** (`data/`): [CC BY-NC 4.0](data/LICENSE.md). Kaynak göstererek, ticari olmayan her amaçla kullanabilirsin.
 - **Fontlar** (`fonts/`): SIL Open Font License 1.1
-- **Logo** (`assets/engrun-logo.svg`): © Osman Şakır, tüm hakları saklıdır.
+- **Logo ve ikon** (`assets/`): © Osman Şakır, tüm hakları saklıdır.

@@ -45,7 +45,7 @@ def main():
         files.append(f)
     for d in ("fonts", "assets"):
         for f in sorted((ROOT / d).iterdir()):
-            if f.suffix in (".css", ".woff2", ".svg"):
+            if f.suffix in (".css", ".woff2", ".svg", ".png"):
                 (OUT / d).mkdir(exist_ok=True)
                 shutil.copy(f, OUT / d / f.name)
                 files.append(d + "/" + f.name)

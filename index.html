@@ -348,9 +348,14 @@ details.fb-block[open] summary::after { content: "–"; }
 .goalpick .gx[aria-checked="true"] { border-color: var(--chip); background: color-mix(in srgb, var(--chip) 16%, var(--surface)); }
 .goalbox { display: flex; flex-direction: column; gap: 12px; }
 .goalbox .lbl { font-weight: 800; font-size: 14px; margin-bottom: -4px; }
-.goalbox select, .goalbox input[type="date"] { min-height: 42px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); padding: 0 10px; color: var(--ink); font: inherit; }
+.goalbox select, .goalbox input[type="date"], .goalbox input[type="number"] { min-height: 42px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); padding: 0 10px; color: var(--ink); font: inherit; }
 .goalbox .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .goalbox .two label { display: grid; gap: 4px; }
+.goalbox .tchips { gap: 4px; }
+.goalbox .tchips .chipbtn { padding: 4px 9px; min-height: 30px; font-size: 13px; }
+.goalbox .two label { align-content: start; }
+.goalbox .note.warn { color: var(--bad); font-weight: 700; }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--chip); font-weight: 800; text-decoration: underline; cursor: pointer; }
 .phases { display: grid; gap: 8px; margin-top: 8px; }
 .phase { display: grid; grid-template-columns: 12px 1fr; gap: 2px 10px; }
 .phase i { grid-row: span 2; width: 10px; height: 10px; margin-top: 6px; border-radius: 50%; border: 2px solid var(--chip); }
@@ -490,7 +495,7 @@ const SEC = {
   para_completion: { tr: "Paragraf tamamlama",  short: "Paragraf",   par: 120, chips: 25, real: 4 },
   irrelevant:      { tr: "Anlam bozan cümle",   short: "Anlam bozan",par: 105, chips: 20, real: 5 }
 };
-const SLOW_SECTIONS = new Set(["reading","restatement","para_completion"]); // hedef %60, diğerleri %75
+const SLOW_SECTIONS = new Set(["reading","restatement","para_completion"]); // bölüm hedefi: secTarget
 const DUCK_SECTIONS = new Set(["reading","cloze","para_completion","irrelevant","trans_en_tr","trans_tr_en","restatement"]);
 // Sınav biçimleri: bölüm başına gerçek soru sayısı. Hepsi 80 soru, 180 dk, soru başı 1,25 puan.
 // YÖKDİL'in ilk 20 sorusu kelime+gramer karışık; ÖSYM ayrım vermediği için yarı yarıya saydık.
@@ -522,13 +527,16 @@ const EXAM_CALENDAR = [
   { exam: "yds",    label: "YDS 2027/2",               date: "2027-11-21" },
   { exam: "eyds",   label: "e-YDS 2027/12",            date: "2027-12-18" }
 ];
-const TARGETS = [50, 55, 60, 65, 70, 75, 80, 90];
+const TARGET_CHIPS = [50, 60, 70, 80, 90];
 const DAILY_MIN = [30, 60, 90, 120];
 const G = () => S().goal || null;                                   // { exam, field, date, label, target, minutes, start }
 const examType = () => EXAM_TYPES[(G() || {}).exam] || EXAM_TYPES.yds;
 const REAL = s => examType().real[s] || 0;
 const examSections = () => SECTIONS.filter(s => REAL(s) > 0);
-const goalTarget = () => (G() && G().target) || 70;
+const goalTarget = () => (G() && G().target) || null;          // kullanıcı seçmediyse hedef yok
+// Hedef puandan bölüm başına hedef doğru oranı: yavaş gelişen bölümler (okuma vb.) 10 puan altta, diğerleri 5 puan üstte.
+// Gerçek soru sayılarıyla tartılınca toplam hedefe denk gelir (70 → %75 ve %60; 50 → %55 ve %40; 90 → %95 ve %80).
+const secTarget = s => { const g = goalTarget(); return g == null ? null : clamp(SLOW_SECTIONS.has(s) ? g - 10 : g + 5, 20, 98) / 100; };
 const parseDay = d => { const [y, m, dd] = d.split("-").map(Number); return new Date(y, m - 1, dd).getTime(); };
 // Payları gerçek soru sayılarıyla orantılı dağıtır (en büyük kalan yöntemi); her bölüme en az `min` soru.
 function scaleDist(total, min = 0) {
@@ -1162,7 +1170,7 @@ function openSettings() {
       <div class="setrow"><label for="setVib"><b>Titreşim</b><br><span class="note">Android'de doğru/yanlışta kısa titreşim.</span></label><span class="switch"><input type="checkbox" id="setVib" ${s.vibrate !== false ? "checked" : ""}><span></span></span></div>
       <div class="setrow"><label for="setTheme"><b>Tema</b></label><select id="setTheme"><option value="auto">Sistem</option><option value="dark">Koyu</option><option value="light">Açık</option></select></div>
     </div>
-    <div class="setrow"><span><b>Sınav ve hedef</b><br><span class="note">${G() ? `${esc(G().label)}${G().date ? " · " + esc(fmtDay(parseDay(G().date), { day: "numeric", month: "long", year: "numeric" })) : ""} · hedef ${goalTarget()}` : "Seçilmedi"}</span></span><button class="btn small" id="setGoal">Değiştir</button></div>
+    <div class="setrow"><span><b>Sınav ve hedef</b><br><span class="note">${G() ? `${esc(G().label)}${G().date ? " · " + esc(fmtDay(parseDay(G().date), { day: "numeric", month: "long", year: "numeric" })) : ""}${goalTarget() ? " · hedef " + goalTarget() : " · hedef yok"}` : "Seçilmedi"}</span></span><button class="btn small" id="setGoal">Değiştir</button></div>
     ${keyBoxHtml()}
     <p class="note">Kayıt: ${Store.status === "cloud" ? "bulutta (telefon ve bilgisayarda aynı)" : "bu tarayıcıda (yerel)"} · ${POOL.size} soru, ${BOOKLETS.length} kitapçık${Store.dirty.size && Store.status === "cloud" ? ` · ${Store.dirty.size} kayıt eşitleniyor` : ""}</p>
     <div class="row"><button class="btn small" id="setReset">Bu cihazdaki önbelleği temizle</button></div>
@@ -1227,9 +1235,14 @@ function bindKeyBox(el) {
 const fmtDay = (t, o = { day: "numeric", month: "long", weekday: "long" }) => new Date(t).toLocaleDateString("tr-TR", o);
 function daysLeft() { const g = G(); return g && g.date ? Math.round((parseDay(g.date) - startOfDay()) / DAY) : null; }
 
+// 80 soru × 1,25 puan: hedef puan için gereken doğru sayısı.
+function targetNote(v) {
+  return v ? `${v} puan için 80 sorudan en az ${Math.ceil(v / 1.25)} doğru gerekir. Plan, hangi bölümlerde ne kadar çalışacağını bu hedefe göre ayarlar.`
+    : "Kaç puan istiyorsan yaz ya da hızlı seçimden birine dokun. Plan bu hedefe göre şekillenir.";
+}
 function openGoal(first) {
   const cur = G() || {};
-  const st = { exam: cur.exam || null, field: cur.field || null, date: cur.date || null, target: cur.target || 70, minutes: cur.minutes || 60 };
+  const st = { exam: cur.exam || null, field: cur.field || null, date: cur.date || null, target: cur.target || null, minutes: cur.minutes || 60 };
   const m = modal(`<div class="goalbox" id="goalBox"></div>`, { onClose: () => { if (!S().goalAsked) Store.setSettings({ goalAsked: true }); } });
   const box = $("#goalBox", m.el);
   const today = startOfDay();
@@ -1248,9 +1261,11 @@ function openGoal(first) {
         <div class="row" style="align-items:center"><label for="gDate" class="note">Listede yoksa tarih gir:</label><input type="date" id="gDate" min="${dayKey()}" value="${custom ? st.date : ""}"></div>
         <p class="note">Tarihler ÖSYM'nin 2026-2027 takviminden. Takvim değişebilir; başvurudan önce osym.gov.tr'den kontrol et.</p>
         <div class="two">
-          <label><span class="lbl">Hedef puan</span><select id="gTarget">${TARGETS.map(t => `<option value="${t}" ${st.target === t ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+          <label><span class="lbl">Hedef puan</span><input type="number" id="gTarget" min="30" max="100" step="1" inputmode="numeric" placeholder="ör. 65" value="${st.target || ""}">
+            <span class="chips tchips" aria-label="Hızlı hedef seçimi">${TARGET_CHIPS.map(v => `<button class="chipbtn" data-gt="${v}" aria-pressed="${st.target === v}">${v}</button>`).join("")}</span></label>
           <label><span class="lbl">Günlük süre</span><select id="gMin">${DAILY_MIN.map(t => `<option value="${t}" ${st.minutes === t ? "selected" : ""}>${t === 120 ? "2 saat ve üstü" : t + " dk"}</option>`).join("")}</select></label>
         </div>
+        <p class="note" id="gTargetNote">${targetNote(st.target)}</p>
         <button class="btn primary block" id="gSave">${G() ? "Kaydet" : "Yol haritamı oluştur"}</button>` : ""}
       <button class="btn block" data-gclose>${first ? "Sonra seçerim" : "Vazgeç"}</button>`;
   };
@@ -1259,7 +1274,9 @@ function openGoal(first) {
     if (t.dataset.gx) { if (st.exam !== t.dataset.gx) { st.exam = t.dataset.gx; st.field = null; if (st.date && !dates().some(c => c.date === st.date)) st.date = null; } draw(); }
     else if (t.dataset.gf) { st.field = t.dataset.gf; const c = EXAM_CALENDAR.find(x => x.date === st.date); if (c && c.field && c.field !== st.field) st.date = null; draw(); }
     else if (t.dataset.gd !== undefined) { st.date = t.dataset.gd || null; if (st.date) { const c = dates().find(x => x.date === st.date); if (c && c.field) st.field = c.field; } draw(); }
+    else if (t.dataset.gt) { st.target = +t.dataset.gt; draw(); }
     else if (t.id === "gSave") {
+      if (!st.target) { const n = $("#gTargetNote", box); n.textContent = "Önce hedef puanını yaz ya da seç: okulunun, işinin ya da kendinin istediği puan."; n.classList.add("warn"); $("#gTarget", box).focus(); return; }
       const c = st.date && EXAM_CALENDAR.find(x => x.date === st.date && x.exam === st.exam);
       const x = EXAM_TYPES[st.exam];
       const label = c ? c.label : x.name + (st.field ? " · " + x.fields[st.field].replace(" Bilimleri", "") : "");
@@ -1271,7 +1288,13 @@ function openGoal(first) {
   });
   box.addEventListener("change", e => {
     if (e.target.id === "gDate" && e.target.value) { st.date = e.target.value; draw(); }
-    if (e.target.id === "gTarget") st.target = +e.target.value;
+    if (e.target.id === "gTarget") {
+      // Yeniden çizmeden güncelle: yazıp hemen Kaydet'e basınca tıklama kaybolmasın.
+      const v = Math.round(+e.target.value); st.target = v ? clamp(v, 30, 100) : null;
+      if (st.target && st.target !== +e.target.value) e.target.value = st.target;
+      const n = $("#gTargetNote", box); n.textContent = targetNote(st.target); n.classList.remove("warn");
+      $$("[data-gt]", box).forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.gt === st.target)));
+    }
     if (e.target.id === "gMin") st.minutes = +e.target.value;
   });
   draw();
@@ -1310,7 +1333,9 @@ function planDays(n) {
       const pr = secs.map(s => {
         const acc = st[s].racc != null ? st[s].racc : Math.min(avg, .5);
         const idle = last[s] ? Math.min(14, (day - last[s]) / DAY) : 14;
-        return { s, acc, known: st[s].racc != null, gain: (1 - acc) * REAL(s), score: (1 - acc) * REAL(s) * (.25 + idle / 4) };
+        // Hedefe uzaklık: hedefin 10 puan üstüne kadar her bölüm biraz çalışılır; hedef yoksa (1 - başarı).
+        const tg = secTarget(s), gap = tg == null ? 1 - acc : Math.max(.05, tg + .1 - acc);
+        return { s, acc, known: st[s].racc != null, gain: gap * REAL(s), score: gap * REAL(s) * (.25 + idle / 4) };
       }).sort((a, b) => b.score - a.score);
       const a = pr[0], b = pr.find(x => SLOW_SECTIONS.has(x.s) !== SLOW_SECTIONS.has(a.s)) || pr[1];
       e.secs = [a, b].filter(Boolean);
@@ -1396,10 +1421,10 @@ function screenToday() {
     <div class="predict">
       <p class="eyebrow">Tahmini puan</p>
       <div class="num">${score == null ? "—" : score}</div>
-      <p class="note">hedef ${target}${score != null && score < target ? ` · ~${Math.ceil((target - score) / 1.25)} doğru daha` : ""}${p.missing ? ` · ${p.missing} bölüm verisiz` : ""}</p>
+      <p class="note">${target ? `hedef ${target}${score != null && score < target ? ` · ~${Math.ceil((target - score) / 1.25)} doğru daha` : ""}` : `hedef yok · <button class="linkbtn" data-act="goal">belirle</button>`}${p.missing ? ` · ${p.missing} bölüm verisiz` : ""}</p>
     </div>
-    <div class="gauge" role="img" aria-label="Tahmini puan ${score ?? "yok"}, hedef ${target}"><i style="width:${gw}%"></i><b style="left:${target}%"></b></div>
-    <div class="gauge-labels"><span>0</span><span style="position:absolute;left:${target}%;transform:translateX(-50%)">${target}</span><span>100</span></div>
+    <div class="gauge" role="img" aria-label="Tahmini puan ${score ?? "yok"}${target ? ", hedef " + target : ""}"><i style="width:${gw}%"></i>${target ? `<b style="left:${target}%"></b>` : ""}</div>
+    <div class="gauge-labels"><span>0</span>${target ? `<span style="position:absolute;left:${target}%;transform:translateX(-50%)">${target}</span>` : ""}<span>100</span></div>
   </section>
   <div class="stats3">
     <div class="stat"><div class="v" style="display:flex;align-items:center;gap:4px">${ICON.flame}${st.n}</div><div class="l">${st.n ? "gün üst üste" : "seri yok"}${st.n && !st.today ? " · bugün çöz!" : ""}</div></div>
@@ -1590,8 +1615,8 @@ function screenStats() {
   <div class="section-title"><h2 class="display" style="font-size:24px">Analiz</h2><span class="pill">Tahmini <strong>${p.score ?? "—"}</strong></span></div>
   <section class="panel">
     <div class="section-title"><h3>Bölüm başarısı</h3><span class="legend"><span><i style="background:var(--chip)"></i>doğru oranı</span><span><i style="background:var(--ink);width:2px"></i>hedef</span></span></div>
-    <div style="margin-top:8px">${examSections().map(s => { const x = st[s]; const tgt = SLOW_SECTIONS.has(s) ? 60 : 75; const a = x.acc == null ? null : Math.round(x.acc * 100);
-      return `<div class="hbar"><span class="lb">${esc(SEC[s].short)}</span><div class="track" title="${a == null ? "veri yok" : "%" + a}"><i style="width:${a || 0}%"></i><b style="left:${tgt}%"></b></div><span class="val"><span>${a == null ? "veri yok" : `%${a} · ${x.ok}/${x.n}`}</span>${a == null ? "" : a >= tgt ? `<span class="ok">✓ hedefte</span>` : `<span class="warn">hedef %${tgt}</span>`}</span></div>`; }).join("")}</div>
+    <div style="margin-top:8px">${examSections().map(s => { const x = st[s]; const tg = secTarget(s), tgt = tg == null ? null : Math.round(tg * 100); const a = x.acc == null ? null : Math.round(x.acc * 100);
+      return `<div class="hbar"><span class="lb">${esc(SEC[s].short)}</span><div class="track" title="${a == null ? "veri yok" : "%" + a}"><i style="width:${a || 0}%"></i>${tgt == null ? "" : `<b style="left:${tgt}%"></b>`}</div><span class="val"><span>${a == null ? "veri yok" : `%${a} · ${x.ok}/${x.n}`}</span>${a == null || tgt == null ? "" : a >= tgt ? `<span class="ok">✓ hedefte</span>` : `<span class="warn">hedef %${tgt}</span>`}</span></div>`; }).join("")}</div>
   </section>
   <section class="panel">
     <div class="section-title"><h3>Ortalama süre ve par</h3><span class="legend"><span><i style="background:var(--chip)"></i>ortalama</span><span><i style="background:var(--ink);width:2px"></i>par</span></span></div>
@@ -1610,7 +1635,7 @@ function screenStats() {
     <div style="margin-top:6px">${weak.length ? weak.map(w => `<div class="weak"><span><b>${esc(tagName(w.tag))}</b></span><span class="mono muted">%${Math.round(w.acc * 100)} · ${w.n}</span><div class="bar"><i style="width:${Math.max(3, Math.round(w.acc * 100))}%"></i></div></div>`).join("") : `<p class="muted">Henüz yeterli veri yok.</p>`}</div>
   </section>
   <section class="panel">
-    <div class="section-title"><h3>Tahmini puanın günden güne</h3><span class="note">kesikli çizgi: hedef ${goalTarget()}</span></div>
+    <div class="section-title"><h3>Tahmini puanın günden güne</h3>${goalTarget() ? `<span class="note">kesikli çizgi: hedef ${goalTarget()}</span>` : ""}</div>
     ${hist.length >= 1 ? sparkline(hist) : `<p class="muted">Veri geldikçe çizgi oluşacak.</p>`}
   </section>`;
 }
@@ -1623,7 +1648,7 @@ function sparkline(pts) {
   const last = pts[pts.length - 1];
   return `<svg class="spark" viewBox="0 0 ${W} ${H}" role="img" aria-label="Tahmini puan geçmişi, son değer ${last.score}">
     ${[0, 50, 100].map(v => `<line x1="${L}" x2="${W - R}" y1="${ys(v)}" y2="${ys(v)}" stroke="var(--line)" stroke-width="1"/><text x="${L - 6}" y="${ys(v) + 4}" text-anchor="end" font-size="11" fill="var(--muted)" font-family="JetBrains Mono, monospace">${v}</text>`).join("")}
-    <line x1="${L}" x2="${W - R}" y1="${ys(goalTarget())}" y2="${ys(goalTarget())}" stroke="var(--ink)" stroke-dasharray="5 5" stroke-width="1" opacity=".6"/>
+    ${goalTarget() ? `<line x1="${L}" x2="${W - R}" y1="${ys(goalTarget())}" y2="${ys(goalTarget())}" stroke="var(--ink)" stroke-dasharray="5 5" stroke-width="1" opacity=".6"/>` : ""}
     <path d="${area}" fill="var(--chip)" opacity=".12"/>
     <path d="${line}" fill="none" stroke="var(--chip)" stroke-width="2" vector-effect="non-scaling-stroke"/>
     ${pts.map((p, i) => `<circle cx="${xs(i)}" cy="${ys(p.score)}" r="${i === pts.length - 1 ? 5 : 3}" fill="${i === pts.length - 1 ? "var(--gold)" : "var(--chip)"}"><title>${esc(p.label)}: ${p.score}</title></circle>`).join("")}
@@ -2595,7 +2620,7 @@ function placementHtml(by, correct, total) {
   for (const s of examSections()) est += (by[s] ? by[s][0] / by[s][1] : avg) * REAL(s) * 1.25;
   const rows = examSections().filter(s => by[s]).map(s => ({ s, acc: by[s][0] / by[s][1], n: by[s][1], gain: (1 - by[s][0] / by[s][1]) * REAL(s) }))
     .sort((a, b) => b.gain - a.gain || a.acc - b.acc);   // sınavda en çok soru kaybettiren bölüm önce
-  const weak = rows.filter(r => r.acc < .75).slice(0, 3);
+  const weak = rows.filter(r => r.acc < (secTarget(r.s) ?? .75)).slice(0, 3);
   return `<section class="panel stack" style="width:100%;text-align:left">
     <h3>Seviye profilin</h3>
     <p>Bu sonuçla gerçek sınavda tahmini puanın <b style="color:var(--gold)">${Math.round(est)}</b> civarında. ${total < 40 ? "28 soruluk bir test kaba bir ölçüm; birkaç gün çözdükçe tahmin netleşir." : ""}</p>
@@ -2634,11 +2659,12 @@ function finishExam(auto) {
   lookupSoon(0);
   const wrong = st.qids.filter(id => st.answers[id] !== Q(id).answer).map(id => ({ qid: id, chosen: st.answers[id] || null }));
   UI.screen = "exam";
+  const tg = goalTarget();
   main.innerHTML = `<div class="wrap"><div class="reward">
     <p class="eyebrow">${auto ? "Süre doldu" : "Bitti"} · ${EXAM_NAME[st.kind]}</p>
-    <div class="score" style="color:${score >= 70 ? "var(--good)" : "var(--gold)"}">${fmtNum(score)}<span class="muted" style="font-size:22px"> / 100</span></div>
+    <div class="score" style="color:${tg && score >= tg ? "var(--good)" : "var(--gold)"}">${fmtNum(score)}<span class="muted" style="font-size:22px"> / 100</span></div>
     <p class="muted">${correct} doğru · ${st.qids.length - correct - blank} yanlış · ${blank} boş · ${fmtHMS(used)} kullanıldı${st.want !== st.qids.length ? ` · ${st.qids.length}/${st.want} soru mevcuttu` : ""}</p>
-    <p class="muted">Her doğru ${fmtNum(per)} puan. ${score >= 70 ? "Hedef 70'in üstündesin!" : `70 için ${Math.max(0, Math.ceil(70 / per) - correct)} doğru daha gerekiyordu.`}</p>
+    <p class="muted">Her doğru ${fmtNum(per)} puan.${!tg ? "" : score >= tg ? ` Hedefin ${tg}'in üstündesin!` : ` ${tg} için ${Math.max(0, Math.ceil(tg / per) - correct)} doğru daha gerekiyordu.`}</p>
     ${st.kind === "placement" ? placementHtml(by, correct, st.qids.length) : ""}
     <section class="panel" style="width:100%;text-align:left"><h3>Bölüm dökümü</h3><div class="tblwrap"><table class="tbl"><thead><tr><th>Bölüm</th><th class="n">Doğru</th><th class="n">%</th></tr></thead><tbody>
       ${SECTIONS.filter(s => by[s]).map(s => `<tr><td>${esc(SEC[s].tr)}</td><td class="n">${by[s][0]}/${by[s][1]}</td><td class="n">${pct(by[s][0], by[s][1])}</td></tr>`).join("")}

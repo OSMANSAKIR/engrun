@@ -38,12 +38,16 @@ Uygulama bu yüzden önce hızlı kazanç getiren bölümlere ağırlık verir.
 
 ### Hedef ve yol haritası
 - **Sınav seçimi:** İlk açılışta YDS, e-YDS ya da YÖKDİL'i seçersin. YÖKDİL'de alanını da seçersin: Fen, Sağlık ya da Sosyal Bilimler.
-- **Tarih, hedef, süre:** Sınav tarihini ÖSYM'nin 2026-2027 takviminden seçersin ya da kendin girersin. Sonra hedef puanını (50-90) ve günlük çalışma süreni (30-120 dk) belirlersin.
+- **Tarih ve süre:** Sınav tarihini ÖSYM'nin 2026-2027 takviminden seçersin ya da kendin girersin. Günlük çalışma süreni (30-120 dk) belirlersin.
+- **Hedef puan:** Kaç puan istediğine sen karar verirsin; hazır bir hedef yoktur. İstediğin sayıyı yazarsın (30-100) ya da 50, 60, 70, 80, 90'dan birine dokunursun. Uygulama bunun kaç doğruya denk geldiğini gösterir; örneğin 65 puan için 80 sorudan 52 doğru gerekir.
+  - Hedef, her bölüm için bir hedef başarı oranına çevrilir. Okuma gibi yavaş gelişen bölümlerde oran 10 puan düşük, diğerlerinde 5 puan yüksek tutulur. 70 hedefi için bu, okumada %60 ve kelimede %75 demektir.
+  - Plan, bölümleri bu hedefe ne kadar uzak olduğuna göre sıralar. 55 isteyen biri okumayı mükemmelleştirmekle uğraşmaz, hızlı puan getiren bölümlere yüklenir. 90 isteyen biri ise her bölümü zorlar.
+  - Analiz ekranındaki çizgiler, deneme sonucundaki "kaç doğru eksik" bilgisi ve seviye testinin önerileri de bu hedefe göre hesaplanır.
 - **Plan:** Uygulama kalan güne göre günlük bir plan çıkarır ve sonuçlarına göre her gün yeniden hesaplar.
   - *Sınava 5 haftadan fazla varsa:* Haftada 5 gün zayıf bölüm çalışması, 1 yarım deneme ve 1 hafif gün.
   - *Son 5 hafta:* 4 günde bir yarım deneme.
   - *Son 2 hafta:* Sınava 14, 10, 7 ve 4 gün kala tam deneme. Son 3 gün yalnızca kırmızı deste, sınavdan önceki gün hafif tekrar.
-- **Bölüm seçimi:** Her gün, tahmini puanda en çok puan kaybettiren ve en uzun süredir çalışmadığın bölümler öne alınır. Hızlı gelişen bir bölümle yavaş gelişen bir bölüm aynı güne konur.
+- **Bölüm seçimi:** Her gün, hedefinin en çok gerisinde kalan, sınavda en çok soru getiren ve en uzun süredir çalışmadığın bölümler öne alınır. Hızlı gelişen bir bölümle yavaş gelişen bir bölüm aynı güne konur.
 - **Günün süresi şöyle bölünür:**
   - %17 tekrar
   - %62 ana çalışma
@@ -255,7 +259,7 @@ Proje, Kasım 2026'daki YDS'ye 10 gün kala kişisel bir çalışma aracı olara
    - Bölüm bölüm strateji kartları ve sık düşülen tuzaklar eklendi.
 5. **Hedef ve yol haritası:**
    - Sınav türü seçimi (YDS, e-YDS, YÖKDİL) ve ÖSYM 2026-2027 takvimi geldi.
-   - Plan, hedef puana ve günlük süreye göre çıkarılıyor.
+   - Plan, kullanıcının kendi belirlediği hedef puana ve günlük süreye göre çıkarılıyor; hazır bir hedef dayatılmıyor.
    - Puan hesabı sınav türüne göre yapılıyor.
 6. **Açık sürüme hazırlık:**
    - Kişisel veriler ve ÖSYM soruları repodan çıkarıldı.

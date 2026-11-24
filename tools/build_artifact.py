@@ -43,11 +43,12 @@ def main():
         (OUT / f).parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(ROOT / f, OUT / f)
         files.append(f)
-    for f in sorted((ROOT / "fonts").iterdir()):
-        if f.suffix in (".css", ".woff2"):
-            (OUT / "fonts").mkdir(exist_ok=True)
-            shutil.copy(f, OUT / "fonts" / f.name)
-            files.append("fonts/" + f.name)
+    for d in ("fonts", "assets"):
+        for f in sorted((ROOT / d).iterdir()):
+            if f.suffix in (".css", ".woff2", ".svg"):
+                (OUT / d).mkdir(exist_ok=True)
+                shutil.copy(f, OUT / d / f.name)
+                files.append(d + "/" + f.name)
     print(json.dumps(files, ensure_ascii=False))
 
 

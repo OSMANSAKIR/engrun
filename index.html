@@ -6,7 +6,7 @@
 <!-- Sayfa yalnızca kendi dosyalarını ve (kullanıcı anahtar girerse) api.anthropic.com'u kullanabilir. Dış script, font, iframe yok. -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
-<title>YDS Koşusu</title>
+<title>ENGRUN</title>
 <meta name="description" content="YDS, e-YDS ve YÖKDİL için oyunlaştırılmış, araştırmaya dayalı çalışma: açıklamalı sorular, aralıklı tekrar, seviye testi ve kişisel yol haritası.">
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
@@ -87,9 +87,7 @@ p { margin: 0; }
   border-bottom: 1px solid var(--line);
 }
 .topbar .wrap { display: flex; align-items: center; gap: 10px; padding-block: 10px; }
-.logo { font-family: var(--font-display); font-size: 19px; letter-spacing: .03em; line-height: 1; white-space: nowrap; }
-.logo b { color: var(--gold); font-weight: 400; }
-.logo i { color: var(--chip); font-style: normal; }
+.logo { display: block; height: 26px; width: auto; }
 .pill {
   display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px;
   background: var(--surface); border: 1px solid var(--line); font-size: 13px; white-space: nowrap;
@@ -453,7 +451,7 @@ select { min-height: 40px; border-radius: 10px; border: 1px solid var(--line); b
 
 <header class="topbar">
   <div class="wrap">
-    <div class="logo">YDS <b>KOŞU</b><i>SU</i></div>
+    <img class="logo" src="assets/engrun-logo.svg" alt="ENGRUN" width="108" height="26">
     <div class="grow"></div>
     <span class="pill" id="predPill" title="Son cevaplarına göre tahmini YDS puanın">Tahmini <strong id="predTop">—</strong></span>
     <button class="iconbtn" id="btnSettings" aria-label="Ayarlar">

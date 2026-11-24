@@ -1,4 +1,4 @@
-# YDS Koşusu — soru verisi şeması
+# ENGRUN — soru verisi şeması
 
 Soru dosyaları `data/manifest.json` üzerinden yüklenir. Tüm açıklamalar **Türkçe**, sade ve gerektiğinde
 günlük hayattan kısa bir örnekle yazılır (Ayşe, John…); jargon tablosu yok.

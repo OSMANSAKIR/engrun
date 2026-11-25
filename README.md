@@ -254,8 +254,8 @@ To add it to another site, `tools/export_site.sh <target-folder>` builds and cop
 | `data/generated/set-01…04.json` | Full practice tests (80 questions each) |
 | `data/generated/gen-*.json` | Extra questions by topic (vocabulary, grammar, sentence, paragraph; 25 each) |
 | `data/dict.json` | English-Turkish dictionary (every word in the questions) |
-| `assets/engrun-logo.svg` | Logo |
-| `assets/engrun-icon.svg`, `assets/favicon-32.png` | Tab icon (square) |
+| `assets/engrun-logo.svg` | Logo (wide, used in the header) |
+| `assets/engrun-icon.svg`, `assets/favicon-32.png` | Tab icon (stacked ENG/RUN; PNG fallback for older browsers) |
 | `fonts/` | Bungee, JetBrains Mono, Nunito (SIL OFL 1.1) |
 | `tools/SCHEMA.md` | Question JSON format, section and tag lists, rules for original questions |
 | `tools/validate.py` | Checks question files: format, counts, answer-letter balance, duplicate IDs |
@@ -310,6 +310,9 @@ The project started 10 days before the November 2026 YDS as a personal study too
    - Pure logic was separated from the DOM and covered by unit tests.
    - Builds moved to Vite; a GitHub Actions pipeline type-checks, tests, validates the data and deploys to Pages.
    - The CSP no longer allows inline scripts.
+9. **New logo:**
+   - The logo and tab icon were redrawn. The runner is cut out of the letters, so the same file works on light and dark themes.
+   - Both are plain vector files of about 2.5 KB each; the old ones, with embedded images, were about 370 KB.
 
 ## Known limitations
 - **Blind solving is not a substitute for human review.** It was done by an automated solver. It catches broken or double-answer questions, but not cases where the writer and the solver make the same mistake. A final human review is still valuable.

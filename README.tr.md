@@ -252,8 +252,8 @@ Başka bir siteye eklemek için `tools/export_site.sh <hedef-klasör>` derler ve
 | `data/generated/set-01…04.json` | Tam deneme setleri (her biri 80 soru) |
 | `data/generated/gen-*.json` | Konu bazlı ek sorular (kelime, gramer, cümle, paragraf; her biri 25 soru) |
 | `data/dict.json` | İngilizce-Türkçe sözlük (sorulardaki tüm kelimeler) |
-| `assets/engrun-logo.svg` | Logo |
-| `assets/engrun-icon.svg`, `assets/favicon-32.png` | Sekme ikonu (kare) |
+| `assets/engrun-logo.svg` | Logo (geniş, üst çubukta kullanılıyor) |
+| `assets/engrun-icon.svg`, `assets/favicon-32.png` | Sekme ikonu (alt alta ENG/RUN; eski tarayıcılar için PNG yedeği) |
 | `fonts/` | Bungee, JetBrains Mono, Nunito (SIL OFL 1.1) |
 | `tools/SCHEMA.md` | Soru JSON biçimi, bölüm ve etiket listesi, özgün soru kuralları |
 | `tools/validate.py` | Soru dosyalarını denetler: biçim, soru sayıları, harf dağılımı, tekrar eden kimlikler |
@@ -308,6 +308,9 @@ Proje, Kasım 2026'daki YDS'ye 10 gün kala "YDS Koşusu" adıyla kişisel bir �
    - Saf mantık DOM'dan ayrıldı ve birim testleriyle kaplandı.
    - Derleme Vite'a taşındı; GitHub Actions tip denetimi, test, veri doğrulama yapıp Pages'e yayınlıyor.
    - CSP artık satır içi scripte izin vermiyor.
+9. **Yeni logo:**
+   - Logo ve sekme ikonu yeniden çizildi. Koşucu harflerin içine oyulmuş, bu yüzden aynı dosya açık ve koyu temada da okunuyor.
+   - İkisi de yaklaşık 2,5 KB'lık düz vektör dosyası; içine resim gömülü eski dosyalar yaklaşık 370 KB'tı.
 
 ## Bilinen sınırlar
 - **Kör çözüm insan kontrolünün yerini tutmaz.** Otomatik bir çözücüyle yapıldı. Bozuk ya da çift cevaplı soruları yakalar, ama yazanla çözenin aynı yanlışa düşmesini yakalayamaz. Bir insanın son kez gözden geçirmesi hâlâ değerli olur.

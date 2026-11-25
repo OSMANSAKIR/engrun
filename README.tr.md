@@ -6,7 +6,7 @@ YDS, e-YDS ve YÖKDİL'e hazırlananlar için oyunlaştırılmış bir çalışm
 
 **Hemen dene:** https://osmansakir.github.io/engrun/
 
-- Tek bir HTML dosyası; framework, kurulum, sunucu ya da hesap gerekmez.
+- TypeScript ile yazıldı; framework ve çalışma anı bağımlılığı yok. Sunucu ya da hesap gerekmez.
 - İlerleme kendi tarayıcında saklanır.
 - Telefonda ve bilgisayarda çalışır, açık ve koyu tema var.
 - 420 özgün soru: YDS biçiminde 4 tam deneme seti (4 × 80) ve konu bazlı 100 ek soru.
@@ -19,6 +19,7 @@ YDS, e-YDS ve YÖKDİL'e hazırlananlar için oyunlaştırılmış bir çalışm
 - [Öğrenme ilkeleri](#öğrenme-ilkeleri)
 - [Sorular nasıl hazırlandı](#sorular-nasıl-hazırlandı)
 - [Çalıştırma](#çalıştırma)
+- [Teknik yapı](#teknik-yapı)
 - [API anahtarı ve gizlilik](#api-anahtarı-ve-gizlilik)
 - [Klasörler](#klasörler)
 - [Soru eklemek](#soru-eklemek)
@@ -193,15 +194,37 @@ Her soru, gerçek bir YDS sorusunun ölçtüğü beceriyi aynı zorlukta ölçec
 Biçim ve kuralların ayrıntısı [`tools/SCHEMA.md`](tools/SCHEMA.md) dosyasında.
 
 ## Çalıştırma
+Node.js 22.12 ya da üstü gerekir.
 ```sh
 git clone https://github.com/OSMANSAKIR/engrun.git
 cd engrun
-python3 -m http.server 8000
-# tarayıcıda http://localhost:8000
+npm install
+npm run dev        # http://localhost:5173, kaydedince kendini yeniler
 ```
-Dosyayı doğrudan açmak (`file://`) çalışmaz, çünkü sorular `fetch` ile yüklenir. Herhangi bir statik sunucu (GitHub Pages, Netlify, kendi siten) yeterli.
 
-Başka bir siteye eklemek için `tools/export_site.sh <hedef-klasör>` komutu yalnızca yayınlanacak dosyaları kopyalar.
+| Komut | Ne yapar |
+|---|---|
+| `npm run dev` | Geliştirme sunucusu |
+| `npm run typecheck` | TypeScript denetimi (`strict`) |
+| `npm test` | Birim testleri |
+| `npm run validate` | Soru dosyalarını denetler (`tools/validate.py`) |
+| `npm run check` | Yukarıdaki üçü birden |
+| `npm run build` | Tip denetimi + `dist/` klasörüne yayın derlemesi |
+| `npm run preview` | `dist/` derlemesini yerelde açar |
+
+`dist/` içindeki çıktı sade bir statik sitedir; herhangi bir statik sunucu (GitHub Pages, Netlify, kendi siten) yeterli. `main` dalına her push'ta GitHub Pages'e otomatik derlenip yayınlanır.
+
+Başka bir siteye eklemek için `tools/export_site.sh <hedef-klasör>` derler ve `dist/` içeriğini oraya kopyalar.
+
+## Teknik yapı
+- **TypeScript**, `strict` modda; ayrıca `noImplicitReturns` ve `noUnusedLocals` açık. Framework ve çalışma anı bağımlılığı yok: tarayıcıya giden JavaScript yalnızca uygulamanın kendi kodu (sıkıştırılmış ~45 KB).
+- Geliştirme sunucusu ve derleme için **Vite**, testler için **Vitest**, CI ve yayın için **GitHub Actions**.
+- **İki katman:**
+  - `src/core/` mantığı tutar ve DOM'a hiç dokunmaz. Bu yüzden Node'da birim testiyle denenebilir: hedef puan, Leitner kutuları, günlük plan, puanlama ve Claude çıktısının denetimi testli.
+  - `src/ui/` bu durumu HTML'e çevirir, tıklama ve klavyeyi yönetir.
+- **Tipli veri modeli** (`src/types.ts`): sorular, cevap kayıtları, tekrar kutuları, ayarlar, koşu kayıtları. Dışarıdan gelen veri (soru dosyaları, bulut eşitleme, Claude'un JSON'u) tip almadan önce sınırda denetlenir.
+- **Kayıt:** varsayılan olarak `localStorage`. claude.ai Artifact olarak açılınca ilerleme ayrıca onun veritabanıyla eşitlenir; çakışmada son değiştirilen kazanır.
+- **Ses** Web Audio API ile sentezlenir; hiç ses dosyası yok.
 
 ## API anahtarı ve gizlilik
 - Uygulamada hiçbir anahtar yok. Claude özelliklerini kullanmak isteyen herkes kendi anahtarını girer.
@@ -209,14 +232,22 @@ Başka bir siteye eklemek için `tools/export_site.sh <hedef-klasör>` komutu ya
   - Varsayılan olarak sekme kapanınca silinir.
   - "Bu cihazda hatırla" seçersen `localStorage`'da kalır.
   - İlerleme kayıtlarına hiç yazılmaz ve yalnızca `api.anthropic.com`'a gönderilir.
-- Sayfadaki Content-Security-Policy, dışarıya yalnızca `api.anthropic.com` bağlantısına izin verir. Dış script, font ya da takip kodu yüklenmez; fontlar repoda durur.
+- Sayfadaki Content-Security-Policy, dışarıya yalnızca `api.anthropic.com` bağlantısına izin verir. Dış ya da satır içi script, dış font ya da takip kodu yüklenmez; fontlar repoda durur.
 - Bu iş için ayrı bir anahtar oluşturup [Anthropic Console](https://console.anthropic.com)'da harcama sınırı koyman önerilir.
 - İlerlemen (cevaplar, tekrar kutuları, kelimeler, hedef) yalnızca tarayıcının yerel deposunda tutulur, hiçbir sunucuya gönderilmez.
 
 ## Klasörler
 | Yol | İçerik |
 |---|---|
-| `index.html` | Uygulamanın tamamı: stil, oyun, ses, depolama |
+| `index.html` | Sayfa iskeleti; Vite'ın giriş noktası |
+| `src/main.ts` | Açılış: olay dinleyicileri, verinin yüklenmesi, ilk ekran |
+| `src/config/` | Bölümler, sınav biçimleri ve takvim, etiketler, strateji kartları, jokerler |
+| `src/core/` | DOM'a dokunmayan mantık: kayıt ve eşitleme, soru havuzu, hedef ve hedef puan, aralıklı tekrar, istatistik, günlük plan, puanlama, soru seçimi, sözlük, Claude çağrıları |
+| `src/ui/` | Ekranlar ve etkileşim: kabuk, oyun motoru, deneme modu, soru kartı, kelime işaretleme, kelime kartları, ayarlar |
+| `src/audio/sound.ts` | Web Audio ile üretilen müzik ve efektler |
+| `src/styles.css` | Bütün stiller, açık ve koyu tema |
+| `tests/` | Vitest birim testleri (hedef puan, aralıklı tekrar, puanlama, plan, Claude çıktısı denetimi, soru dosyaları) |
+| `.github/workflows/deploy.yml` | CI: tip denetimi, testler, veri doğrulama, derleme, GitHub Pages'e yayın |
 | `data/manifest.json` | Yüklenecek soru dosyalarının listesi |
 | `data/generated/set-01…04.json` | Tam deneme setleri (her biri 80 soru) |
 | `data/generated/gen-*.json` | Konu bazlı ek sorular (kelime, gramer, cümle, paragraf; her biri 25 soru) |
@@ -272,6 +303,11 @@ Proje, Kasım 2026'daki YDS'ye 10 gün kala "YDS Koşusu" adıyla kişisel bir �
    - ÖSYM sorularının yerine, aynı beceriyi ölçen 4 × 80 özgün soru yazıldı. Hepsi kopya kontrolü ve kör çözümle doğrulandı.
    - Metinler YÖKDİL alanlarına ayrıldı.
    - Sözlük 5.703 kelimeye genişletildi.
+8. **TypeScript'e geçiş:**
+   - 2.800 satırlık tek HTML dosyası, `strict` TypeScript ile tipli modüllere (`config`, `core`, `ui`, `audio`) bölündü.
+   - Saf mantık DOM'dan ayrıldı ve birim testleriyle kaplandı.
+   - Derleme Vite'a taşındı; GitHub Actions tip denetimi, test, veri doğrulama yapıp Pages'e yayınlıyor.
+   - CSP artık satır içi scripte izin vermiyor.
 
 ## Bilinen sınırlar
 - **Kör çözüm insan kontrolünün yerini tutmaz.** Otomatik bir çözücüyle yapıldı. Bozuk ya da çift cevaplı soruları yakalar, ama yazanla çözenin aynı yanlışa düşmesini yakalayamaz. Bir insanın son kez gözden geçirmesi hâlâ değerli olur.
@@ -281,11 +317,11 @@ Proje, Kasım 2026'daki YDS'ye 10 gün kala "YDS Koşusu" adıyla kişisel bir �
 - **İlerleme tarayıcıya bağlıdır.** Tarayıcı verilerini silersen ilerlemen de silinir.
 
 ## Sınav takvimi
-Tarihler ÖSYM'nin 2026-2027 takviminden alınmıştır (`EXAM_CALENDAR`, `index.html`). Takvim değişebilir;
+Tarihler ÖSYM'nin 2026-2027 takviminden alınmıştır (`EXAM_CALENDAR`, `src/config/exams.ts`). Takvim değişebilir;
 başvurudan önce [osym.gov.tr](https://www.osym.gov.tr)'den kontrol et.
 
 ## Lisans
-- **Kod** (`index.html`, `tools/`): [MIT](LICENSE)
+- **Kod** (`src/`, `tests/`, `tools/`, `index.html`): [MIT](LICENSE)
 - **Sorular ve sözlük** (`data/`): [CC BY-NC 4.0](data/LICENSE.md). Kaynak göstererek, ticari olmayan her amaçla kullanabilirsin.
 - **Fontlar** (`fonts/`): SIL Open Font License 1.1
 - **Logo ve ikon** (`assets/`): © Osman Şakır, tüm hakları saklıdır.

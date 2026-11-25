@@ -5,7 +5,7 @@ Herkese açık sürümden farkı:
   - CSP meta satırı çıkarılır (claude.ai kendi köprü scriptlerini sayfaya ekliyor; CSP onları engellerdi),
   - sayfa claude.ai'nin beklediği gibi iskeletsiz (doctype/html/head/body olmadan) yazılır.
 
-Kullanım:  python3 -I tools/build_artifact.py
+Kullanım:  npm run build && python3 -I tools/build_artifact.py   (derlenmiş dist/ klasöründen çalışır)
 Sonra Artifact'i root=work/artifact, file_path=work/artifact/index.html ile yayınla; çıktıdaki dosya listesi `files` olur.
 """
 import json
@@ -14,11 +14,12 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+DIST = ROOT / "dist"
 OUT = ROOT / "work/artifact"
 
 
 def page():
-    s = (ROOT / "index.html").read_text(encoding="utf-8")
+    s = (DIST / "index.html").read_text(encoding="utf-8")
     s = re.sub(r"<!--[^>]*-->\n<meta http-equiv=\"Content-Security-Policy\"[^>]*>\n", "", s)
     s = re.sub(r"^(<!doctype html>|<html[^>]*>|<head>|</head>|<body>|</body>|</html>)\n", "", s, flags=re.M | re.I)
     s = re.sub(r'<meta name="viewport"[^>]*>\n', "", s)
@@ -27,6 +28,8 @@ def page():
 
 
 def main():
+    if not (DIST / "index.html").exists():
+        raise SystemExit("Önce derle: npm run build")
     if OUT.exists():
         shutil.rmtree(OUT)
     (OUT / "data").mkdir(parents=True)
@@ -43,12 +46,11 @@ def main():
         (OUT / f).parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(ROOT / f, OUT / f)
         files.append(f)
-    for d in ("fonts", "assets"):
-        for f in sorted((ROOT / d).iterdir()):
-            if f.suffix in (".css", ".woff2", ".svg", ".png"):
-                (OUT / d).mkdir(exist_ok=True)
-                shutil.copy(f, OUT / d / f.name)
-                files.append(d + "/" + f.name)
+    # Vite çıktısı: derlenmiş JS/CSS, fontlar ve görseller (adları içerik özetli)
+    for f in sorted((DIST / "assets").iterdir()):
+        (OUT / "assets").mkdir(exist_ok=True)
+        shutil.copy(f, OUT / "assets" / f.name)
+        files.append("assets/" + f.name)
     print(json.dumps(files, ensure_ascii=False))
 
 

@@ -1,14 +1,11 @@
 #!/bin/sh
-# Yayınlanacak dosyaları hedef klasöre kopyalar (data/private ve work/ hariç).
-#   tools/export_site.sh ~/website/public/yds
+# Derlenmiş siteyi (dist/) hedef klasöre kopyalar. data/private ve work/ zaten derlemeye girmez.
+#   tools/export_site.sh ~/website/public/engrun
 set -eu
-dest=${1:?hedef klasör ver, ör. ~/website/public/yds}
+dest=${1:?hedef klasör ver, ör. ~/website/public/engrun}
 cd "$(dirname "$0")/.."
+npm run build
 rm -rf "$dest"
-mkdir -p "$dest/data/generated" "$dest/fonts" "$dest/assets"
-cp index.html LICENSE "$dest/"
-cp data/manifest.json data/dict.json data/LICENSE.md "$dest/data/"
-cp data/generated/*.json "$dest/data/generated/"
-cp fonts/* "$dest/fonts/"
-cp assets/* "$dest/assets/"
+mkdir -p "$dest"
+cp -R dist/. "$dest/"
 echo "kopyalandı: $dest ($(find "$dest" -type f | wc -l | tr -d ' ') dosya)"

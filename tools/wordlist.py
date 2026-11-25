@@ -4,7 +4,7 @@ Kullanım:
   python3 -I tools/wordlist.py               → eksik biçim sayısı
   python3 -I tools/wordlist.py --missing N   → eksikleri N'lik parçalara böler: work/dict/todo-XX.txt
 
-Kelime ayırma kuralı index.html'deki WORD_RE / wordKey ile aynıdır (küçük harf, ’ → ', sondaki 's atılır).
+Kelime ayırma kuralı src/core/words.ts'teki WORD_RE / wordKey ile aynıdır (küçük harf, ’ → ', sondaki 's atılır).
 """
 import json
 import re
@@ -24,7 +24,7 @@ def word_key(w):
 
 
 def lemma_cands(k):
-    """index.html'deki lemmaCands ile aynı: çekim eklerini atarak sözlük biçimi adayları üretir."""
+    """src/core/words.ts'teki lemmaCands ile aynı: çekim eklerini atarak sözlük biçimi adayları üretir."""
     c = [k]
 
     def add(x):

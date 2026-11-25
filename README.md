@@ -6,7 +6,7 @@ A gamified study app for Turkey's national English proficiency exams: **YDS**, *
 
 **Try it now:** https://osmansakir.github.io/engrun/
 
-- A single HTML file. No framework, no install, no server, no account.
+- Written in TypeScript with no framework and no runtime dependencies. No server, no account.
 - Your progress is stored in your own browser.
 - Works on phones and desktops, with light and dark themes.
 - 420 original questions: 4 full YDS-format practice tests (4 × 80) and 100 extra questions by topic.
@@ -21,6 +21,7 @@ A gamified study app for Turkey's national English proficiency exams: **YDS**, *
 - [Learning principles](#learning-principles)
 - [How the questions were made](#how-the-questions-were-made)
 - [Running it](#running-it)
+- [Tech stack and architecture](#tech-stack-and-architecture)
 - [API key and privacy](#api-key-and-privacy)
 - [Project layout](#project-layout)
 - [Adding questions](#adding-questions)
@@ -195,15 +196,37 @@ Each question was written from scratch to test the same skill, at the same diffi
 Format and rules are documented in [`tools/SCHEMA.md`](tools/SCHEMA.md) (in Turkish).
 
 ## Running it
+Requires Node.js 22.12 or later.
 ```sh
 git clone https://github.com/OSMANSAKIR/engrun.git
 cd engrun
-python3 -m http.server 8000
-# open http://localhost:8000
+npm install
+npm run dev        # http://localhost:5173, reloads on save
 ```
-Opening the file directly (`file://`) won't work, because the questions are loaded with `fetch`. Any static host works: GitHub Pages, Netlify, or your own site.
 
-To add it to another site, `tools/export_site.sh <target-folder>` copies only the files that need to be published.
+| Command | What it does |
+|---|---|
+| `npm run dev` | Development server |
+| `npm run typecheck` | TypeScript check (`strict`) |
+| `npm test` | Unit tests |
+| `npm run validate` | Checks the question files (`tools/validate.py`) |
+| `npm run check` | All three above |
+| `npm run build` | Type check + production build into `dist/` |
+| `npm run preview` | Serves the `dist/` build locally |
+
+The output in `dist/` is a plain static site: any static host works (GitHub Pages, Netlify, your own site). Pushing to `main` builds and publishes it to GitHub Pages automatically.
+
+To add it to another site, `tools/export_site.sh <target-folder>` builds and copies `dist/` there.
+
+## Tech stack and architecture
+- **TypeScript** in `strict` mode, plus `noImplicitReturns` and `noUnusedLocals`. No framework and no runtime dependencies: the shipped JavaScript is only the app's own code (~45 KB gzipped).
+- **Vite** for the dev server and production build, **Vitest** for tests, **GitHub Actions** for CI and deployment.
+- **Two layers:**
+  - `src/core/` holds the logic and never touches the DOM. That is why it can be unit-tested in Node: the target score, Leitner boxes, the daily plan, scoring and the checks on Claude's output all have tests.
+  - `src/ui/` turns that state into HTML and handles clicks and keys.
+- **Typed data model** (`src/types.ts`): questions, attempts, review entries, settings and run records. Data coming from outside (question files, cloud sync, Claude's JSON) is checked at the boundary before it gets a type.
+- **Storage:** `localStorage` by default. When opened as a claude.ai Artifact, progress also syncs to its database; conflicts are resolved by last-modified time.
+- **Sound** is synthesized with the Web Audio API; there are no audio files.
 
 ## API key and privacy
 - The app contains no API key. Anyone who wants the Claude features enters their own.
@@ -211,14 +234,22 @@ To add it to another site, `tools/export_site.sh <target-folder>` copies only th
   - By default it is deleted when you close the tab.
   - If you choose "Remember on this device", it is kept in `localStorage`.
   - It is never written to your progress data and is only ever sent to `api.anthropic.com`.
-- The page's Content-Security-Policy allows outgoing connections only to `api.anthropic.com`. No external scripts, fonts or trackers are loaded; the fonts live in the repo.
+- The page's Content-Security-Policy allows outgoing connections only to `api.anthropic.com`. No external or inline scripts, fonts or trackers are loaded; the fonts live in the repo.
 - We recommend creating a separate key for this and setting a spending limit in the [Anthropic Console](https://console.anthropic.com).
 - Your progress (answers, review boxes, words, goal) is kept only in your browser's local storage and is never sent to any server.
 
 ## Project layout
 | Path | Contents |
 |---|---|
-| `index.html` | The whole app: styles, game, sound, storage |
+| `index.html` | Page shell; Vite's entry point |
+| `src/main.ts` | Startup: event listeners, loading data, first screen |
+| `src/config/` | Sections, exam formats and calendar, tags, strategy cards, jokers |
+| `src/core/` | Logic with no DOM: storage and sync, question pool, goal and target score, spaced repetition, stats, daily plan, scoring, question selection, dictionary, Claude calls |
+| `src/ui/` | Screens and interaction: shell, game engine, exam mode, question card, word marking, vocabulary cards, settings |
+| `src/audio/sound.ts` | Music and sound effects generated with Web Audio |
+| `src/styles.css` | All styles, light and dark themes |
+| `tests/` | Vitest unit tests (target score, spaced repetition, scoring, plan, Claude output checks, question files) |
+| `.github/workflows/deploy.yml` | CI: type check, tests, data validation, build, publish to GitHub Pages |
 | `data/manifest.json` | List of question files to load |
 | `data/generated/set-01…04.json` | Full practice tests (80 questions each) |
 | `data/generated/gen-*.json` | Extra questions by topic (vocabulary, grammar, sentence, paragraph; 25 each) |
@@ -274,6 +305,11 @@ The project started 10 days before the November 2026 YDS as a personal study too
    - 4 × 80 original questions testing the same skills replaced the ÖSYM questions. All passed the copy check and blind solving.
    - Passages were tagged by YÖKDİL field.
    - The dictionary grew to 5,703 words.
+8. **TypeScript migration:**
+   - The single 2,800-line HTML file was split into typed modules (`config`, `core`, `ui`, `audio`) under `strict` TypeScript.
+   - Pure logic was separated from the DOM and covered by unit tests.
+   - Builds moved to Vite; a GitHub Actions pipeline type-checks, tests, validates the data and deploys to Pages.
+   - The CSP no longer allows inline scripts.
 
 ## Known limitations
 - **Blind solving is not a substitute for human review.** It was done by an automated solver. It catches broken or double-answer questions, but not cases where the writer and the solver make the same mistake. A final human review is still valuable.
@@ -283,11 +319,11 @@ The project started 10 days before the November 2026 YDS as a personal study too
 - **Progress is tied to the browser.** If you clear your browser data, your progress is deleted too.
 
 ## Exam calendar
-Dates come from ÖSYM's 2026-2027 calendar (`EXAM_CALENDAR` in `index.html`). The calendar may change;
+Dates come from ÖSYM's 2026-2027 calendar (`EXAM_CALENDAR` in `src/config/exams.ts`). The calendar may change;
 check [osym.gov.tr](https://www.osym.gov.tr) before you register.
 
 ## License
-- **Code** (`index.html`, `tools/`): [MIT](LICENSE)
+- **Code** (`src/`, `tests/`, `tools/`, `index.html`): [MIT](LICENSE)
 - **Questions and dictionary** (`data/`): [CC BY-NC 4.0](data/LICENSE.md). Free to use for any non-commercial purpose with attribution.
 - **Fonts** (`fonts/`): SIL Open Font License 1.1
 - **Logo and icon** (`assets/`): © Osman Şakır, all rights reserved.

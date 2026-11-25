@@ -59,7 +59,7 @@ günlük hayattan kısa bir örnekle yazılır (Ayşe, John…); jargon tablosu 
 | `para_completion` | Paragraf tamamlama | 72-75 |
 | `irrelevant` | Anlam bütünlüğünü bozan cümle | 76-80 |
 
-YÖKDİL'de diyalog ve yakın anlam yoktur; ilk 20 soru kelime+gramer karışıktır. Bölüm ağırlıkları `index.html` içindeki `EXAM_TYPES`'ta.
+YÖKDİL'de diyalog ve yakın anlam yoktur; ilk 20 soru kelime+gramer karışıktır. Bölüm ağırlıkları `src/config/exams.ts` içindeki `EXAM_TYPES`'ta.
 
 ## Etiketler (yalnızca bu listeden; her soruya 1-3 tane)
 Kelime: `vocab.noun`, `vocab.verb`, `vocab.adjective`, `vocab.adverb`, `vocab.phrasal_verb`, `vocab.collocation`
